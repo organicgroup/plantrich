@@ -199,3 +199,19 @@ doctype_js = {"Lead" : "public/js/lead.js"}
 # auth_hooks = [
 #	"plantrich.auth.validate"
 # ]
+
+fixtures =[{
+	"dt":"Custom Field",
+	"filters":[
+		["name","in",[
+			"Lead-custom_job_title",
+            "Lead-custom_interest",
+            "Lead-custom_other_interest",
+            "Lead-custom_section_break_hjz5x",
+            "Lead-custom_is_sale",
+            "Lead-custom_item",
+            "Lead-custom_total_amount"
+		]]
+	]
+}
+]
