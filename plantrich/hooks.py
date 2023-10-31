@@ -102,13 +102,11 @@ doctype_js = {"Lead" : "public/js/lead.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Lead": {
+		"validate": "plantrich.doc_events.lead.get_item_total",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
