@@ -15,7 +15,7 @@
  "fields": [
   {
    "fieldname": "item_code",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Item Code",
    "options": "Item",
@@ -48,7 +48,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-10-31 23:19:01.316010",
+ "modified": "2023-11-01 09:23:16.660372",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Lead Item",
