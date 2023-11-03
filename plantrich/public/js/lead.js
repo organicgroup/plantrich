@@ -1,13 +1,15 @@
 frappe.ui.form.on("Lead", {
     before_save:function(frm){
         let total_amount = 0
-        frm.doc.custom_item.forEach(row=>{
-            if(!row.amount){
-                row.amount = row.qty * row.rate
-            }
-            total_amount += row.amount 
-        })
-        frm.set_value("custom_total_amount", total_amount)
+        if(frm.doc.custom_item){
+            frm.doc.custom_item.forEach(row=>{
+                if(!row.amount){
+                    row.amount = row.qty * row.rate
+                }
+                total_amount += row.amount 
+            })
+            frm.set_value("custom_total_amount", total_amount)
+        }
     }
 })
 
