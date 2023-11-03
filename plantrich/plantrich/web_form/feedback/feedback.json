@@ -21,7 +21,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2023-10-31 23:42:06.237074",
+ "modified": "2023-11-03 14:23:33.744487",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "feedback",
@@ -95,6 +95,19 @@
    "label": "Other Interest",
    "max_length": 0,
    "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Email",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Email",
    "read_only": 0,
    "reqd": 0,
    "show_in_filter": 0
