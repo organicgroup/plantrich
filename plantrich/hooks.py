@@ -29,7 +29,11 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Lead" : "public/js/lead.js"}
+doctype_js = {
+	"Lead" : "public/js/lead.js",
+	"Sales Invoice": "public/js/sales_invoice.js"
+
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -208,8 +212,56 @@ fixtures =[{
             "Lead-custom_section_break_hjz5x",
             "Lead-custom_is_sale",
             "Lead-custom_item",
-            "Lead-custom_total_amount"
+            "Lead-custom_total_amount",
+
+			'Job Applicant-father_name',
+			'Job Applicant-sex',
+			'Job Applicant-date_of_birth',
+			'Job Applicant-religion_caste',
+			'Job Applicant-blood_group',
+			'Job Applicant-column_break_usn9v',
+			'Job Applicant-marital_status',
+			'Job Applicant-present_address',
+			'Job Applicant-address',
+			'Job Applicant-column_break_a1v2e',
+			'Job Applicant-permanent_postal_address',
+			'Job Applicant-same_as_present_address',
+			'Job Applicant-driving_licences',
+			'Job Applicant-passport',
+			'Job Applicant-criminal_offence',
+			'Job Applicant-disability',
+			'Job Applicant-column_break_usr2x',
+			'Job Applicant-section_break_npkrz',
+			'Job Applicant-already_interviewed',
+			'Job Applicant-employee_referral_1',
+			'Job Applicant-section_break_pvc5u',
+			'Job Applicant-educational_and_qualifications',
+			'Job Applicant-section_break_kzuxl',
+			'Job Applicant-courses_sales',
+			'Job Applicant-section_break_9gt5p',
+			'Job Applicant-language',
+			'Job Applicant-section_break_ey4hj',
+			'Job Applicant-employment_history',
+			'Job Applicant-reason',
+			'Job Applicant-section_break_mhzg4',
+			'Job Applicant-references',
+			'Job Applicant-column_break_faztx',
+			'Job Applicant-section_break_yw5ti',
+			'Job Applicant-about',
+			'Job Applicant-section_break_4vyai',
+			'Job Applicant-sign',
+			'Job Applicant-column_break_rd1lj',
+			'Job Applicant-place',
+			'Job Applicant-notice_period_form_current_position_'
+
 		]]
 	]
-}
-]
+},
+{
+	"dt":"Property Setter",
+	"filters":
+		[["name","in",[
+			"Sales Invoice-naming_series-read_only"
+		]]
+	]
+}]
