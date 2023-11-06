@@ -214,6 +214,8 @@ fixtures =[{
             "Lead-custom_item",
             "Lead-custom_total_amount",
 
+			"Sales Invoice-custom_business_type",
+
 			'Job Applicant-father_name',
 			'Job Applicant-sex',
 			'Job Applicant-date_of_birth',

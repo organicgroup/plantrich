@@ -8,4 +8,3 @@ class BusinessType(Document):
 	def autoname(self):
 		if self.business_type and self.company:
 			self.business_type = self.business_type + "-" + frappe.db.get_value("Company", self.company, ["abbr"])
-			print(self.business_type)

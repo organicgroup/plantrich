@@ -19,7 +19,9 @@ frappe.ui.form.on("Sales Invoice", {
     },
     custom_business_type: function(frm){
         if(frm.doc.custom_business_type && frm.is_new()){
-            frm.set_value("naming_series", frm.doc.custom_business_type)
+            frappe.db.get_value("Business Type", frm.doc.custom_business_type, ["series"]).then(data=>{
+                frm.set_value("naming_series", data.message.series)
+            })
         }
     }
 })
