@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-26 16:25:18.002301",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachment",
+  "date",
+  "translation_provision"
+ ],
+ "fields": [
+  {
+   "columns": 6,
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachment [Agenda, Minutes-Word Format]"
+  },
+  {
+   "columns": 2,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "columns": 2,
+   "fieldname": "translation_provision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Translation Provision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-26 16:25:40.100009",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Minutes Of Board Meeting List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
