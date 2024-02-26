@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-26 11:07:12.334865",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rm_cost",
+  "rm_qty",
+  "process_loss",
+  "grade",
+  "qty",
+  "logistic_cost",
+  "column_break_ca36c",
+  "process_cost",
+  "consumables",
+  "packing_cost",
+  "profit_margin",
+  "market_price_per_kg_today"
+ ],
+ "fields": [
+  {
+   "fieldname": "rm_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "RM Cost/Kg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rm_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "RM Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_loss",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Process Loss(%)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "\nAAA\nAA\nA\nB\nC\nPB\nBITS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "QTY",
+   "reqd": 1
+  },
+  {
+   "fieldname": "logistic_cost",
+   "fieldtype": "Currency",
+   "label": " Logistic cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "process_cost",
+   "fieldtype": "Currency",
+   "label": " Process Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Data",
+   "label": " Consumables",
+   "reqd": 1
+  },
+  {
+   "fieldname": "packing_cost",
+   "fieldtype": "Currency",
+   "label": " Packing Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profit_margin",
+   "fieldtype": "Percent",
+   "label": "Profit Margin(%)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "market_price_per_kg_today",
+   "fieldtype": "Data",
+   "label": "Market Price Per KG (Today)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ca36c",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-26 16:51:17.088646",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Coffee Cost Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CCE-{item}-{MM}-{YY}-{####}",
+ "creation": "2024-02-26 11:00:56.888467",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_estate",
+  "date",
+  "item",
+  "crop_variety",
+  "column_break_riadp",
+  "location",
+  "elevation_in_ft",
+  "description",
+  "cost_details_section",
+  "coffee_cost_details",
+  "section_break_ceqv1",
+  "total_qty",
+  "total_packing_cost",
+  "column_break_vm7qb",
+  "total_logistic_cost",
+  "total_profit_margin",
+  "column_break_gwfrc",
+  "total_process_cost",
+  "column_break_so4ft",
+  "total_consumables",
+  "cost_calculation_section",
+  "coffee_cost_calculation",
+  "section_break_xkpke",
+  "total_qty_proportion",
+  "calculated_total_consumables",
+  "total_ex_factory_cost",
+  "column_break_yykfz",
+  "total_cost_per_kg",
+  "calculated_tpc",
+  "calculated_sp",
+  "column_break_57ymq",
+  "calculated_tlc",
+  "calculated_tc",
+  "column_break_zwkaj",
+  "calculated_total_process_cost",
+  "calculated_tpm"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_estate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Estate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "column_break_riadp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "elevation_in_ft",
+   "fieldtype": "Data",
+   "label": "Elevation in ft"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "cost_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Details"
+  },
+  {
+   "fieldname": "coffee_cost_details",
+   "fieldtype": "Table",
+   "label": "Coffee Cost Details",
+   "options": "Coffee Cost Details"
+  },
+  {
+   "fieldname": "cost_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Calculation"
+  },
+  {
+   "fieldname": "coffee_cost_calculation",
+   "fieldtype": "Table",
+   "label": "Coffee Cost Calculation",
+   "options": "Coffee Cost Calculation"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty"
+  },
+  {
+   "fieldname": "total_packing_cost",
+   "fieldtype": "Float",
+   "label": "Total Packing Cost"
+  },
+  {
+   "fieldname": "column_break_vm7qb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_logistic_cost",
+   "fieldtype": "Float",
+   "label": "Total Logistic Cost"
+  },
+  {
+   "fieldname": "total_profit_margin",
+   "fieldtype": "Percent",
+   "label": "Total Profit Margin(%)"
+  },
+  {
+   "fieldname": "column_break_gwfrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_process_cost",
+   "fieldtype": "Float",
+   "label": "Total Process Cost"
+  },
+  {
+   "fieldname": "column_break_so4ft",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_consumables",
+   "fieldtype": "Float",
+   "label": "Total Consumables"
+  },
+  {
+   "fieldname": "section_break_ceqv1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_xkpke",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_qty_proportion",
+   "fieldtype": "Currency",
+   "label": "Total QTY Proportion"
+  },
+  {
+   "fieldname": "calculated_total_consumables",
+   "fieldtype": "Currency",
+   "label": "Total Consumables"
+  },
+  {
+   "fieldname": "total_ex_factory_cost",
+   "fieldtype": "Currency",
+   "label": "Total Ex Factory Cost"
+  },
+  {
+   "fieldname": "column_break_yykfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_cost_per_kg",
+   "fieldtype": "Currency",
+   "label": "Total Cost Per Kg"
+  },
+  {
+   "fieldname": "calculated_tpc",
+   "fieldtype": "Currency",
+   "label": "Total Packing Cost"
+  },
+  {
+   "fieldname": "calculated_sp",
+   "fieldtype": "Currency",
+   "label": "Total Selling Price"
+  },
+  {
+   "fieldname": "column_break_57ymq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculated_tlc",
+   "fieldtype": "Currency",
+   "label": "Total Logistic Cost"
+  },
+  {
+   "fieldname": "calculated_tc",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "column_break_zwkaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculated_total_process_cost",
+   "fieldtype": "Currency",
+   "label": "Total Process Cost"
+  },
+  {
+   "fieldname": "calculated_tpm",
+   "fieldtype": "Percent",
+   "label": "Total Profit Margin"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-26 17:31:04.951813",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Coffee Cost Estimation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
