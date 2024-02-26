@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-26 11:14:45.992264",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "net_qty_in_kg",
+  "cost_after_process",
+  "grade",
+  "qty_proportion",
+  "cost_per_kg",
+  "logistic_cost",
+  "process_cost",
+  "column_break_ppun3",
+  "consumables",
+  "packing_cost",
+  "total_cost",
+  "profit_margin",
+  "ex_factory_price",
+  "selling_price",
+  "profit_or_loss"
+ ],
+ "fields": [
+  {
+   "fieldname": "net_qty_in_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net Qty in Kg"
+  },
+  {
+   "fieldname": "cost_after_process",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost after Process"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "\nAAA\nAA\nA\nB\nC\nPB\nBITS"
+  },
+  {
+   "fieldname": "qty_proportion",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "QTY Proportion"
+  },
+  {
+   "fieldname": "cost_per_kg",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost Per Kg"
+  },
+  {
+   "fieldname": "logistic_cost",
+   "fieldtype": "Currency",
+   "label": "Logistic cost"
+  },
+  {
+   "fieldname": "process_cost",
+   "fieldtype": "Currency",
+   "label": "Process Cost"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Currency",
+   "label": "Consumables"
+  },
+  {
+   "fieldname": "packing_cost",
+   "fieldtype": "Currency",
+   "label": "Packing Cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "profit_margin",
+   "fieldtype": "Percent",
+   "label": "Profit Margin(%)"
+  },
+  {
+   "fieldname": "ex_factory_price",
+   "fieldtype": "Currency",
+   "label": "Ex Factory Price"
+  },
+  {
+   "fieldname": "selling_price",
+   "fieldtype": "Currency",
+   "label": "Selling Price"
+  },
+  {
+   "fieldname": "profit_or_loss",
+   "fieldtype": "Currency",
+   "label": "Profit/Loss "
+  },
+  {
+   "fieldname": "column_break_ppun3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-26 16:38:06.279993",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Coffee Cost Calculation",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
