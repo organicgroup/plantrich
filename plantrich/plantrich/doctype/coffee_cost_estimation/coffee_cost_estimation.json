@@ -43,7 +43,12 @@
   "calculated_tc",
   "column_break_zwkaj",
   "calculated_total_process_cost",
-  "calculated_tpm"
+  "calculated_tpm",
+  "section_break_hufvp",
+  "approver_code",
+  "approver_name",
+  "column_break_gzk1r",
+  "approver_signature"
  ],
  "fields": [
   {
@@ -225,11 +230,37 @@
    "fieldname": "calculated_tpm",
    "fieldtype": "Percent",
    "label": "Total Profit Margin"
+  },
+  {
+   "fieldname": "section_break_hufvp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approver_code",
+   "fieldtype": "Link",
+   "label": "Approver Code",
+   "options": "Approver Details"
+  },
+  {
+   "fetch_from": "approver_code.approver_name",
+   "fieldname": "approver_name",
+   "fieldtype": "Data",
+   "label": "Approver Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gzk1r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver Signature"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-26 17:31:04.951813",
+ "modified": "2024-02-27 20:55:55.791574",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Coffee Cost Estimation",
