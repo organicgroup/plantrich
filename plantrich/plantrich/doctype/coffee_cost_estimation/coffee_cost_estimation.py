@@ -12,6 +12,7 @@ class CoffeeCostEstimation(Document):
 		self.total_consumables = 0
 		self.total_packing_cost = 0
 		self.total_profit_margin = 0
+		self.coffee_cost_calculation = []
 		for row in self.coffee_cost_details:
 			self.total_qty += float(row.qty)
 			self.total_logistic_cost += float(row.logistic_cost)
@@ -31,7 +32,7 @@ class CoffeeCostEstimation(Document):
 			total_cost = cost_per_kg + logistic_cost + process_cost + consumables + packing_cost
 			profit_margin = total_cost*row.profit_margin
 			# frappe.throw(profit_margin)
-			self.coffee_cost_calculation = []
+			
 			self.append("coffee_cost_calculation", {
 				"net_qty_in_kg": net_qty_in_kg,
 				"cost_after_process": cost_after_process,
