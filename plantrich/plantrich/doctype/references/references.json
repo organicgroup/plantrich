@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:49:25.738272",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "address",
+  "position",
+  "telephone",
+  "e_mail"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name ",
+   "reqd": 1,
+   "width": "2"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1,
+   "width": "2"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Position",
+   "reqd": 1,
+   "width": "2"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Telephone",
+   "reqd": 1,
+   "width": "2"
+  },
+  {
+   "fieldname": "e_mail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "E-mail ",
+   "reqd": 1,
+   "width": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:49:25.738272",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "References",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

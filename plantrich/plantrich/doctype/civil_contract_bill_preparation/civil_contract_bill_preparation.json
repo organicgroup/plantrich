@@ -1,0 +1,282 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:Civil Bill-{vendor_name}-{#####}",
+ "creation": "2024-07-17 18:06:14.661757",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "vendor_name",
+  "vendor_address",
+  "hsn_code",
+  "asset_head",
+  "civil_work_statement",
+  "civil_details",
+  "previous_measurement_details",
+  "civil_contract_bill_child",
+  "sub_total",
+  "vendor_acknowledgement",
+  "previous_balance",
+  "paid",
+  "prepared_by",
+  "prepared_by_name",
+  "signature",
+  "checked_by",
+  "checker_signature",
+  "approved_by",
+  "approver_signature",
+  "project_manager",
+  "pm_signature",
+  "payment_terms",
+  "total_work_value",
+  "completed_paid_work_value",
+  "balance_to_be_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name ",
+   "max_height": "64px"
+  },
+  {
+   "fieldname": "vendor_address",
+   "fieldtype": "Data",
+   "label": "Vendor Address"
+  },
+  {
+   "fieldname": "hsn_code",
+   "fieldtype": "Data",
+   "label": "HSN CODE"
+  },
+  {
+   "fieldname": "asset_head",
+   "fieldtype": "Select",
+   "label": "Asset Head",
+   "options": "\nPlants and Machinery\nBuilding\nLand development\nFactory Expenses"
+  },
+  {
+   "fieldname": "civil_work_statement",
+   "fieldtype": "Heading",
+   "label": "CIVIL WORK STATEMENT"
+  },
+  {
+   "fieldname": "civil_details",
+   "fieldtype": "Table",
+   "label": "CIVIL BILL DETAILS",
+   "options": "Civil Details"
+  },
+  {
+   "fieldname": "previous_measurement_details",
+   "fieldtype": "Heading",
+   "hidden": 1,
+   "label": "PREVIOUS MEASUREMENT DETAILS",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "civil_contract_bill_child",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Civil Contract Bill Child",
+   "options": "Civil Contract Bill Child",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Sub Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_acknowledgement",
+   "fieldtype": "Data",
+   "label": "Vendor Acknowledgement"
+  },
+  {
+   "fieldname": "previous_balance",
+   "fieldtype": "Currency",
+   "label": "Previous Balance"
+  },
+  {
+   "fieldname": "paid",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Paid "
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "prepared_by.employee_name",
+   "fieldname": "prepared_by_name",
+   "fieldtype": "Read Only",
+   "label": "Prepared by Name"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "default": "BASIL K MATHEWS",
+   "fieldname": "checked_by",
+   "fieldtype": "Read Only",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "checker_signature",
+   "fieldtype": "Signature",
+   "label": "Checker Signature"
+  },
+  {
+   "default": "ANGEL M S",
+   "fieldname": "approved_by",
+   "fieldtype": "Read Only",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver Signature"
+  },
+  {
+   "default": "Mohanan K N",
+   "fieldname": "project_manager",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Project Manager"
+  },
+  {
+   "fieldname": "pm_signature",
+   "fieldtype": "Signature",
+   "label": "PM Signature"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Select",
+   "label": "Payment Terms",
+   "options": "\nAdvance\nFull settlement"
+  },
+  {
+   "fieldname": "total_work_value",
+   "fieldtype": "Data",
+   "label": "Total Work Value"
+  },
+  {
+   "fieldname": "completed_paid_work_value",
+   "fieldtype": "Data",
+   "label": "Completed_Paid Work Value"
+  },
+  {
+   "fieldname": "balance_to_be_paid",
+   "fieldtype": "Currency",
+   "label": "Balance to be paid",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 18:06:14.661757",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Civil Contract Bill Preparation",
+ "name_case": "Title Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Task Users",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

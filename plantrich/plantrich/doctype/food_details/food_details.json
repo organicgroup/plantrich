@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:47:47.092054",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_food",
+  "taste_prefernece",
+  "allegeric_details_if_any",
+  "any_special_note",
+  "team_responsible_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_food",
+   "fieldtype": "Select",
+   "label": "Type of Food",
+   "options": "\nVeg\nNon Veg"
+  },
+  {
+   "fieldname": "taste_prefernece",
+   "fieldtype": "Text",
+   "label": "Taste Prefernece"
+  },
+  {
+   "fieldname": "allegeric_details_if_any",
+   "fieldtype": "Text",
+   "label": "Allegeric Details if any"
+  },
+  {
+   "fieldname": "any_special_note",
+   "fieldtype": "Text",
+   "label": "Any special note"
+  },
+  {
+   "fieldname": "team_responsible_person",
+   "fieldtype": "Text",
+   "label": "Team Responsible person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:47:47.092054",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "FOOD DETAILS",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

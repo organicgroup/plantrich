@@ -1,0 +1,443 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-18 11:56:20.859933",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_hand_over_form",
+  "naming_series",
+  "employee_code",
+  "employee_name",
+  "date",
+  "department",
+  "job_title",
+  "reason_of_handover",
+  "leave",
+  "transfer",
+  "end_of_employment",
+  "others",
+  "responsibilities_tasks",
+  "attach_cloud_link_here",
+  "section_break_jm3uc",
+  "sim",
+  "column_break_jqloz",
+  "phonenumber",
+  "column_break_d5hzq",
+  "hand_over_to",
+  "section_break_f1bv0",
+  "mobile",
+  "column_break_s0tdr",
+  "model",
+  "column_break_6ox16",
+  "handed_over_to",
+  "section_break_5cie8",
+  "laptop",
+  "column_break_qvgjj",
+  "l_model",
+  "column_break_k4dpe",
+  "handed_over_to_l",
+  "section_break_gqd19",
+  "laptop_user_name",
+  "column_break_kzmju",
+  "password",
+  "column_break_accsi",
+  "handed_over_to_u",
+  "section_break_hpcy1",
+  "email_id",
+  "column_break_t0q5y",
+  "password_email",
+  "column_break_l3w1y",
+  "handed_over_to_email",
+  "section_break_rsfji",
+  "erp_id",
+  "column_break_pjjmr",
+  "password_erp",
+  "column_break_2yzpy",
+  "handed_over_to_erp",
+  "section_break_oswns",
+  "cloud_id",
+  "column_break_ikfms",
+  "password_cloud",
+  "column_break_qauhn",
+  "handed_over_to_cloud",
+  "section_break_lugpd",
+  "remarks",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_hand_over_form",
+   "fieldtype": "Heading",
+   "label": "EMPLOYEE HAND OVER FORM"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nHF/PAM/.FY./.###\nHF/PAK/.FY./.###\nHF/PO/.FY./.###\nHF/HAS/.FY./.###\nHF/PRT/.FY./.###\nHF/BLY/.FY./.###\nHF/HOWFFA/.FY./.###\nHF/PEC/.FY./.###\nHF/MAS/.FY./.###\nHF/MASS/.FY./.###\nHF/FONL/.FY./.###\nHF/FTGS/.FY./.###"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "reason_of_handover",
+   "fieldtype": "Heading",
+   "label": "Reason of Handover "
+  },
+  {
+   "default": "0",
+   "fieldname": "leave",
+   "fieldtype": "Check",
+   "label": "Leave "
+  },
+  {
+   "default": "0",
+   "fieldname": "transfer",
+   "fieldtype": "Check",
+   "label": "Transfer "
+  },
+  {
+   "default": "0",
+   "fieldname": "end_of_employment",
+   "fieldtype": "Check",
+   "label": "End of Employment"
+  },
+  {
+   "default": "0",
+   "fieldname": "others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "fieldname": "responsibilities_tasks",
+   "fieldtype": "Table",
+   "label": "Responsibilities / Tasks",
+   "options": "Responsibilities And Tasks"
+  },
+  {
+   "fieldname": "attach_cloud_link_here",
+   "fieldtype": "Attach",
+   "label": "Attach Cloud Link here"
+  },
+  {
+   "fieldname": "section_break_jm3uc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sim",
+   "fieldtype": "Data",
+   "label": "Sim",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jqloz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phonenumber",
+   "fieldtype": "Data",
+   "label": "Phonenumber",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_d5hzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hand_over_to",
+   "fieldtype": "Data",
+   "label": "Handed over To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_f1bv0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_s0tdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6ox16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to",
+   "fieldtype": "Data",
+   "label": "Handed over to",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5cie8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "laptop",
+   "fieldtype": "Data",
+   "label": "Laptop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qvgjj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l_model",
+   "fieldtype": "Data",
+   "label": "Model ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_k4dpe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to_l",
+   "fieldtype": "Data",
+   "label": "Handed over To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gqd19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "laptop_user_name",
+   "fieldtype": "Data",
+   "label": "Laptop User name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kzmju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_accsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to_u",
+   "fieldtype": "Data",
+   "label": "Handed over to",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hpcy1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_t0q5y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password_email",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_l3w1y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to_email",
+   "fieldtype": "Data",
+   "label": "Handed over to",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rsfji",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "erp_id",
+   "fieldtype": "Data",
+   "label": "ERP id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pjjmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password_erp",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2yzpy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to_erp",
+   "fieldtype": "Data",
+   "label": "Handed over To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_oswns",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cloud_id",
+   "fieldtype": "Data",
+   "label": "Cloud ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ikfms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "password_cloud",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qauhn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "handed_over_to_cloud",
+   "fieldtype": "Data",
+   "label": "Handed over to",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_lugpd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "max_height": "200px",
+   "width": "200px"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "in_list_view": 1,
+   "label": "Signature",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 11:56:20.859933",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Employee Hand Over Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MD",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

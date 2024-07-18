@@ -1,0 +1,721 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-11 15:20:32.159706",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "issue_number",
+  "frequency",
+  "column_break_2",
+  "company",
+  "date_of_issue",
+  "type",
+  "section_break_8",
+  "date_of_reception",
+  "name_of_the_transporter",
+  "vehicle_number",
+  "container_number",
+  "quantity",
+  "column_break_12",
+  "customer_name",
+  "tc_number",
+  "product_code",
+  "product_name",
+  "lot_number",
+  "section_break_15",
+  "parameters",
+  "column_break_6ogbz",
+  "observation",
+  "section_break_gurx8",
+  "parameters_1",
+  "column_break_qk2ii",
+  "observation_1",
+  "section_break_09rlq",
+  "parameters_2",
+  "column_break_pck3y",
+  "observation_2",
+  "section_break_2zhur",
+  "parameters_3",
+  "column_break_btelg",
+  "observation_3",
+  "section_break_agxsv",
+  "parameters_4",
+  "column_break_5nuud",
+  "observation_4",
+  "section_break_y4zzy",
+  "parameters_5",
+  "column_break_o7wi3",
+  "observation_5",
+  "section_break_4bawi",
+  "parameters_6",
+  "column_break_suiu4",
+  "observation_6",
+  "section_break_yatmn",
+  "parameters_7",
+  "column_break_qf8iu",
+  "observation_7",
+  "section_break_foltg",
+  "parameters_8",
+  "column_break_qev5f",
+  "observation_8",
+  "section_break_zezmp",
+  "parameters_9",
+  "column_break_kkond",
+  "observation_9",
+  "section_break_017ez",
+  "parameters_10",
+  "column_break_wcyoq",
+  "observation_10",
+  "section_break_wziss",
+  "parameters_11",
+  "column_break_kt4l6",
+  "observation_11",
+  "section_break_pdwas",
+  "parameters_12",
+  "column_break_2i8b5",
+  "observation_12",
+  "section_break_3wkrc",
+  "parameters_13",
+  "column_break_6ejkq",
+  "observation_13",
+  "section_break_sfzsv",
+  "parameters_14",
+  "column_break_wkuib",
+  "observation_14",
+  "section_break_9jyhb",
+  "parameters_15",
+  "column_break_nxedo",
+  "observation_15",
+  "section_break_qt964",
+  "parameters_16",
+  "column_break_20",
+  "observation_16",
+  "section_break_38",
+  "checked_by",
+  "checked_by_name",
+  "column_break_41",
+  "verified_by",
+  "verified_by_name",
+  "amended_from",
+  "section_break_brldo",
+  "boxsack_loading_tracker",
+  "value",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "PAT/QA/IVC/.DD./.#",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_number",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Issue Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nTo Every Receipt",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_issue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Issue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nNot Defined\nCoffee QC\nSpices QC\nNPD QC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_reception",
+   "fieldtype": "Date",
+   "label": "Date of Reception",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_of_the_transporter",
+   "fieldtype": "Data",
+   "label": "Name of The Transporter",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "container_number",
+   "fieldtype": "Data",
+   "label": "Container Number"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "tc_number",
+   "fieldtype": "Data",
+   "label": "TC Number"
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Link",
+   "label": "Product Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "product_code.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name ",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "lot_number",
+   "fieldtype": "Data",
+   "label": "LOT Number"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether the vehicle is cleaned properly (Free from dust, spillage of previous loaded\nmaterial and smell)",
+   "fieldname": "parameters",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6ogbz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_gurx8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether the plat form of the vehicle is free from sharp ends, dents.",
+   "fieldname": "parameters_1",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qk2ii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_1",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_09rlq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Details of the pervious loaded material",
+   "fieldname": "parameters_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pck3y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_2",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2zhur",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether the container washed and dried",
+   "fieldname": "parameters_3",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_btelg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_3",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_agxsv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Was any pesticides/Insecticides are loaded on previous delivery",
+   "fieldname": "parameters_4",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5nuud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_4",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_y4zzy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether any Fragrance material is delivered on previous delivery?",
+   "fieldname": "parameters_5",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_o7wi3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_5",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_4bawi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether the roof and sides of the container is free from any holes to avoid leakage during rain?",
+   "fieldname": "parameters_6",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_suiu4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_6",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_yatmn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Capacity of the vehicle is ok for the dispatch quantity",
+   "fieldname": "parameters_7",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qf8iu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_7",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_foltg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether the vehicle is free from pests",
+   "fieldname": "parameters_8",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qev5f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_8",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_zezmp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether all sides of container inside covered with paper role",
+   "fieldname": "parameters_9",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kkond",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_9",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_017ez",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "How many silica gel used,hanged/Not",
+   "fieldname": "parameters_10",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wcyoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_10",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_wziss",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Whether all QC parameters/analysis is done or not ",
+   "fieldname": "parameters_11",
+   "fieldtype": "Data",
+   "label": "Parameters",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kt4l6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_11",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_pdwas",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Stuffing day climate",
+   "fieldname": "parameters_12",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2i8b5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_12",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3wkrc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Jute bag/Bulk bag",
+   "fieldname": "parameters_13",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6ejkq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_13",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_sfzsv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Printed or Not printed jute bag",
+   "fieldname": "parameters_14",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wkuib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_14",
+   "fieldtype": "Data",
+   "label": "Observation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9jyhb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Grain pro bag used or not",
+   "fieldname": "parameters_15",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameters",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nxedo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_15",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_qt964",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Miscellaneous(Any special demand-Customer)",
+   "fieldname": "parameters_16",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Parameter",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "observation_16",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "checked_by_name",
+   "fieldtype": "Data",
+   "label": "Checked By Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "verified_by_name",
+   "fieldtype": "Data",
+   "label": "Verified By Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_brldo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "boxsack_loading_tracker",
+   "fieldtype": "Heading",
+   "label": "Box/Sack Loading Tracker"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Int",
+   "label": "Default Value"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "DISPATCH VEHICLE CHECK REPORT"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "DISPATCH VEHICLE CHECK REPORT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-11 16:01:17.872819",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "DISPATCH VEHICLE CHECK REPORT",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quality Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

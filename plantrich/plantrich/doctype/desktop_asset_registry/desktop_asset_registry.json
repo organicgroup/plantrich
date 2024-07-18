@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2024-07-17 17:15:45.584794",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "company",
+  "lastupdated",
+  "laptop_asset_registry_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/DAR/24-25/.####\nPAK/DAR/24-25/.####\nPAT/DAR/24-25/.####\nHAS/DAR/24-25/.####\nMAS/DAR/24-25/.####\nHOWFFA/DAR/24-25/.####\nBJY/DAR/24-25/.####\nPTN/DAR/24-25/.####\nPEC/DAR/24-25/.####\nMASS/DAR/24-25/.####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "lastupdated",
+   "fieldtype": "Date",
+   "label": "Last Updated"
+  },
+  {
+   "fieldname": "laptop_asset_registry_table",
+   "fieldtype": "Table",
+   "label": "Desktop Asset Registry Table",
+   "options": "Desktop Asset Registry Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 17:15:45.584794",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Desktop Asset Registry",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

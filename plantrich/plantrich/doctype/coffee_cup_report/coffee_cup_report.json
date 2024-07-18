@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Cupping Report-{sample_ref_no}",
+ "creation": "2024-01-26 14:42:55.492140",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "sample_ref_no",
+  "source",
+  "name_of_exporter",
+  "country",
+  "quality_description_as_per_contract",
+  "section_break_boeb8",
+  "physical_aspect",
+  "section_break_h3tzn",
+  "roast",
+  "notes",
+  "fragrancearoma",
+  "flavor_out_of_10",
+  "after_taste_out_of_10",
+  "acidity_out_of_10",
+  "bodyout_of_10",
+  "balance_out_of_10",
+  "overallout_of_10",
+  "sweetnessout_of_10",
+  "uniformityout_of_10",
+  "clean_cupout_of_10",
+  "defectsout_of_10",
+  "total_points_sca",
+  "plantrich_findings",
+  "remarks",
+  "name1",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "sample_ref_no",
+   "fieldtype": "Data",
+   "label": "Sample Ref No"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "name_of_exporter",
+   "fieldtype": "Data",
+   "label": "Name of Exporter"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "quality_description_as_per_contract",
+   "fieldtype": "Data",
+   "label": "Quality Description as per contract"
+  },
+  {
+   "fieldname": "section_break_boeb8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "physical_aspect",
+   "fieldtype": "Table",
+   "label": "Product Physical Aspect",
+   "options": "Physical Aspect"
+  },
+  {
+   "fieldname": "section_break_h3tzn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "roast",
+   "fieldtype": "Table",
+   "label": "Roast details",
+   "options": "Roast"
+  },
+  {
+   "description": "THE BELOW SELECTION DOESNOT APPLY FOR LOW GRADES\n(Stocklots)",
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes",
+   "max_height": "16px"
+  },
+  {
+   "fieldname": "fragrancearoma",
+   "fieldtype": "Data",
+   "label": "Fragrance/Aroma (out of 10)"
+  },
+  {
+   "fieldname": "flavor_out_of_10",
+   "fieldtype": "Data",
+   "label": "Flavor (out of 10)"
+  },
+  {
+   "fieldname": "after_taste_out_of_10",
+   "fieldtype": "Data",
+   "label": "After taste (out of 10)"
+  },
+  {
+   "fieldname": "acidity_out_of_10",
+   "fieldtype": "Data",
+   "label": "Acidity (out of 10)"
+  },
+  {
+   "fieldname": "bodyout_of_10",
+   "fieldtype": "Data",
+   "label": "Body(out of 10)"
+  },
+  {
+   "fieldname": "balance_out_of_10",
+   "fieldtype": "Data",
+   "label": "Balance (out of 10)"
+  },
+  {
+   "fieldname": "overallout_of_10",
+   "fieldtype": "Data",
+   "label": "Overall(out of 10)"
+  },
+  {
+   "fieldname": "sweetnessout_of_10",
+   "fieldtype": "Data",
+   "label": "Sweetness(out of 10)"
+  },
+  {
+   "fieldname": "uniformityout_of_10",
+   "fieldtype": "Data",
+   "label": "Uniformity(out of 10)"
+  },
+  {
+   "fieldname": "clean_cupout_of_10",
+   "fieldtype": "Data",
+   "label": "Clean cup(out of 10)"
+  },
+  {
+   "fieldname": "defectsout_of_10",
+   "fieldtype": "Data",
+   "label": "Defects(out of 10)"
+  },
+  {
+   "fieldname": "total_points_sca",
+   "fieldtype": "Data",
+   "label": "Total Points SCA"
+  },
+  {
+   "fieldname": "plantrich_findings",
+   "fieldtype": "Select",
+   "label": "PLANTRICH FINDINGS",
+   "options": "\nApproved\nRejected"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Text",
+   "label": "Name",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "is_child_table": 1,
+   "link_doctype": "Physical Aspect",
+   "link_fieldname": "Colour",
+   "parent_doctype": "Physical Aspect",
+   "table_fieldname": "colour"
+  }
+ ],
+ "modified": "2024-06-27 13:11:48.650158",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "COFFEE CUP REPORT",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Inbox User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

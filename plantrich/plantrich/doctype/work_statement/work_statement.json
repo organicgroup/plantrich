@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PAK-LWS-.####",
+ "creation": "2024-06-23 17:33:38.135561",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "labour_work_statement",
+  "labour_work_details",
+  "total_amount",
+  "paid_amount",
+  "balance_amount_payable",
+  "vendor_acknowledgement",
+  "prepared_by",
+  "name1",
+  "checked_by",
+  "checker_name",
+  "checker_signature",
+  "approved_by",
+  "approver_signature",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "labour_work_statement",
+   "fieldtype": "Heading",
+   "label": "WORK STATEMENT"
+  },
+  {
+   "fieldname": "labour_work_details",
+   "fieldtype": "Table",
+   "label": "WORK DETAILS",
+   "options": "LABOUR WORK DETAILS"
+  },
+  {
+   "fieldname": "balance_amount_payable",
+   "fieldtype": "Currency",
+   "label": "Balance Amount Payable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_acknowledgement",
+   "fieldtype": "Data",
+   "label": "Vendor Acknowledgement"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared by",
+   "options": "User"
+  },
+  {
+   "fetch_from": "prepared_by.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "prepared_by.full_name",
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "User"
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "checker_name",
+   "fieldtype": "Read Only",
+   "label": "Checker Name"
+  },
+  {
+   "fieldname": "checker_signature",
+   "fieldtype": "Signature",
+   "label": "Checker Signature"
+  },
+  {
+   "default": "ANGEL M S",
+   "fieldname": "approved_by",
+   "fieldtype": "Text",
+   "label": "Approved by",
+   "max_height": "32px",
+   "width": "32px"
+  },
+  {
+   "fieldname": "approver_signature",
+   "fieldtype": "Signature",
+   "label": "Approver signature"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "precision": "5"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-12 15:14:35.044812",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "WORK STATEMENT",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

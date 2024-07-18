@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:46:27.560821",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "processed_from",
+  "processed_to",
+  "grading_qty__if_needed",
+  "loss",
+  "drying_qty___if_needed",
+  "drying_loss",
+  "powdering_qty",
+  "powdering_loss",
+  "other_process",
+  "other_process_loss",
+  "total_loss",
+  "fg_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "processed_from",
+   "fieldtype": "Date",
+   "label": "Processed From"
+  },
+  {
+   "fieldname": "processed_to",
+   "fieldtype": "Date",
+   "label": "Processed To"
+  },
+  {
+   "fieldname": "grading_qty__if_needed",
+   "fieldtype": "Data",
+   "label": "Grading Qty  (if needed)"
+  },
+  {
+   "fieldname": "loss",
+   "fieldtype": "Data",
+   "label": "Loss"
+  },
+  {
+   "fieldname": "drying_qty___if_needed",
+   "fieldtype": "Data",
+   "label": "Drying Qty   (if needed)"
+  },
+  {
+   "fieldname": "drying_loss",
+   "fieldtype": "Data",
+   "label": "Drying Loss"
+  },
+  {
+   "fieldname": "powdering_qty",
+   "fieldtype": "Data",
+   "label": "Powdering Qty"
+  },
+  {
+   "fieldname": "powdering_loss",
+   "fieldtype": "Data",
+   "label": "Powdering Loss"
+  },
+  {
+   "fieldname": "other_process",
+   "fieldtype": "Data",
+   "label": "Other Process"
+  },
+  {
+   "fieldname": "other_process_loss",
+   "fieldtype": "Data",
+   "label": "Other Process Loss"
+  },
+  {
+   "fieldname": "total_loss",
+   "fieldtype": "Data",
+   "label": "Total Loss"
+  },
+  {
+   "fieldname": "fg_qty",
+   "fieldtype": "Data",
+   "label": "FG QTY"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:46:27.560821",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Processing details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

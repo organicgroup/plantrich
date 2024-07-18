@@ -1,0 +1,986 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-10 22:31:07.779647",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_rh5ja",
+  "md_email_id",
+  "section_break_bguux",
+  "amended_from",
+  "company",
+  "buyer_name",
+  "column_break_nxaje",
+  "section_break_yaafh",
+  "eudr_qr_code",
+  "buyer_bank_details",
+  "column_break_uzojq",
+  "buyer_address_with_eorn",
+  "notify_party_1",
+  "notify_party_2",
+  "section_break_minnd",
+  "destination_portcountry",
+  "column_break_qrdma",
+  "purchase_contract_number",
+  "section_break_lgkul",
+  "contract_date_b",
+  "column_break_xpuhl",
+  "batch_creation_date",
+  "section_break_9vrx8",
+  "shipment_date",
+  "column_break_6zttc",
+  "supplier_name",
+  "section_break_oougv",
+  "contract_no",
+  "section_break_6sjnf",
+  "contract_date_s",
+  "column_break_wumox",
+  "supplier_invoice_number",
+  "section_break_em7z3",
+  "supplier_invoice_date",
+  "column_break_1zayv",
+  "section_break_lqxj2",
+  "source_coffee_from",
+  "section_break_hkzup",
+  "test_results_of_sourced_material_qc",
+  "column_break_dgkhc",
+  "section_break_u1jmx",
+  "export_invoice_number",
+  "column_break_gowai",
+  "sales_invoice_date",
+  "section_break_dw4dm",
+  "whether_samplingtest_done_shonithaswapna",
+  "column_break_svbgd",
+  "e_way_bill_date",
+  "section_break_8firz",
+  "e_way_bill_no",
+  "column_break_hwbsf",
+  "ico_no_and_date",
+  "section_break_8fi6e",
+  "ico_date",
+  "column_break_okgrd",
+  "certification",
+  "section_break_49axd",
+  "product_coffee",
+  "section_break_6xfym",
+  "eu_scope_name",
+  "column_break_s6f8j",
+  "nop_scope_name",
+  "section_break_t9pl0",
+  "qtymt",
+  "column_break_4pr4c",
+  "currency",
+  "section_break_2ryw7",
+  "pricekg_usd",
+  "section_break_ogpmg",
+  "pricekg_euro",
+  "column_break_1u2je",
+  "price_kg_inr",
+  "section_break_a4nu8",
+  "total_amount",
+  "product_name",
+  "column_break_mvzgr",
+  "product_grade",
+  "section_break_cwbqx",
+  "qty_in_kg",
+  "column_break_ug4h4",
+  "batch_no",
+  "section_break_pfibt",
+  "pss_date",
+  "column_break_0omjy",
+  "pss_approved_date",
+  "section_break_t0ill",
+  "bag_marking_design_approved_date",
+  "column_break_doyyy",
+  "spice_board_test_approved_date",
+  "section_break_plgq2",
+  "do_no",
+  "column_break_af7kd",
+  "do_date",
+  "section_break_sgpn3",
+  "bl_no_and_date",
+  "column_break_nuxrd",
+  "isf_date",
+  "section_break_o5awm",
+  "coi_no_and_date",
+  "column_break_haqvt",
+  "coi_date",
+  "section_break_vxjjg",
+  "scan_copy_of_original_documents",
+  "section_break_nggq1",
+  "obl_or_swb",
+  "column_break_aqkcl",
+  "pq_aplin_submit_date",
+  "section_break_p5hb2",
+  "pq",
+  "column_break_mpv3e",
+  "other",
+  "section_break_vx3od",
+  "shipping_line",
+  "column_break_andma",
+  "pol",
+  "section_break_wqbhv",
+  "pod",
+  "column_break_bj7x1",
+  "etd_jomol",
+  "section_break_dgvjy",
+  "eta_jomol",
+  "column_break_fmgwi",
+  "scan_docs_date",
+  "section_break_cexbj",
+  "original_document_sent_date",
+  "column_break_fijpv",
+  "docs_tracking_no",
+  "section_break_bcdjo",
+  "fund_status",
+  "column_break_ql8dv",
+  "date",
+  "column_break_zafmv",
+  "ref_bank_details_or_foreign_bills_transaction_advice",
+  "column_break_j20iu",
+  "column_break_ipzhx",
+  "label_approval_from_cb",
+  "column_break_2ubjq",
+  "stuffing_location",
+  "section_break_u5csn",
+  "stuffing_date",
+  "column_break_ww4t4",
+  "cb_sampling_date",
+  "section_break_q4bih",
+  "shipping_bill_no",
+  "column_break_3mids",
+  "shipping_bill_date",
+  "section_break_wwlpo",
+  "container_no",
+  "column_break_uub34",
+  "npop_tc_no",
+  "section_break_8kbly",
+  "date_ptc",
+  "column_break_cug7l",
+  "section_break_aquzq",
+  "nop_tc_no",
+  "column_break_3oyql",
+  "nop_tc_date",
+  "section_break_edl2h",
+  "eu_or_coi_no",
+  "column_break_a9use",
+  "eu_or_coi_date",
+  "section_break_norhp",
+  "batch_tracenet_qty",
+  "column_break_xupxp",
+  "section_break_dpwgz",
+  "declaration"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Naming Series",
+   "options": "PAM/ET/24-25/.####\nPAK/ET/24-25/.####\nPAT/ET/24-25/.####\nHAS/ET/24-25/.####\nMAS/ET/24-25/.####\nHOWFFA/ET/24-25/.####\nBJY/ET/24-25/.####\nPTN/ET/24-25/.####\nPEC/ET/24-25/.####\nMASS/ET/24-25/.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rh5ja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "biju@plantrich.com",
+   "fieldname": "md_email_id",
+   "fieldtype": "Data",
+   "label": "MD Email ID",
+   "options": "Email"
+  },
+  {
+   "fieldname": "section_break_bguux",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Export Traces",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "buyer_name",
+   "fieldtype": "Data",
+   "label": "Buyer Name"
+  },
+  {
+   "fieldname": "column_break_nxaje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yaafh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eudr_qr_code",
+   "fieldtype": "Attach",
+   "label": "EUDR Compliance QR Code"
+  },
+  {
+   "fieldname": "buyer_bank_details",
+   "fieldtype": "Data",
+   "label": "Buyer Bank Details"
+  },
+  {
+   "fieldname": "column_break_uzojq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buyer_address_with_eorn",
+   "fieldtype": "Text",
+   "label": "Buyer Address With EORI"
+  },
+  {
+   "fieldname": "section_break_minnd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "destination_portcountry",
+   "fieldtype": "Data",
+   "label": "Destination Port/Country"
+  },
+  {
+   "fieldname": "column_break_qrdma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_contract_number",
+   "fieldtype": "Data",
+   "label": "Buyer Contract Number"
+  },
+  {
+   "fieldname": "section_break_lgkul",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contract_date_b",
+   "fieldtype": "Date",
+   "label": "Buyer Contract Date"
+  },
+  {
+   "fieldname": "column_break_xpuhl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batch_creation_date",
+   "fieldtype": "Date",
+   "label": "Batch creation date"
+  },
+  {
+   "fieldname": "section_break_9vrx8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipment_date",
+   "fieldtype": "Date",
+   "label": "Shipment Date"
+  },
+  {
+   "fieldname": "column_break_6zttc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name"
+  },
+  {
+   "fieldname": "section_break_oougv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Int",
+   "label": "Supplier Contract No"
+  },
+  {
+   "fieldname": "section_break_6sjnf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contract_date_s",
+   "fieldtype": "Date",
+   "label": "Supplier Contract Date"
+  },
+  {
+   "fieldname": "column_break_wumox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier_invoice_number",
+   "fieldtype": "Int",
+   "label": "Supplier invoice Number "
+  },
+  {
+   "fieldname": "section_break_em7z3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier_invoice_date",
+   "fieldtype": "Date",
+   "label": "Supplier invoice Date"
+  },
+  {
+   "fieldname": "column_break_1zayv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lqxj2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "source_coffee_from",
+   "fieldtype": "Table",
+   "label": "Source from",
+   "options": "Source Coffee From1"
+  },
+  {
+   "fieldname": "section_break_hkzup",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_results_of_sourced_material_qc",
+   "fieldtype": "Select",
+   "label": "Test Results of Sourced Material ",
+   "options": "\nApproved\nPending\nNot Approved"
+  },
+  {
+   "fieldname": "column_break_dgkhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_u1jmx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "export_invoice_number",
+   "fieldtype": "Data",
+   "label": "Sales Invoice Number"
+  },
+  {
+   "fieldname": "column_break_gowai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_invoice_date",
+   "fieldtype": "Date",
+   "label": "Sales Invoice Date"
+  },
+  {
+   "fieldname": "section_break_dw4dm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "whether_samplingtest_done_shonithaswapna",
+   "fieldtype": "Data",
+   "label": "Whether sampling for pesticides done"
+  },
+  {
+   "fieldname": "column_break_svbgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e_way_bill_date",
+   "fieldtype": "Date",
+   "label": "E way bill date "
+  },
+  {
+   "fieldname": "section_break_8firz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e_way_bill_no",
+   "fieldtype": "Data",
+   "label": "E way bill No"
+  },
+  {
+   "fieldname": "column_break_hwbsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ico_no_and_date",
+   "fieldtype": "Data",
+   "label": "ICO No "
+  },
+  {
+   "fieldname": "section_break_8fi6e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ico_date",
+   "fieldtype": "Date",
+   "label": "ICO Date"
+  },
+  {
+   "fieldname": "column_break_okgrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certification",
+   "fieldtype": "Select",
+   "label": "Certification",
+   "options": "\nOrganic\nFT\nFTO\nNAT\nRFA\nRFAO\nFTRFAO\nConventional",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "section_break_49axd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_coffee",
+   "fieldtype": "Data",
+   "label": "Product Name and Grade"
+  },
+  {
+   "fieldname": "section_break_6xfym",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eu_scope_name",
+   "fieldtype": "Data",
+   "label": "EU Scope Name"
+  },
+  {
+   "fieldname": "column_break_s6f8j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nop_scope_name",
+   "fieldtype": "Data",
+   "label": "NOP Scope Name"
+  },
+  {
+   "fieldname": "section_break_t9pl0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qtymt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Qty.MT"
+  },
+  {
+   "fieldname": "column_break_4pr4c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_2ryw7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.currency=='USD';",
+   "fieldname": "pricekg_usd",
+   "fieldtype": "Currency",
+   "label": "Price/Kg USD"
+  },
+  {
+   "fieldname": "section_break_ogpmg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.currency=='EUR';",
+   "fieldname": "pricekg_euro",
+   "fieldtype": "Currency",
+   "label": "Price /Kg Euro"
+  },
+  {
+   "fieldname": "column_break_1u2je",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.currency=='INR';",
+   "fieldname": "price_kg_inr",
+   "fieldtype": "Currency",
+   "label": "Price /Kg INR"
+  },
+  {
+   "fieldname": "section_break_a4nu8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Select",
+   "label": "Product Name",
+   "options": "\nCoffee\nSpices"
+  },
+  {
+   "fieldname": "column_break_mvzgr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_grade",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Product Grade"
+  },
+  {
+   "fieldname": "section_break_cwbqx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty_in_kg",
+   "fieldtype": "Data",
+   "label": "Qty in kg"
+  },
+  {
+   "fieldname": "column_break_ug4h4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "section_break_pfibt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pss_date",
+   "fieldtype": "Date",
+   "label": "PSS Date "
+  },
+  {
+   "fieldname": "column_break_0omjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pss_approved_date",
+   "fieldtype": "Date",
+   "label": "PSS Approved Date"
+  },
+  {
+   "fieldname": "section_break_t0ill",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bag_marking_design_approved_date",
+   "fieldtype": "Date",
+   "label": "Bag Marking design Approved Date"
+  },
+  {
+   "fieldname": "column_break_doyyy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spice_board_test_approved_date",
+   "fieldtype": "Date",
+   "label": "Spice Board Test Approved Date"
+  },
+  {
+   "fieldname": "section_break_plgq2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "do_no",
+   "fieldtype": "Data",
+   "label": "DO No "
+  },
+  {
+   "fieldname": "column_break_af7kd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_date",
+   "fieldtype": "Date",
+   "label": "DO Date"
+  },
+  {
+   "fieldname": "section_break_sgpn3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bl_no_and_date",
+   "fieldtype": "Data",
+   "label": "BL No and Date "
+  },
+  {
+   "fieldname": "column_break_nuxrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "isf_date",
+   "fieldtype": "Date",
+   "label": "ISF Date"
+  },
+  {
+   "fieldname": "section_break_o5awm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "coi_no_and_date",
+   "fieldtype": "Data",
+   "label": "COI No"
+  },
+  {
+   "fieldname": "column_break_haqvt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coi_date",
+   "fieldtype": "Date",
+   "label": "COI Date"
+  },
+  {
+   "fieldname": "section_break_vxjjg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scan_copy_of_original_documents",
+   "fieldtype": "Heading",
+   "label": "Scan Copy of Original Documents "
+  },
+  {
+   "fieldname": "section_break_nggq1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "obl_or_swb",
+   "fieldtype": "Date",
+   "label": "OBL OR SWB Date"
+  },
+  {
+   "fieldname": "column_break_aqkcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pq_aplin_submit_date",
+   "fieldtype": "Date",
+   "label": "PQ  Submit Date"
+  },
+  {
+   "fieldname": "section_break_p5hb2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pq",
+   "fieldtype": "Data",
+   "label": "PQ No"
+  },
+  {
+   "fieldname": "column_break_mpv3e",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other Certificates"
+  },
+  {
+   "fieldname": "section_break_vx3od",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipping_line",
+   "fieldtype": "Data",
+   "label": "Shipping Line "
+  },
+  {
+   "fieldname": "column_break_andma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pol",
+   "fieldtype": "Data",
+   "label": "POL "
+  },
+  {
+   "fieldname": "section_break_wqbhv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pod",
+   "fieldtype": "Data",
+   "label": "POD "
+  },
+  {
+   "fieldname": "column_break_bj7x1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "etd_jomol",
+   "fieldtype": "Data",
+   "label": "ETD "
+  },
+  {
+   "fieldname": "section_break_dgvjy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eta_jomol",
+   "fieldtype": "Data",
+   "label": "ETA "
+  },
+  {
+   "fieldname": "column_break_fmgwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scan_docs_date",
+   "fieldtype": "Date",
+   "label": "Scan Docs Date"
+  },
+  {
+   "fieldname": "section_break_cexbj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "original_document_sent_date",
+   "fieldtype": "Date",
+   "label": "Original Document Sent Date"
+  },
+  {
+   "fieldname": "column_break_fijpv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "docs_tracking_no",
+   "fieldtype": "Data",
+   "label": "Docs tracking No"
+  },
+  {
+   "fieldname": "section_break_bcdjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fund_status",
+   "fieldtype": "Select",
+   "label": "Fund Status",
+   "options": "\nReceived\nNot Received\nPending"
+  },
+  {
+   "fieldname": "column_break_ql8dv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_zafmv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ref_bank_details_or_foreign_bills_transaction_advice",
+   "fieldtype": "Data",
+   "label": "Ref Bank details  Foreign Bills Transaction Advice"
+  },
+  {
+   "fieldname": "column_break_j20iu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ipzhx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "label_approval_from_cb",
+   "fieldtype": "Data",
+   "label": "Label approval from CB "
+  },
+  {
+   "fieldname": "column_break_2ubjq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stuffing_location",
+   "fieldtype": "Data",
+   "label": "Stuffing Location "
+  },
+  {
+   "fieldname": "section_break_u5csn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stuffing_date",
+   "fieldtype": "Date",
+   "label": "Stuffing Date "
+  },
+  {
+   "fieldname": "column_break_ww4t4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_sampling_date",
+   "fieldtype": "Date",
+   "label": "CB Sampling Date"
+  },
+  {
+   "fieldname": "section_break_q4bih",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipping_bill_no",
+   "fieldtype": "Data",
+   "label": "Shipping Bill No"
+  },
+  {
+   "fieldname": "column_break_3mids",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_bill_date",
+   "fieldtype": "Date",
+   "label": "Shipping Bill Date "
+  },
+  {
+   "fieldname": "section_break_wwlpo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No."
+  },
+  {
+   "fieldname": "column_break_uub34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "npop_tc_no",
+   "fieldtype": "Data",
+   "label": "NPOP TC No."
+  },
+  {
+   "fieldname": "section_break_8kbly",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_ptc",
+   "fieldtype": "Date",
+   "label": "Date PTC"
+  },
+  {
+   "fieldname": "column_break_cug7l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_aquzq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nop_tc_no",
+   "fieldtype": "Data",
+   "label": "NOP TC No "
+  },
+  {
+   "fieldname": "column_break_3oyql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nop_tc_date",
+   "fieldtype": "Date",
+   "label": "NOP TC Date"
+  },
+  {
+   "fieldname": "section_break_edl2h",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "eu_or_coi_no",
+   "fieldtype": "Data",
+   "label": "EU  COI No"
+  },
+  {
+   "fieldname": "column_break_a9use",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "eu_or_coi_date",
+   "fieldtype": "Date",
+   "label": "EU COI Date"
+  },
+  {
+   "fieldname": "section_break_norhp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "batch_tracenet_qty",
+   "fieldtype": "Data",
+   "label": "BATCH TRACENET QTY"
+  },
+  {
+   "fieldname": "column_break_xupxp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dpwgz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "EUDR Compliance Statement:\nWe hereby declare that Plantrich Agri Tech Pvt. Ltd., India is in full compliance with the European Union Deforestation Regulation (EUDR). We have established and implemented the necessary due diligence procedures, traceability systems, and risk mitigation measures to ensure that our products do not contribute to deforestation or forest degradation.",
+   "fieldname": "declaration",
+   "fieldtype": "Text",
+   "label": "Declaration"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "notify_party_1",
+   "fieldtype": "Text",
+   "label": "Notify Party 1",
+   "max_height": "64px"
+  },
+  {
+   "fieldname": "notify_party_2",
+   "fieldtype": "Text",
+   "label": "Notify Party 2",
+   "max_height": "64px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 13:44:48.100556",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Export Traces",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

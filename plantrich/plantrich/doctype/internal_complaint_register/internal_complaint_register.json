@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-17 17:38:33.875169",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "employee_code",
+  "employee_name",
+  "sender_email",
+  "subject",
+  "issue_raised_on",
+  "issue_description",
+  "status",
+  "resolved_by",
+  "resolver",
+  "comments",
+  "issue_closed_on",
+  "objective_evidence"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series ",
+   "options": "\nPAM/ICR/.FY./.####\nPAK/ICR/.FY./.####\nPAT/ICR/.FY./.####\nHAS/ICR/.FY./.####\nMAS/ICR/.FY./.####\nPTN/ICR/.FY./.####\nPEC/ICR/.FY./.####\nHOWFFA/ICR/.FY./.####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Company",
+   "options": "Company",
+   "width": "16"
+  },
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "label": "Complaint Registered by",
+   "options": "User"
+  },
+  {
+   "fetch_from": "employee_code.full_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "sender_email",
+   "fieldtype": "Read Only",
+   "label": "Sender Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "issue_raised_on",
+   "fieldtype": "Date",
+   "label": "Issue Raised on"
+  },
+  {
+   "fieldname": "issue_description",
+   "fieldtype": "Text",
+   "label": "Issue Description",
+   "max_height": "96px"
+  },
+  {
+   "bold": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "\nOpen\nWorking\nStill exist\nResolved"
+  },
+  {
+   "fieldname": "resolved_by",
+   "fieldtype": "Link",
+   "label": "Resolved by",
+   "options": "User"
+  },
+  {
+   "fetch_from": "resolved_by.full_name",
+   "fieldname": "resolver",
+   "fieldtype": "Read Only",
+   "label": "Resolver"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "How it is solved",
+   "max_height": "96px"
+  },
+  {
+   "fieldname": "issue_closed_on",
+   "fieldtype": "Date",
+   "label": "Issue Closed on"
+  },
+  {
+   "fieldname": "objective_evidence",
+   "fieldtype": "Attach",
+   "label": "Objective evidence"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 17:38:33.875169",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Internal Complaint Register",
+ "naming_rule": "By \"Naming Series\" field",
+ "nsm_parent_field": "parent_internal_complaint_register",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Task Users",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Inbox User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sender_field": "sender_email",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "subject_field": "subject"
+}

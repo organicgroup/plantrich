@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:39:32.615351",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_code",
+  "employee_name",
+  "department",
+  "section_break_eqsyj",
+  "todays_work_plan",
+  "column_break_gm0xq",
+  "todays_work_report",
+  "column_break_muwly",
+  "performance_evaluation",
+  "quality_of_work",
+  "quantity_of_work",
+  "timeliness",
+  "initiative_and_innovation",
+  "communication_among_coworkers_and_clients",
+  "team_work_and_collaboration",
+  "problem_solving",
+  "adaptability_and_flexibility",
+  "professionalism",
+  "total_score",
+  "section_break_efcme",
+  "open_task",
+  "expected_end_date",
+  "remarks_of_open_task"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee_code.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_eqsyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "todays_work_plan",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Todays Work Plan"
+  },
+  {
+   "fieldname": "column_break_gm0xq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "todays_work_report",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Todays Work Report"
+  },
+  {
+   "fieldname": "column_break_muwly",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "performance_evaluation",
+   "fieldtype": "Heading",
+   "label": "Performance Evaluation"
+  },
+  {
+   "fieldname": "quality_of_work",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Quality of Work",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "quantity_of_work",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Quantity of Work",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "timeliness",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Timeliness",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "initiative_and_innovation",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Initiative and Innovation",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "communication_among_coworkers_and_clients",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Communication among Coworkers and Clients",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "team_work_and_collaboration",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Team work and Collaboration",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "problem_solving",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Problem Solving",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "adaptability_and_flexibility",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Adaptability and Flexibility",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "professionalism",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Professionalism",
+   "options": "\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+   "fieldname": "total_score",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_efcme",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "open_task",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Open Task"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Expected End date"
+  },
+  {
+   "fieldname": "remarks_of_open_task",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Remarks of Open Task"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:39:32.615351",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Work Plan Brief",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,386 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:arrangements_of_local_transport_departure",
+ "creation": "2024-07-17 17:12:07.406279",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "employee",
+  "employee_name",
+  "column_break_column",
+  "travel_type",
+  "documents_section",
+  "passport",
+  "tickets",
+  "copies",
+  "documents",
+  "boarding",
+  "drivers",
+  "health_insurance_card",
+  "medical_prescription",
+  "travel_insurance",
+  "visitor_entry_voucher",
+  "visitor_entry_voucher_document",
+  "financial_section",
+  "currency_name",
+  "currency_name1",
+  "column_break_7",
+  "amount",
+  "amount2",
+  "wallet_",
+  "card_debit",
+  "wallet",
+  "appliances_section",
+  "cellphone_charger",
+  "lap_ipad_charger",
+  "cam_mmc",
+  "travel_adapter_and_converter",
+  "headphones",
+  "health_section",
+  "medications_pain_reliever",
+  "first_aid_kit",
+  "hand_sanatizerdesinfectant",
+  "table_break_tab",
+  "sample",
+  "table_section",
+  "business_card",
+  "international_mobile_service_activation",
+  "section_break_msaky",
+  "arrangements_of_local_transport_departure",
+  "column_break_1jlti",
+  "time_departure",
+  "section_break_dgcng",
+  "arrangements_of_local_transport_arrival",
+  "column_break_gi3ja",
+  "time_arrival",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/TPC/24-25/.####\nPAK/TPC/24-25/.####\nPAT/TPC/24-25/.####\nHAS/TPC/24-25/.####\nMAS/TPC/24-25/.####\nHOWFFA/TPC/24-25/.####\nBJY/TPC/24-25/.####\nPTN/TPC/24-25/.####\nPEC/TPC/24-25/.####\nMASS/TPC/24-25/.####"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "column_break_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "travel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Travel Type",
+   "options": "\nDomestic\nInternational",
+   "reqd": 1
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "default": "0",
+   "fieldname": "passport",
+   "fieldtype": "Check",
+   "label": "Passport"
+  },
+  {
+   "default": "0",
+   "fieldname": "tickets",
+   "fieldtype": "Check",
+   "label": "Tickets for airline"
+  },
+  {
+   "default": "0",
+   "fieldname": "copies",
+   "fieldtype": "Check",
+   "label": "Copies of passport, tickets etc"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents "
+  },
+  {
+   "default": "0",
+   "fieldname": "boarding",
+   "fieldtype": "Check",
+   "label": "Boarding pass"
+  },
+  {
+   "default": "0",
+   "fieldname": "drivers",
+   "fieldtype": "Check",
+   "label": "Drivers licence"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_card",
+   "fieldtype": "Check",
+   "label": "Health insurance card"
+  },
+  {
+   "default": "0",
+   "fieldname": "medical_prescription",
+   "fieldtype": "Check",
+   "label": "List of medications, letter prescriber"
+  },
+  {
+   "default": "0",
+   "fieldname": "travel_insurance",
+   "fieldtype": "Check",
+   "label": "Travel insurance"
+  },
+  {
+   "default": "0",
+   "fieldname": "visitor_entry_voucher",
+   "fieldtype": "Check",
+   "label": "Visitor Entry Voucher"
+  },
+  {
+   "fieldname": "visitor_entry_voucher_document",
+   "fieldtype": "Attach",
+   "label": "Visitor Entry Voucher Document"
+  },
+  {
+   "fieldname": "financial_section",
+   "fieldtype": "Section Break",
+   "label": "Financial"
+  },
+  {
+   "fieldname": "currency_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Foreign currency",
+   "options": "\nAFN\nALL\nDZD\nEUR\nAOA\nXCD\nARS\nAMD\nAUD\nAZN\nBSD\nBHD\nBDT\nBBD\nBYN\nBZD\nXOF\nBTN\nBOB\nBAM\nBWP\nBRL\nBND\nBGN\nBIF\nKHR\nXAF\nCAD\nCVE\nCLP\nCNY\nCOP\nKMF\nCRC\nCUP\nCZK\nCDF\nDKK\nDJF\nDOP\nUSD\nEGP\nERN\nSZL\nETB\nFJD\nGMD\nGEL\nGHS\nGTQ\nGNF\nGYD\nHTG\nHNL\nHUF\nISK\nINR\nIDR\nIRR\nIQD\nILS\nJMD\nJPY\nJOD\nKZT\nKES\nKPW\nKRW\nKWD\nKGS\nLAK\nLBP\nLSL\nLRD\nLYD\nCHF\nMGA\nMWK\nMYR\nMVR\nMRO\nMUR\nMXN\nMDL\nMNT\nMAD\nMZN\nMMK\nNAD\nNPR\nNZD\nNIO\nNGN\nMKD\nNOK\nOMR\nPKR\nPAB\nPGK\nPYG\nPEN\nPHP\nPLN\nQAR\nRON\nRUB\nRWF\nWST\nSTD\nSAR\nRSD\nSCR\nSLL\nSGD\nSBD\nSOS\nZAR\nSSP\nLKR\nSDG\nSRD\nSEK\nSYP\nTWD\nTJS\nTZS\nTHB\nTOP\nTTD\nTND\nTRY\nTMT\nUGX\nUAH\nAED\nGBP\nUYU\nUZS\nVUV\nVEF\nVND\nYER\nZMW"
+  },
+  {
+   "fieldname": "currency_name1",
+   "fieldtype": "Select",
+   "label": "Foreign currency",
+   "options": "\nAFN\nALL\nDZD\nEUR\nAOA\nXCD\nARS\nAMD\nAUD\nAZN\nBSD\nBHD\nBDT\nBBD\nBYN\nBZD\nXOF\nBTN\nBOB\nBAM\nBWP\nBRL\nBND\nBGN\nBIF\nKHR\nXAF\nCAD\nCVE\nCLP\nCNY\nCOP\nKMF\nCRC\nCUP\nCZK\nCDF\nDKK\nDJF\nDOP\nUSD\nEGP\nERN\nSZL\nETB\nFJD\nGMD\nGEL\nGHS\nGTQ\nGNF\nGYD\nHTG\nHNL\nHUF\nISK\nINR\nIDR\nIRR\nIQD\nILS\nJMD\nJPY\nJOD\nKZT\nKES\nKPW\nKRW\nKWD\nKGS\nLAK\nLBP\nLSL\nLRD\nLYD\nCHF\nMGA\nMWK\nMYR\nMVR\nMRO\nMUR\nMXN\nMDL\nMNT\nMAD\nMZN\nMMK\nNAD\nNPR\nNZD\nNIO\nNGN\nMKD\nNOK\nOMR\nPKR\nPAB\nPGK\nPYG\nPEN\nPHP\nPLN\nQAR\nRON\nRUB\nRWF\nWST\nSTD\nSAR\nRSD\nSCR\nSLL\nSGD\nSBD\nSOS\nZAR\nSSP\nLKR\nSDG\nSRD\nSEK\nSYP\nTWD\nTJS\nTZS\nTHB\nTOP\nTTD\nTND\nTRY\nTMT\nUGX\nUAH\nAED\nGBP\nUYU\nUZS\nVUV\nVEF\nVND\nYER\nZMW"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "amount2",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "wallet_",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "card_debit",
+   "fieldtype": "Check",
+   "label": "Credit card, debit card"
+  },
+  {
+   "default": "0",
+   "fieldname": "wallet",
+   "fieldtype": "Check",
+   "label": "Extra wallet"
+  },
+  {
+   "fieldname": "appliances_section",
+   "fieldtype": "Section Break",
+   "label": "Appliances"
+  },
+  {
+   "default": "0",
+   "fieldname": "cellphone_charger",
+   "fieldtype": "Check",
+   "label": "Cellphone, charger"
+  },
+  {
+   "default": "0",
+   "fieldname": "lap_ipad_charger",
+   "fieldtype": "Check",
+   "label": "Laptop, iPad or Tablet, E-reader, chargers"
+  },
+  {
+   "default": "0",
+   "fieldname": "cam_mmc",
+   "fieldtype": "Check",
+   "label": "Photo camera, memory card, charger"
+  },
+  {
+   "default": "0",
+   "fieldname": "travel_adapter_and_converter",
+   "fieldtype": "Check",
+   "label": "Travel adapter and converter"
+  },
+  {
+   "default": "0",
+   "fieldname": "headphones",
+   "fieldtype": "Check",
+   "label": "Headphones"
+  },
+  {
+   "fieldname": "health_section",
+   "fieldtype": "Section Break",
+   "label": "Health"
+  },
+  {
+   "default": "0",
+   "fieldname": "medications_pain_reliever",
+   "fieldtype": "Check",
+   "label": "Medications, pain reliever"
+  },
+  {
+   "default": "0",
+   "fieldname": "first_aid_kit",
+   "fieldtype": "Check",
+   "label": "First aid kit"
+  },
+  {
+   "default": "0",
+   "fieldname": "hand_sanatizerdesinfectant",
+   "fieldtype": "Check",
+   "label": "Hand sanatizer/desinfectant"
+  },
+  {
+   "fieldname": "table_break_tab",
+   "fieldtype": "Section Break",
+   "label": "Sample Pack"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Table",
+   "label": "Sample",
+   "options": "sample"
+  },
+  {
+   "fieldname": "table_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "business_card",
+   "fieldtype": "Check",
+   "label": "Business Card "
+  },
+  {
+   "default": "0",
+   "fieldname": "international_mobile_service_activation",
+   "fieldtype": "Check",
+   "label": "International Mobile Service Activation  "
+  },
+  {
+   "fieldname": "section_break_msaky",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "arrangements_of_local_transport_departure",
+   "fieldtype": "Data",
+   "label": "Arrangements of Local Transport Departure ",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_1jlti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_departure",
+   "fieldtype": "Time",
+   "label": "Time Departure"
+  },
+  {
+   "fieldname": "section_break_dgcng",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "arrangements_of_local_transport_arrival",
+   "fieldtype": "Data",
+   "label": "Arrangements of Local Transport Arrival"
+  },
+  {
+   "fieldname": "column_break_gi3ja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time_arrival",
+   "fieldtype": "Time",
+   "label": "Time Arrival"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TRAVEL PACKING CHECKLIST",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TRAVEL PACKING CHECKLIST",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Currency",
+   "link_fieldname": "currency_name"
+  }
+ ],
+ "modified": "2024-07-17 17:12:07.406279",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "TRAVEL PACKING CHECKLIST",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

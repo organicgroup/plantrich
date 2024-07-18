@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:42:14.103261",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "name1",
+  "satisfaction",
+  "suggestions"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/EFF/24-25/.####\nPAK/EFF/24-25/.####\nPAT/EFF/24-25/.####\nHAS/EFF/24-25/.####\nMAS/EFF/24-25/.####\nHOWFFA/EFF/24-25/.####\nBJY/EFF/24-25/.####\nPTN/EFF/24-25/.####\nPEC/EFF/24-25/.####\nMASS/EFF/24-25/.####"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "satisfaction",
+   "fieldtype": "Rating",
+   "label": "On a scale of 1 to 10 how satisfied are you with the training\u00a0program?"
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Text",
+   "label": "suggestions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-07-17 17:42:14.103261",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Employee Feedback form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_views": 1
+}

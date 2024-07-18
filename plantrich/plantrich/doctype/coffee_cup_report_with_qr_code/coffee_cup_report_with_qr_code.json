@@ -1,0 +1,299 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-07-11 15:48:22.145815",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "sample_ref_no",
+  "source",
+  "name_of_exporter",
+  "country",
+  "quality_description_as_per_contract",
+  "section_break_qv3mb",
+  "coffee_qr_code",
+  "section_break_eb10x",
+  "product_physical_aspect",
+  "section_break_nxvbx",
+  "roast_details",
+  "notes",
+  "section_break_knje4",
+  "fragrancearoma",
+  "flavor_out_of_10",
+  "after_taste_out_of_10",
+  "acidity_out_of_10",
+  "bodyout_of_10",
+  "balance_out_of_10",
+  "overallout_of_10",
+  "sweetnessout_of_10",
+  "uniformityout_of_10",
+  "clean_cupout_of_10",
+  "defectsout_of_10",
+  "total_points_sca",
+  "column_break_pfdzh",
+  "chart_wrapper",
+  "section_break_nvnkq",
+  "plantrich_findings",
+  "remarks",
+  "name1",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Seried",
+   "options": "\nPATM/CCR/.####\nPAK/CCR/.####"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "sample_ref_no",
+   "fieldtype": "Data",
+   "label": "Sample Ref No"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "name_of_exporter",
+   "fieldtype": "Data",
+   "label": "Name of Exporter"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "quality_description_as_per_contract",
+   "fieldtype": "Data",
+   "label": "Quality Description as per contract"
+  },
+  {
+   "fieldname": "section_break_qv3mb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_eb10x",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_physical_aspect",
+   "fieldtype": "Table",
+   "label": "Product Physical Aspect",
+   "options": "Physical Aspect"
+  },
+  {
+   "fieldname": "section_break_nxvbx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "roast_details",
+   "fieldtype": "Table",
+   "label": "Roast details",
+   "options": "Roast"
+  },
+  {
+   "description": "THE BELOW SELECTION DOESNOT APPLY FOR LOW GRADES\n(Stocklots)",
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes",
+   "max_height": "48px"
+  },
+  {
+   "fieldname": "section_break_knje4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fragrancearoma",
+   "fieldtype": "Data",
+   "label": "Fragrance/Aroma (out of 10)"
+  },
+  {
+   "fieldname": "flavor_out_of_10",
+   "fieldtype": "Data",
+   "label": "Flavor (out of 10)"
+  },
+  {
+   "fieldname": "after_taste_out_of_10",
+   "fieldtype": "Data",
+   "label": "After taste (out of 10)"
+  },
+  {
+   "fieldname": "acidity_out_of_10",
+   "fieldtype": "Data",
+   "label": "Acidity (out of 10)"
+  },
+  {
+   "fieldname": "bodyout_of_10",
+   "fieldtype": "Data",
+   "label": "Body(out of 10)"
+  },
+  {
+   "fieldname": "balance_out_of_10",
+   "fieldtype": "Data",
+   "label": "Balance (out of 10)"
+  },
+  {
+   "fieldname": "overallout_of_10",
+   "fieldtype": "Data",
+   "label": "Overall(out of 10)"
+  },
+  {
+   "fieldname": "sweetnessout_of_10",
+   "fieldtype": "Data",
+   "label": "Sweetness(out of 10)"
+  },
+  {
+   "fieldname": "uniformityout_of_10",
+   "fieldtype": "Data",
+   "label": "Uniformity(out of 10)"
+  },
+  {
+   "fieldname": "clean_cupout_of_10",
+   "fieldtype": "Data",
+   "label": "Clean cup(out of 10)"
+  },
+  {
+   "fieldname": "defectsout_of_10",
+   "fieldtype": "Data",
+   "label": "Defects(out of 10)"
+  },
+  {
+   "fieldname": "total_points_sca",
+   "fieldtype": "Data",
+   "label": "Total Points SCA"
+  },
+  {
+   "fieldname": "column_break_pfdzh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "chart_wrapper",
+   "fieldtype": "HTML",
+   "label": "Chart Wrapper"
+  },
+  {
+   "fieldname": "section_break_nvnkq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plantrich_findings",
+   "fieldtype": "Select",
+   "label": "FINDINGS",
+   "options": "\nApproved\nRejected"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "max_height": "48px"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Text",
+   "label": "Name",
+   "max_height": "48px"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "coffee_qr_code",
+   "fieldtype": "Attach",
+   "label": "Coffee QR Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-11 16:47:15.214050",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Coffee Cup Report with QR code",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Task Users",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

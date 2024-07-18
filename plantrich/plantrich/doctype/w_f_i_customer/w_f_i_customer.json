@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-07-18 12:03:03.237707",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salutation",
+  "column_break_2j7lw",
+  "name1",
+  "section_break_40dxx",
+  "column_break_trk6w",
+  "phone",
+  "column_break_q9kom",
+  "email",
+  "section_break_jw4cx",
+  "column_break_ehobc",
+  "job_title",
+  "state",
+  "selfie",
+  "column_break_cjen5",
+  "company_name",
+  "country",
+  "interest"
+ ],
+ "fields": [
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "column_break_2j7lw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "section_break_40dxx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_trk6w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_q9kom",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_jw4cx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ehobc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "selfie",
+   "fieldtype": "Attach Image",
+   "label": "Selfie"
+  },
+  {
+   "fieldname": "column_break_cjen5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "interest",
+   "fieldtype": "Select",
+   "label": "Interest ",
+   "options": "\nBuyer\nSupplier\nDistributor\nRoaster\nFarmer\nJob Aspirants\nExecutives\nMedia\nOfficials\nOthers"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 12:03:03.237707",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "W F I Customer",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

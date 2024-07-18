@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Gadgets-{employee_name}",
+ "creation": "2024-07-17 17:18:53.098673",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name_of_the_company",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "gadget_detail",
+  "declaration",
+  "signature",
+  "employee_signature",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/RG/24-25/.####\nPAK/RG/24-25/.####\nPAT/RG/24-25/.####\nHAS/RG/24-25/.####\nMAS/RG/24-25/.####\nHOWFFA/RG/24-25/.####\nBJY/RG/24-25/.####\nPTN/RG/24-25/.####\nPEC/RG/24-25/.####\nMASS/RG/24-25/.####"
+  },
+  {
+   "fieldname": "name_of_the_company",
+   "fieldtype": "Select",
+   "label": "Name of the Company",
+   "options": "\nPlantrich Agritech Private Limited\nPlantrich Agritech Private Limited-Kurianad\nPlanton Organic Experience Center"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "gadget_detail",
+   "fieldtype": "Table",
+   "label": "Gadget Detail",
+   "options": "GADGET DETAIL"
+  },
+  {
+   "default": "I ,_______________________________ ,hereby acknowledge that I have handover the above-mentioned assets. I understand that this\nasset belongs to PlantrichAgritechPvt Ltd and is under my possession for carrying out my office work. I hereby\nassure that I will take care of the company assets to the best possible extend and will handover at any time if\ncompany demands. I will be the responsible person if any damage occurs due to misuse. I will never misuse any\ndata\u2019s related to our company and never share the data\u2019s to outsiders in any situations. I will keep everything as\nconfidential in my custody. I will take all the responsibilities related to these data\u2019s and further. I assure you that\nI shall indemnify all the loss for the breach of any act as shown above with the material damage caused",
+   "fieldname": "declaration",
+   "fieldtype": "Text",
+   "label": "Declaration",
+   "max_height": "64px"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Heading",
+   "in_preview": 1,
+   "label": "Signature"
+  },
+  {
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 17:18:53.098673",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Receipt of Gadget",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

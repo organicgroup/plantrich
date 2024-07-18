@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:52:02.590492",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_course_from_matriculation",
+  "boarduniversity_institute",
+  "year_of_passing",
+  "subjects_of_study",
+  "class__division_obtained"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "name_of_the_course_from_matriculation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of the Course (from Matriculation)",
+   "width": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "boarduniversity_institute",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Board/University/ Institute",
+   "width": "1"
+  },
+  {
+   "columns": 2,
+   "fieldname": "year_of_passing",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Year of Passing",
+   "width": "1"
+  },
+  {
+   "columns": 2,
+   "fieldname": "subjects_of_study",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subjects of study",
+   "width": "2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "class__division_obtained",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class / Division Obtained",
+   "width": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:52:02.590492",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Job Applicant Educational and Qualifications",
+ "owner": "Administrator",
+ "permissions": [],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

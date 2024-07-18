@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:46:58.261509",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inward_date",
+  "inward_qty",
+  "rm_lot_no",
+  "inward_lot_no",
+  "tc_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "inward_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "INWARD DATE "
+  },
+  {
+   "fieldname": "inward_qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "INWARD QTY in MT"
+  },
+  {
+   "fieldname": "rm_lot_no",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "RM LOT NO",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "inward_lot_no",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "INWARD LOT NO",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "tc_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TC No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:46:58.261509",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "BMR Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

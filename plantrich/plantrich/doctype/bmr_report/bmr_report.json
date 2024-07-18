@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BMR-{fg_lot_number}",
+ "creation": "2024-07-17 17:45:51.362637",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_manufacturing_report",
+  "processing_centre",
+  "name_of_commodity",
+  "fg_lot_number",
+  "inward_vehicle",
+  "bmr_details",
+  "processing_details",
+  "despatched_qty",
+  "despatched_date",
+  "despatched_vehicle",
+  "balance_qty",
+  "checked_by",
+  "name1",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_manufacturing_report",
+   "fieldtype": "Heading",
+   "label": "Batch Manufacturing Report"
+  },
+  {
+   "fieldname": "processing_centre",
+   "fieldtype": "Link",
+   "label": "Processing centre",
+   "max_height": "32px",
+   "options": "Company"
+  },
+  {
+   "fieldname": "name_of_commodity",
+   "fieldtype": "Link",
+   "label": "Name of Commodity",
+   "options": "Item"
+  },
+  {
+   "fieldname": "fg_lot_number",
+   "fieldtype": "Data",
+   "label": "FG lot number"
+  },
+  {
+   "fieldname": "inward_vehicle",
+   "fieldtype": "Data",
+   "label": "Inward Vehicle"
+  },
+  {
+   "fieldname": "bmr_details",
+   "fieldtype": "Table",
+   "label": "BMR DETAILS",
+   "options": "BMR Details"
+  },
+  {
+   "fieldname": "processing_details",
+   "fieldtype": "Table",
+   "label": "Processing details",
+   "options": "Processing details"
+  },
+  {
+   "fieldname": "despatched_qty",
+   "fieldtype": "Data",
+   "label": "Despatched Qty"
+  },
+  {
+   "fieldname": "despatched_date",
+   "fieldtype": "Date",
+   "label": "Despatched Date"
+  },
+  {
+   "fieldname": "despatched_vehicle",
+   "fieldtype": "Data",
+   "label": "Despatched Vehicle"
+  },
+  {
+   "fieldname": "balance_qty",
+   "fieldtype": "Data",
+   "label": "Balance Qty"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "max_height": "64px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 17:45:51.362637",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "BMR REPORT",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quality Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Task Users",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

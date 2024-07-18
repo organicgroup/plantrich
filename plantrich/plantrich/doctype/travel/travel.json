@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:48:17.765162",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_vehicle",
+  "type_of_vehicle",
+  "name_of_travel_agent",
+  "vehicle_number",
+  "contact_number_of_driver",
+  "contact_number_of_agent",
+  "team_responsible_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_vehicle",
+   "fieldtype": "Text",
+   "label": "Name of Vehicle"
+  },
+  {
+   "fieldname": "type_of_vehicle",
+   "fieldtype": "Select",
+   "label": "Type of Vehicle",
+   "options": "AC\nNON AC"
+  },
+  {
+   "fieldname": "name_of_travel_agent",
+   "fieldtype": "Text",
+   "label": "Name of Travel Agent"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Text",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "contact_number_of_driver",
+   "fieldtype": "Int",
+   "label": "Contact Number of Driver"
+  },
+  {
+   "fieldname": "contact_number_of_agent",
+   "fieldtype": "Int",
+   "label": "Contact Number of Agent"
+  },
+  {
+   "fieldname": "team_responsible_person",
+   "fieldtype": "Text",
+   "label": "Team Responsible Person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:48:17.765162",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Travel",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

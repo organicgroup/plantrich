@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 16:40:03.741989",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_factory",
+  "place",
+  "traveling_distance_from_stay",
+  "team_responsible_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_factory",
+   "fieldtype": "Text",
+   "label": "Name of Factory"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Text",
+   "label": "Place"
+  },
+  {
+   "fieldname": "traveling_distance_from_stay",
+   "fieldtype": "Text",
+   "label": "Traveling distance from Stay"
+  },
+  {
+   "fieldname": "team_responsible_person",
+   "fieldtype": "Text",
+   "label": "Team Responsible person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 16:40:03.741989",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Factory Visit",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

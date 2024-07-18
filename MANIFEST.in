@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include plantrich *.css
+recursive-include plantrich *.csv
+recursive-include plantrich *.html
+recursive-include plantrich *.ico
+recursive-include plantrich *.js
+recursive-include plantrich *.json
+recursive-include plantrich *.md
+recursive-include plantrich *.png
+recursive-include plantrich *.py
+recursive-include plantrich *.svg
+recursive-include plantrich *.txt
+recursive-exclude plantrich *.pyc

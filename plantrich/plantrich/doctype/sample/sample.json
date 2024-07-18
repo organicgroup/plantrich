@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 17:53:10.739048",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "weight",
+  "uom"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "item",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "\nAP AA\nMM AA\nRP AB\nRKR\nRC AB\nAC A"
+  },
+  {
+   "columns": 2,
+   "fieldname": "weight",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "columns": 2,
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "\nKg\nLtr\nNos\nPacket\nBag\nBox"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 17:53:10.739048",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "sample",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

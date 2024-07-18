@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Buyer-{nameofvisitor}",
+ "creation": "2024-07-17 17:07:58.989662",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_visitor",
+  "place",
+  "schedule_from",
+  "schedule_to",
+  "section_break_geiex",
+  "guest_receiving",
+  "travel_section",
+  "section_break_xanyd",
+  "food_details",
+  "section_break_aklqu",
+  "estate_visit",
+  "special_notes",
+  "section_break_o4zst",
+  "factory_visit",
+  "remarks",
+  "section_break_xya1r",
+  "presentations",
+  "gifts",
+  "conclusion"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_visitor",
+   "fieldtype": "Text",
+   "label": "Name of Visitor",
+   "max_height": "48px"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Text",
+   "label": "Place",
+   "max_height": "48px"
+  },
+  {
+   "fieldname": "schedule_from",
+   "fieldtype": "Date",
+   "label": "Schedule from"
+  },
+  {
+   "fieldname": "schedule_to",
+   "fieldtype": "Date",
+   "label": "Schedule to"
+  },
+  {
+   "fieldname": "section_break_geiex",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "guest_receiving",
+   "fieldtype": "Table",
+   "label": "GUEST RECEIVING",
+   "options": "Guest Receiving"
+  },
+  {
+   "fieldname": "travel_section",
+   "fieldtype": "Table",
+   "label": "TRAVEL",
+   "options": "Travel"
+  },
+  {
+   "fieldname": "section_break_xanyd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "food_details",
+   "fieldtype": "Table",
+   "label": "Food Details",
+   "options": "FOOD DETAILS"
+  },
+  {
+   "fieldname": "section_break_aklqu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estate_visit",
+   "fieldtype": "Table",
+   "label": "Estate Visit",
+   "options": "Estate Visit"
+  },
+  {
+   "fieldname": "special_notes",
+   "fieldtype": "Text",
+   "label": "Special Notes",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "section_break_o4zst",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "factory_visit",
+   "fieldtype": "Table",
+   "label": "Factory Visit",
+   "options": "Factory Visit"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "section_break_xya1r",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "presentations",
+   "fieldtype": "Table",
+   "label": "Presentations",
+   "options": "Presentations"
+  },
+  {
+   "fieldname": "gifts",
+   "fieldtype": "Table",
+   "label": "Gifts",
+   "options": "Gifts"
+  },
+  {
+   "fieldname": "conclusion",
+   "fieldtype": "Text",
+   "label": "Conclusion",
+   "max_height": "32px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 17:07:58.989662",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Buyer receiving check list",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Inbox User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
