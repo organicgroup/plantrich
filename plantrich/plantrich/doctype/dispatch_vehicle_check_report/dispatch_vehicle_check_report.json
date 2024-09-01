@@ -660,12 +660,6 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "options": "DISPATCH VEHICLE CHECK REPORT"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "options": "DISPATCH VEHICLE CHECK REPORT"
   }
  ],
  "index_web_pages_for_search": 1,
