@@ -130,7 +130,7 @@
    "fieldname": "frequency",
    "fieldtype": "Select",
    "label": "Frequency",
-   "options": "\nTo Every Receipt",
+   "options": "\nTo Every Dispatch",
    "reqd": 1
   },
   {
@@ -665,7 +665,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-11 16:01:17.872819",
+ "modified": "2024-09-03 21:40:55.495701",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "DISPATCH VEHICLE CHECK REPORT",
