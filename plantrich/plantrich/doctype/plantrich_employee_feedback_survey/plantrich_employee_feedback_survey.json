@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 12:45:57.065146",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "erp_energy_point_system_section",
+  "q1",
+  "q2",
+  "q3",
+  "work_stress_and_work_life_balance_section",
+  "q4",
+  "q5",
+  "q6",
+  "work_skill_and_development_section",
+  "q7",
+  "q8",
+  "q9",
+  "mentorship_section",
+  "q10",
+  "q11",
+  "overall_company_rating_section",
+  "r1",
+  "q12",
+  "belief_in_management_section",
+  "q13",
+  "q14",
+  "suggestions_for_improvement_section",
+  "q15",
+  "workplace_facilities_section"
+ ],
+ "fields": [
+  {
+   "fieldname": "erp_energy_point_system_section",
+   "fieldtype": "Section Break",
+   "label": "ERP Energy Point System"
+  },
+  {
+   "fieldname": "q1",
+   "fieldtype": "Select",
+   "label": "How do you feel about the ERP energy point system?",
+   "options": "\nVery satisfied\nSatisfied\nNeutral\nDissatisfied\nVery dissatisfied"
+  },
+  {
+   "fieldname": "q2",
+   "fieldtype": "Select",
+   "label": "How motivated are you by the ERP energy points in your daily tasks?",
+   "options": "\nHighly motivated\nMotivated\nNeutral\nDemotivated\nVery demotivated"
+  },
+  {
+   "fieldname": "q3",
+   "fieldtype": "Small Text",
+   "label": "What improvements would you suggest for the ERP energy point system?"
+  },
+  {
+   "fieldname": "work_stress_and_work_life_balance_section",
+   "fieldtype": "Section Break",
+   "label": "Work Stress and Work-Life Balance"
+  },
+  {
+   "fieldname": "q4",
+   "fieldtype": "Select",
+   "label": "How would you rate your current work stress level?",
+   "options": "\nVery high\nHigh\nModerate\nLow\nVery low"
+  },
+  {
+   "fieldname": "q5",
+   "fieldtype": "Select",
+   "label": "Do you feel you have a good work-life balance at Plantrich?",
+   "options": "\nYes\nNo\nSomewhat"
+  },
+  {
+   "fieldname": "q6",
+   "fieldtype": "Small Text",
+   "label": "What could be done to reduce work stress at Plantrich?"
+  },
+  {
+   "fieldname": "work_skill_and_development_section",
+   "fieldtype": "Section Break",
+   "label": "Work Skill and Development"
+  },
+  {
+   "fieldname": "q7",
+   "fieldtype": "Select",
+   "label": "How confident are you in the skills you use for your current role?",
+   "options": "\nHighly confident\nConfident\nNeutral\nLacking some skills\nLacking significant skills"
+  },
+  {
+   "fieldname": "q8",
+   "fieldtype": "Select",
+   "label": "Have you learned any new skills while working at Plantrich?",
+   "options": "\nYes\nNo\nSomewhat"
+  },
+  {
+   "fieldname": "q9",
+   "fieldtype": "Small Text",
+   "label": "If yes, what new skills have you learned?"
+  },
+  {
+   "fieldname": "mentorship_section",
+   "fieldtype": "Section Break",
+   "label": "Mentorship"
+  },
+  {
+   "fieldname": "q10",
+   "fieldtype": "Small Text",
+   "label": "Who is the best mentor you have found in the organization?"
+  },
+  {
+   "fieldname": "q11",
+   "fieldtype": "Small Text",
+   "label": "Why do you consider them the best mentor?"
+  },
+  {
+   "fieldname": "overall_company_rating_section",
+   "fieldtype": "Section Break",
+   "label": "Overall Company Rating"
+  },
+  {
+   "description": "(1 = Poor, 5 = Excellent) ",
+   "fieldname": "r1",
+   "fieldtype": "Select",
+   "label": "On a scale of 1 to 5, how would you rate Plantrich as a company?",
+   "options": "\n5\n4\n3\n2\n1"
+  },
+  {
+   "fieldname": "q12",
+   "fieldtype": "Small Text",
+   "label": "What is the primary reason for your rating?"
+  },
+  {
+   "fieldname": "belief_in_management_section",
+   "fieldtype": "Section Break",
+   "label": "Belief in Management"
+  },
+  {
+   "fieldname": "q13",
+   "fieldtype": "Select",
+   "label": "Do you believe in the leadership and management of Plantrich?",
+   "options": "\nStrongly believe\nBelieve\nNeutral\nDisbelieve\nStrongly disbelieve"
+  },
+  {
+   "fieldname": "q14",
+   "fieldtype": "Small Text",
+   "label": "What could management do better to earn your trust?"
+  },
+  {
+   "fieldname": "suggestions_for_improvement_section",
+   "fieldtype": "Section Break",
+   "label": "Suggestions for Improvement"
+  },
+  {
+   "fieldname": "q15",
+   "fieldtype": "Small Text",
+   "label": "What changes would you like to see implemented at Plantrich?"
+  },
+  {
+   "fieldname": "workplace_facilities_section",
+   "fieldtype": "Section Break",
+   "label": "Workplace Facilities"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-12 13:53:21.206153",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Plantrich Employee Feedback Survey",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

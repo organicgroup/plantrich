@@ -1,0 +1,727 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-12 12:45:30.741749",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "date",
+  "stacking",
+  "q1",
+  "stock_management",
+  "q2",
+  "labeling",
+  "q3",
+  "awareness_of_workers",
+  "q4",
+  "awareness_of_organic_standards",
+  "q5",
+  "awareness_of_fairtrade_standards",
+  "q6",
+  "awareness_of_rfa_standards",
+  "q7",
+  "personal_hygiene",
+  "q8",
+  "migrant_workers_contract",
+  "q9",
+  "entryexit_system",
+  "q10",
+  "documentation_in_erp",
+  "q11",
+  "machinery",
+  "q12",
+  "maintenance_system",
+  "q13",
+  "non_conformities",
+  "q14",
+  "stacking_of_used_bags",
+  "q15",
+  "lab_maintenance",
+  "q16",
+  "accident_sop",
+  "q17",
+  "theft_sop",
+  "q18",
+  "fire_sop",
+  "q19",
+  "rodent_and_pest_control_tab",
+  "pest_control_plan",
+  "q20",
+  "external_pest_control_services",
+  "q21",
+  "rodent_proofing_section",
+  "q22",
+  "regular_monitoring_section",
+  "q23",
+  "cleaning__sanitation_section",
+  "q24",
+  "chemical_control_methods_section",
+  "q25",
+  "non_chemical_control_methods_section",
+  "q26",
+  "employee_training_section",
+  "q27",
+  "compliance_with_standards_section",
+  "q28",
+  "pest_control_equipment_maintenance_section",
+  "q29",
+  "response_to_infestations_section",
+  "q30",
+  "storage_of_food_products_section",
+  "q31",
+  "water_leakage_tab",
+  "inspection_of_water_systems_section",
+  "q32",
+  "leak_detection_system_section",
+  "q33",
+  "plumbing_and_drainage_maintenance_section",
+  "q34",
+  "water_metering_section",
+  "q35",
+  "immediate_action_protocol_section",
+  "q36",
+  "preventive_maintenance_section",
+  "q37",
+  "efficiency_of_workers_measurement_tab",
+  "task_assignment_and_monitoring_section",
+  "q38",
+  "daily_output_measurement_section",
+  "q39",
+  "use_of_technology_section",
+  "q40",
+  "performance_kpis_section",
+  "q41",
+  "training_and_skill_development_section",
+  "q42",
+  "incentives_and_motivation_section",
+  "q43",
+  "error_and_downtime_tracking_section",
+  "q44",
+  "workload_distribution_section",
+  "q45",
+  "feedback_tab",
+  "feedback_collection_system_section",
+  "q46",
+  "regular_feedback_sessions_section",
+  "q47",
+  "worker_satisfaction_section",
+  "q48",
+  "internal_auditor_list_section",
+  "internal_auditor_list",
+  "participants"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/QA/FAC/.FY./.####\nPAT/QA/FAC/.FY./.####\nPAK/QA/FAC/.FY./.####\nHAS/QA/FAC/.FY./.####\nMAS/QA/FAC/.FY./.####\nMASS/QA/FAC/.FY./.####\nHOWFFA/QA/FAC/.FY./.####\nBJY/QA/FAC/.FY./.####\nPTN/QA/FAC/.FY./.####\nPEC/QA/FAC/.FY./.####"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "stacking",
+   "fieldtype": "Section Break",
+   "label": "Stacking"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q1",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "stock_management",
+   "fieldtype": "Section Break",
+   "label": "Stock Management"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q2",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "labeling",
+   "fieldtype": "Section Break",
+   "label": "Labeling"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q3",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "awareness_of_workers",
+   "fieldtype": "Section Break",
+   "label": "Awareness of Workers"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q4",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "awareness_of_organic_standards",
+   "fieldtype": "Section Break",
+   "label": "Awareness of Organic Standards"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q5",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "awareness_of_fairtrade_standards",
+   "fieldtype": "Section Break",
+   "label": "Awareness of Fairtrade Standards"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q6",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "awareness_of_rfa_standards",
+   "fieldtype": "Section Break",
+   "label": "Awareness of RFA Standards"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q7",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "personal_hygiene",
+   "fieldtype": "Section Break",
+   "label": "Personal Hygiene"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q8",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "migrant_workers_contract",
+   "fieldtype": "Section Break",
+   "label": "Migrant Workers Contract"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q9",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "entryexit_system",
+   "fieldtype": "Section Break",
+   "label": "Entry/Exit System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q10",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "documentation_in_erp",
+   "fieldtype": "Section Break",
+   "label": "Documentation in ERP"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q11",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "machinery",
+   "fieldtype": "Section Break",
+   "label": "Machinery"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q12",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "maintenance_system",
+   "fieldtype": "Section Break",
+   "label": "Maintenance System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q13",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "non_conformities",
+   "fieldtype": "Section Break",
+   "label": "Non Conformities"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q14",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "stacking_of_used_bags",
+   "fieldtype": "Section Break",
+   "label": "Stacking of Used Bags"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q15",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "lab_maintenance",
+   "fieldtype": "Section Break",
+   "label": "Lab Maintenance"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q16",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "accident_sop",
+   "fieldtype": "Section Break",
+   "label": "Accident SOP"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q17",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "theft_sop",
+   "fieldtype": "Section Break",
+   "label": "Theft SOP"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q18",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "fire_sop",
+   "fieldtype": "Section Break",
+   "label": "Fire SOP"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q19",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "rodent_and_pest_control_tab",
+   "fieldtype": "Tab Break",
+   "label": "Rodent and Pest Control "
+  },
+  {
+   "fieldname": "pest_control_plan",
+   "fieldtype": "Section Break",
+   "label": "Pest Control Plan"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q20",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "external_pest_control_services",
+   "fieldtype": "Section Break",
+   "label": "External Pest Control Services"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q21",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "rodent_proofing_section",
+   "fieldtype": "Section Break",
+   "label": "Rodent Proofing"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q22",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "regular_monitoring_section",
+   "fieldtype": "Section Break",
+   "label": "Regular Monitoring"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q23",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "cleaning__sanitation_section",
+   "fieldtype": "Section Break",
+   "label": "Cleaning  Sanitation"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q24",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "chemical_control_methods_section",
+   "fieldtype": "Section Break",
+   "label": "Chemical Control Methods"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q25",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "non_chemical_control_methods_section",
+   "fieldtype": "Section Break",
+   "label": "Non Chemical Control Methods"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q26",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "employee_training_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Training"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q27",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "compliance_with_standards_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance with Standards"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q28",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "pest_control_equipment_maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Pest Control Equipment Maintenance"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q29",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "response_to_infestations_section",
+   "fieldtype": "Section Break",
+   "label": "Response to Infestations"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q30",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "storage_of_food_products_section",
+   "fieldtype": "Section Break",
+   "label": "Storage of Food Products"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q31",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "water_leakage_tab",
+   "fieldtype": "Tab Break",
+   "label": "Water Leakage "
+  },
+  {
+   "fieldname": "inspection_of_water_systems_section",
+   "fieldtype": "Section Break",
+   "label": "Inspection of Water Systems"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q32",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "leak_detection_system_section",
+   "fieldtype": "Section Break",
+   "label": "Leak Detection System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q33",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "plumbing_and_drainage_maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Plumbing and Drainage Maintenance"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q34",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "water_metering_section",
+   "fieldtype": "Section Break",
+   "label": "Water Metering"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q35",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "immediate_action_protocol_section",
+   "fieldtype": "Section Break",
+   "label": "Immediate Action Protocol"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q36",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "preventive_maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Preventive Maintenance"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q37",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "efficiency_of_workers_measurement_tab",
+   "fieldtype": "Tab Break",
+   "label": "Efficiency of Workers Measurement "
+  },
+  {
+   "fieldname": "task_assignment_and_monitoring_section",
+   "fieldtype": "Section Break",
+   "label": "Task Assignment and Monitoring"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q38",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "daily_output_measurement_section",
+   "fieldtype": "Section Break",
+   "label": "Daily Output Measurement"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q39",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "use_of_technology_section",
+   "fieldtype": "Section Break",
+   "label": "Use of Technology"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q40",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "performance_kpis_section",
+   "fieldtype": "Section Break",
+   "label": "Performance KPIs"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q41",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "training_and_skill_development_section",
+   "fieldtype": "Section Break",
+   "label": "Training and Skill Development"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q42",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "incentives_and_motivation_section",
+   "fieldtype": "Section Break",
+   "label": "Incentives and Motivation"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q43",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "error_and_downtime_tracking_section",
+   "fieldtype": "Section Break",
+   "label": "Error and Downtime Tracking"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q44",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "workload_distribution_section",
+   "fieldtype": "Section Break",
+   "label": "Workload Distribution"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q45",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "feedback_tab",
+   "fieldtype": "Tab Break",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "feedback_collection_system_section",
+   "fieldtype": "Section Break",
+   "label": "Feedback Collection System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q46",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "regular_feedback_sessions_section",
+   "fieldtype": "Section Break",
+   "label": "Regular Feedback Sessions"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q47",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "worker_satisfaction_section",
+   "fieldtype": "Section Break",
+   "label": "Worker Satisfaction"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q48",
+   "fieldtype": "Table",
+   "options": "Factory Audit Questions"
+  },
+  {
+   "fieldname": "internal_auditor_list_section",
+   "fieldtype": "Section Break",
+   "label": "Internal Auditor List"
+  },
+  {
+   "fieldname": "internal_auditor_list",
+   "fieldtype": "Table",
+   "label": "Internal Auditor List",
+   "options": "Internal Auditor List"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Table",
+   "label": "Participants",
+   "options": "Internal Auditor List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-12 13:53:03.286161",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Coffee Factory Audit Checklist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
