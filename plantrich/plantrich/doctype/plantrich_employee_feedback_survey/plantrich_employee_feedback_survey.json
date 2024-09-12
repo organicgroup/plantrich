@@ -1,12 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-09-12 12:45:57.065146",
+ "autoname": "format:FEEDBACK-{###}",
+ "creation": "2024-09-12 15:59:32.636010",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "date",
   "erp_energy_point_system_section",
   "q1",
   "q2",
@@ -30,9 +32,21 @@
   "q14",
   "suggestions_for_improvement_section",
   "q15",
-  "workplace_facilities_section"
+  "workplace_facilities_section",
+  "q16",
+  "q17",
+  "salary_and_other_benefits_section",
+  "q18",
+  "q19",
+  "general_feedback_section",
+  "q20"
  ],
  "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
   {
    "fieldname": "erp_energy_point_system_section",
    "fieldtype": "Section Break",
@@ -124,7 +138,7 @@
    "fieldname": "r1",
    "fieldtype": "Select",
    "label": "On a scale of 1 to 5, how would you rate Plantrich as a company?",
-   "options": "\n5\n4\n3\n2\n1"
+   "options": "5\n4\n3\n2\n1"
   },
   {
    "fieldname": "q12",
@@ -161,14 +175,51 @@
    "fieldname": "workplace_facilities_section",
    "fieldtype": "Section Break",
    "label": "Workplace Facilities"
+  },
+  {
+   "fieldname": "q16",
+   "fieldtype": "Select",
+   "label": "Are there any additional facilities you would like to have in the workplace?",
+   "options": "\nYes\nNo\nNot Sure"
+  },
+  {
+   "fieldname": "q17",
+   "fieldtype": "Small Text",
+   "label": "If yes, what facilities would you suggest?"
+  },
+  {
+   "fieldname": "salary_and_other_benefits_section",
+   "fieldtype": "Section Break",
+   "label": "Salary and Other Benefits"
+  },
+  {
+   "fieldname": "q18",
+   "fieldtype": "Small Text",
+   "label": "Apart from salary, what other benefits or perks do you expect?"
+  },
+  {
+   "fieldname": "q19",
+   "fieldtype": "Small Text",
+   "label": "What can Plantrich do to improve your job satisfaction?"
+  },
+  {
+   "fieldname": "general_feedback_section",
+   "fieldtype": "Section Break",
+   "label": "General Feedback"
+  },
+  {
+   "fieldname": "q20",
+   "fieldtype": "Small Text",
+   "label": "Is there anything else you would like to share with the management?"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-12 13:53:21.206153",
+ "modified": "2024-09-12 15:59:32.636010",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Plantrich Employee Feedback Survey",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -180,6 +231,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase User",
    "share": 1,
    "write": 1
   }
