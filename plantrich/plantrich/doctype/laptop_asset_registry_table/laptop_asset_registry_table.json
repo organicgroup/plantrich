@@ -60,12 +60,14 @@
   {
    "fieldname": "brand",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Brand",
    "reqd": 1
   },
   {
    "fieldname": "model_and_serial_number",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Model and Serial Number",
    "reqd": 1
   },
@@ -105,14 +107,13 @@
   {
    "fieldname": "images",
    "fieldtype": "Attach Image",
-   "label": "Images",
-   "reqd": 1
+   "label": "Images"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-17 17:14:07.992065",
+ "modified": "2024-09-16 16:17:13.223792",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Laptop Asset Registry Table",

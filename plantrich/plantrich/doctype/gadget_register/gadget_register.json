@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-16 16:15:54.925977",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "lastupdated",
+  "laptop_asset_registry_table",
+  "complaints",
+  "suggestions",
+  "review_date",
+  "signature",
+  "name_of_checker"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/LAR/24-25/.####\nPAK/LAR/24-25/.####\nPAT/LAR/24-25/.####\nHAS/LAR/24-25/.####\nMAS/LAR/24-25/.####\nHOWFFA/LAR/24-25/.####\nBJY/LAR/24-25/.####\nPTN/LAR/24-25/.####\nPEC/LAR/24-25/.####\nMASS/LAR/24-25/.####"
+  },
+  {
+   "fieldname": "lastupdated",
+   "fieldtype": "Date",
+   "label": "Last Updated"
+  },
+  {
+   "fieldname": "laptop_asset_registry_table",
+   "fieldtype": "Table",
+   "label": "Laptop Asset Registry Table",
+   "options": "Laptop Asset Registry Table"
+  },
+  {
+   "fieldname": "complaints",
+   "fieldtype": "Small Text",
+   "label": "Complaints"
+  },
+  {
+   "fieldname": "suggestions",
+   "fieldtype": "Small Text",
+   "label": "Suggestions"
+  },
+  {
+   "fieldname": "review_date",
+   "fieldtype": "Date",
+   "label": "Review Date"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "name_of_checker",
+   "fieldtype": "Data",
+   "label": "Name of Checker"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-16 16:15:54.925977",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Gadget Register",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
