@@ -29,6 +29,7 @@
    "label": "Last Updated"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "laptop_asset_registry_table",
    "fieldtype": "Table",
    "label": "Laptop Asset Registry Table",
@@ -62,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-16 16:15:54.925977",
+ "modified": "2024-09-17 17:43:05.416054",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Gadget Register",
