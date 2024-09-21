@@ -1,0 +1,688 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-21 16:10:18.396037",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "location_of_work",
+  "machine",
+  "contracter",
+  "employee_name",
+  "section_break_mmrgz",
+  "pcc",
+  "column_break_j9c0d",
+  "total_area_in_m2",
+  "total_area_in_sq_ft",
+  "section_break_wlafa",
+  "rcc",
+  "column_break_l3g3m",
+  "total_area_in_m3",
+  "total_area_in_cu_ft",
+  "section_break_bpcxa",
+  "land_excavations",
+  "column_break_ezi1a",
+  "r1",
+  "q1",
+  "section_break_gxpku",
+  "roofing",
+  "column_break_xtkbc",
+  "r2",
+  "q2",
+  "section_break_enn5j",
+  "gsb_laying",
+  "column_break_cx6rr",
+  "r3",
+  "q3",
+  "section_break_j66za",
+  "att",
+  "column_break_hxowh",
+  "r4",
+  "q4",
+  "section_break_5jx5c",
+  "unloading_of_material_qty",
+  "column_break_wzyzn",
+  "r5",
+  "q5",
+  "section_break_nqw2g",
+  "unloading_of_steel_qty",
+  "column_break_fft6w",
+  "r6",
+  "q6",
+  "section_break_w3sbu",
+  "unloading_of_msand_qty",
+  "column_break_b9nl9",
+  "r7",
+  "q7",
+  "section_break_9y9mq",
+  "unloading_of_metal_qty",
+  "column_break_anxra",
+  "r8",
+  "q8",
+  "section_break_roigs",
+  "unloading_of_gsb_qty",
+  "column_break_pj0wz",
+  "r9",
+  "q9",
+  "section_break_edeco",
+  "concrete_mix",
+  "c_s_a_ratio",
+  "cement_in_qty",
+  "sand",
+  "aggregate",
+  "water_bucket",
+  "total_volume_used",
+  "no_of_workers",
+  "steel_enforcement",
+  "steel_quantity_kg",
+  "whether_steel_work_as_per_approved_drawing",
+  "civil_work_images",
+  "image_1",
+  "image_2",
+  "equipment_check",
+  "mixer_ajax_cleanliness",
+  "mixer_ajax_proper_functioning",
+  "mixer_ajax_calibration",
+  "shovels",
+  "buckets",
+  "vibrator",
+  "mixing_process_time",
+  "quality_control_testing",
+  "conduct_slump_test_to_ensure_workability",
+  "sample_and_test_concrete_cubes_for_compressive_strength",
+  "delivery_and_placement",
+  "proper_placement_and_compaction",
+  "provide_adequate_personal_protective_equipment_ppe_for_workers",
+  "cleanup",
+  "dispose_of_waste_materials_properly",
+  "checked_by",
+  "checker_name",
+  "checker_signature",
+  "approved_by",
+  "pm_signature",
+  "authorised_by",
+  "gm_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PAK/CIVIL/.DD.-.MM.-20.YY./.###"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "location_of_work",
+   "fieldtype": "Data",
+   "label": "Location of work"
+  },
+  {
+   "fieldname": "machine",
+   "fieldtype": "Select",
+   "label": "Machine",
+   "options": "\nAjax\nMixer\nManual"
+  },
+  {
+   "fieldname": "contracter",
+   "fieldtype": "Data",
+   "label": "Contractor"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee name"
+  },
+  {
+   "fieldname": "section_break_mmrgz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pcc",
+   "fieldtype": "Check",
+   "label": "PCC"
+  },
+  {
+   "depends_on": "pcc",
+   "fieldname": "column_break_j9c0d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "pcc",
+   "fieldname": "total_area_in_m2",
+   "fieldtype": "Data",
+   "label": "Total Area in M2"
+  },
+  {
+   "depends_on": "pcc",
+   "fieldname": "total_area_in_sq_ft",
+   "fieldtype": "Data",
+   "label": "Total Area in Sq ft"
+  },
+  {
+   "fieldname": "section_break_wlafa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "rcc",
+   "fieldtype": "Check",
+   "label": "RCC"
+  },
+  {
+   "depends_on": "rcc",
+   "fieldname": "column_break_l3g3m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "rcc",
+   "fieldname": "total_area_in_m3",
+   "fieldtype": "Data",
+   "label": "Total Area in M3"
+  },
+  {
+   "depends_on": "rcc",
+   "fieldname": "total_area_in_cu_ft",
+   "fieldtype": "Data",
+   "label": "Total Area in Cu ft"
+  },
+  {
+   "fieldname": "section_break_bpcxa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "land_excavations",
+   "fieldtype": "Check",
+   "label": "Land Excavations"
+  },
+  {
+   "fieldname": "column_break_ezi1a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "land_excavations",
+   "fieldname": "r1",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "land_excavations",
+   "fieldname": "q1",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_gxpku",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "roofing",
+   "fieldtype": "Check",
+   "label": "Roofing"
+  },
+  {
+   "fieldname": "column_break_xtkbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "roofing",
+   "fieldname": "r2",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "roofing",
+   "fieldname": "q2",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_enn5j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "gsb_laying",
+   "fieldtype": "Check",
+   "label": "GSB laying"
+  },
+  {
+   "fieldname": "column_break_cx6rr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "gsb_laying",
+   "fieldname": "r3",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "gsb_laying",
+   "fieldname": "q3",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_j66za",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "att",
+   "fieldtype": "Check",
+   "label": "ATT"
+  },
+  {
+   "fieldname": "column_break_hxowh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "att",
+   "fieldname": "r4",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "att",
+   "fieldname": "q4",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_5jx5c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_material_qty",
+   "fieldtype": "Check",
+   "label": "Unloading of Material"
+  },
+  {
+   "fieldname": "column_break_wzyzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "unloading_of_material_qty",
+   "fieldname": "r5",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_material_qty",
+   "fieldname": "q5",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_nqw2g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_steel_qty",
+   "fieldtype": "Check",
+   "label": "Unloading of Steel"
+  },
+  {
+   "fieldname": "column_break_fft6w",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "unloading_of_steel_qty",
+   "fieldname": "r6",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_steel_qty",
+   "fieldname": "q6",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_w3sbu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_msand_qty",
+   "fieldtype": "Check",
+   "label": "Unloading of Msand"
+  },
+  {
+   "fieldname": "column_break_b9nl9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "unloading_of_msand_qty",
+   "fieldname": "r7",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_msand_qty",
+   "fieldname": "q7",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_9y9mq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_metal_qty",
+   "fieldtype": "Check",
+   "label": "Unloading of Metal"
+  },
+  {
+   "fieldname": "column_break_anxra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "unloading_of_metal_qty",
+   "fieldname": "r8",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_metal_qty",
+   "fieldname": "q8",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_roigs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_gsb_qty",
+   "fieldtype": "Check",
+   "label": "Unloading of GSB"
+  },
+  {
+   "fieldname": "column_break_pj0wz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "unloading_of_gsb_qty",
+   "fieldname": "r9",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_gsb_qty",
+   "fieldname": "q9",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_edeco",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "concrete_mix",
+   "fieldtype": "Select",
+   "label": "Concrete Mix",
+   "options": "\nM5\nM7.5\nM10\nM15\nM20\nM25\nM30\nM35\nM40"
+  },
+  {
+   "fieldname": "c_s_a_ratio",
+   "fieldtype": "Select",
+   "label": "C S A ratio",
+   "options": "\n1:5:10\n1:4:8\n1:3:6\n1:2:4\n1:1.5:3\n1:1:2\n1:0.75:1.5\n1:0.5:1\n1:0.25:0.5"
+  },
+  {
+   "fieldname": "cement_in_qty",
+   "fieldtype": "Data",
+   "label": "Cement in qty (kg/bucket/bag)"
+  },
+  {
+   "fieldname": "sand",
+   "fieldtype": "Data",
+   "label": "Sand (Cuft/bucket)"
+  },
+  {
+   "fieldname": "aggregate",
+   "fieldtype": "Data",
+   "label": "Aggregate (Cuft /bucket)"
+  },
+  {
+   "fieldname": "water_bucket",
+   "fieldtype": "Data",
+   "label": "Water (bucket)"
+  },
+  {
+   "fieldname": "total_volume_used",
+   "fieldtype": "Data",
+   "label": "Total Volume used"
+  },
+  {
+   "fieldname": "no_of_workers",
+   "fieldtype": "Data",
+   "label": "No. of workers"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "steel_enforcement",
+   "fieldtype": "Table",
+   "label": "Steel Enforcement",
+   "options": "steel enforcement"
+  },
+  {
+   "fieldname": "steel_quantity_kg",
+   "fieldtype": "Int",
+   "label": "Total Steel quantity (kg)"
+  },
+  {
+   "fieldname": "whether_steel_work_as_per_approved_drawing",
+   "fieldtype": "Select",
+   "label": "Whether steel work as per approved drawing",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "civil_work_images",
+   "fieldtype": "Heading",
+   "label": "Civil work Photos:"
+  },
+  {
+   "fieldname": "image_1",
+   "fieldtype": "Attach Image",
+   "label": "Photo 1"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "Photo 2"
+  },
+  {
+   "fieldname": "equipment_check",
+   "fieldtype": "Heading",
+   "label": "Equipment Check:"
+  },
+  {
+   "fieldname": "mixer_ajax_cleanliness",
+   "fieldtype": "Select",
+   "label": "Mixer/ Ajax : Cleanliness",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "mixer_ajax_proper_functioning",
+   "fieldtype": "Select",
+   "label": "Mixer/ Ajax : proper functioning",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "mixer_ajax_calibration",
+   "fieldtype": "Select",
+   "label": "Mixer/ Ajax : calibration",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "shovels",
+   "fieldtype": "Select",
+   "label": "Tools: Shovels-clean and in good condition",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "buckets",
+   "fieldtype": "Select",
+   "label": "Tools: Buckets-clean and in good condition",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "vibrator",
+   "fieldtype": "Select",
+   "label": "Tools: Vibrator-clean and in good condition",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "mixing_process_time",
+   "fieldtype": "Data",
+   "label": "Mixing Process& Time :  consistency of the mix"
+  },
+  {
+   "fieldname": "quality_control_testing",
+   "fieldtype": "Heading",
+   "label": "Quality Control Testing"
+  },
+  {
+   "fieldname": "conduct_slump_test_to_ensure_workability",
+   "fieldtype": "Select",
+   "label": "Conduct slump test to ensure workability",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "sample_and_test_concrete_cubes_for_compressive_strength",
+   "fieldtype": "Select",
+   "label": "Sample and test concrete cubes for compressive strength",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "delivery_and_placement",
+   "fieldtype": "Heading",
+   "label": "Delivery and Placement"
+  },
+  {
+   "fieldname": "proper_placement_and_compaction",
+   "fieldtype": "Select",
+   "label": "proper placement and compaction",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "provide_adequate_personal_protective_equipment_ppe_for_workers",
+   "fieldtype": "Select",
+   "label": "Provide adequate personal protective equipment (PPE) for workers",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "cleanup",
+   "fieldtype": "Heading",
+   "label": "Cleanup"
+  },
+  {
+   "fieldname": "dispose_of_waste_materials_properly",
+   "fieldtype": "Select",
+   "label": "Dispose of waste materials properly",
+   "options": "\nyes\nno"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked by ",
+   "options": "User"
+  },
+  {
+   "fetch_from": "checked_by.full_name",
+   "fieldname": "checker_name",
+   "fieldtype": "Read Only",
+   "label": "Checker Name"
+  },
+  {
+   "fieldname": "checker_signature",
+   "fieldtype": "Signature",
+   "label": "Checker Signature"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "pm_signature",
+   "fieldtype": "Signature",
+   "label": "PM Signature"
+  },
+  {
+   "fieldname": "authorised_by",
+   "fieldtype": "Data",
+   "label": "Authorised by"
+  },
+  {
+   "fieldname": "gm_signature",
+   "fieldtype": "Signature",
+   "label": "GM Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-21 16:10:18.396037",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Civil Checklist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
