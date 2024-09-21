@@ -10,7 +10,6 @@
  "field_order": [
   "series",
   "employee",
-  "employee_name",
   "column_break_column",
   "travel_type",
   "documents_section",
@@ -56,9 +55,7 @@
   "section_break_dgcng",
   "arrangements_of_local_transport_arrival",
   "column_break_gi3ja",
-  "time_arrival",
-  "amended_from",
-  "amended_from"
+  "time_arrival"
  ],
  "fields": [
   {
@@ -69,15 +66,8 @@
   },
   {
    "fieldname": "employee",
-   "fieldtype": "Link",
-   "label": "Employee",
-   "options": "Employee"
-  },
-  {
-   "fetch_from": "employee.employee_name",
-   "fieldname": "employee_name",
    "fieldtype": "Data",
-   "label": "Employee Name"
+   "label": "Employee"
   },
   {
    "fieldname": "column_break_column",
@@ -329,36 +319,16 @@
    "fieldname": "time_arrival",
    "fieldtype": "Time",
    "label": "Time Arrival"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "TRAVEL PACKING CHECKLIST",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "TRAVEL PACKING CHECKLIST",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [
   {
    "link_doctype": "Currency",
    "link_fieldname": "currency_name"
   }
  ],
- "modified": "2024-07-17 17:12:07.406279",
+ "modified": "2024-09-21 17:31:02.434365",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "TRAVEL PACKING CHECKLIST",
