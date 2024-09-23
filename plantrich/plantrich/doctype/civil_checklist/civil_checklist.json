@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2024-09-21 16:10:18.396037",
+ "autoname": "PAK/Civil/.DD.-.MM.-20.YY./.###",
+ "creation": "2024-07-18 12:00:21.529511",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "naming_series",
   "date",
   "location_of_work",
   "machine",
@@ -26,50 +25,50 @@
   "total_area_in_cu_ft",
   "section_break_bpcxa",
   "land_excavations",
-  "column_break_ezi1a",
-  "r1",
-  "q1",
-  "section_break_gxpku",
+  "column_break_dxmcq",
+  "unit",
+  "qty",
+  "section_break_4ahkm",
   "roofing",
-  "column_break_xtkbc",
-  "r2",
+  "column_break_2hcb5",
+  "u2",
   "q2",
-  "section_break_enn5j",
+  "section_break_fbst8",
   "gsb_laying",
-  "column_break_cx6rr",
-  "r3",
+  "column_break_tqsxe",
+  "u3",
   "q3",
-  "section_break_j66za",
+  "section_break_adfww",
   "att",
-  "column_break_hxowh",
-  "r4",
+  "column_break_ga6fz",
+  "u7",
   "q4",
-  "section_break_5jx5c",
-  "unloading_of_material_qty",
-  "column_break_wzyzn",
-  "r5",
+  "section_break_wiho2",
+  "unloading_of_material",
+  "column_break_cdl21",
+  "u9",
   "q5",
-  "section_break_nqw2g",
-  "unloading_of_steel_qty",
-  "column_break_fft6w",
-  "r6",
+  "section_break_le84p",
+  "unloading_of_steel",
+  "column_break_6oslp",
+  "u8",
   "q6",
-  "section_break_w3sbu",
-  "unloading_of_msand_qty",
-  "column_break_b9nl9",
-  "r7",
+  "section_break_hjbmf",
+  "unloading_of_msand",
+  "column_break_jnvrx",
+  "u6",
   "q7",
-  "section_break_9y9mq",
-  "unloading_of_metal_qty",
-  "column_break_anxra",
-  "r8",
+  "section_break_pmovt",
+  "unloading_of_metal",
+  "column_break_megkg",
+  "u5",
   "q8",
-  "section_break_roigs",
-  "unloading_of_gsb_qty",
-  "column_break_pj0wz",
-  "r9",
+  "section_break_fbllj",
+  "unloading_of_gsb",
+  "column_break_tqbdj",
+  "u4",
   "q9",
-  "section_break_edeco",
+  "column_break_qcjkq",
   "concrete_mix",
   "c_s_a_ratio",
   "cement_in_qty",
@@ -110,12 +109,6 @@
  ],
  "fields": [
   {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "PAK/CIVIL/.DD.-.MM.-20.YY./.###"
-  },
-  {
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
@@ -134,7 +127,7 @@
   {
    "fieldname": "contracter",
    "fieldtype": "Data",
-   "label": "Contractor"
+   "label": "Contracter"
   },
   {
    "fieldname": "employee_name",
@@ -206,243 +199,6 @@
    "label": "Land Excavations"
   },
   {
-   "fieldname": "column_break_ezi1a",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "land_excavations",
-   "fieldname": "r1",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "land_excavations",
-   "fieldname": "q1",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_gxpku",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "roofing",
-   "fieldtype": "Check",
-   "label": "Roofing"
-  },
-  {
-   "fieldname": "column_break_xtkbc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "roofing",
-   "fieldname": "r2",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "roofing",
-   "fieldname": "q2",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_enn5j",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "gsb_laying",
-   "fieldtype": "Check",
-   "label": "GSB laying"
-  },
-  {
-   "fieldname": "column_break_cx6rr",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "gsb_laying",
-   "fieldname": "r3",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "gsb_laying",
-   "fieldname": "q3",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_j66za",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "att",
-   "fieldtype": "Check",
-   "label": "ATT"
-  },
-  {
-   "fieldname": "column_break_hxowh",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "att",
-   "fieldname": "r4",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "att",
-   "fieldname": "q4",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_5jx5c",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "unloading_of_material_qty",
-   "fieldtype": "Check",
-   "label": "Unloading of Material"
-  },
-  {
-   "fieldname": "column_break_wzyzn",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "unloading_of_material_qty",
-   "fieldname": "r5",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "unloading_of_material_qty",
-   "fieldname": "q5",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_nqw2g",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "unloading_of_steel_qty",
-   "fieldtype": "Check",
-   "label": "Unloading of Steel"
-  },
-  {
-   "fieldname": "column_break_fft6w",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "unloading_of_steel_qty",
-   "fieldname": "r6",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "unloading_of_steel_qty",
-   "fieldname": "q6",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_w3sbu",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "unloading_of_msand_qty",
-   "fieldtype": "Check",
-   "label": "Unloading of Msand"
-  },
-  {
-   "fieldname": "column_break_b9nl9",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "unloading_of_msand_qty",
-   "fieldname": "r7",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "unloading_of_msand_qty",
-   "fieldname": "q7",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_9y9mq",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "unloading_of_metal_qty",
-   "fieldtype": "Check",
-   "label": "Unloading of Metal"
-  },
-  {
-   "fieldname": "column_break_anxra",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "unloading_of_metal_qty",
-   "fieldname": "r8",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "unloading_of_metal_qty",
-   "fieldname": "q8",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_roigs",
-   "fieldtype": "Section Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "unloading_of_gsb_qty",
-   "fieldtype": "Check",
-   "label": "Unloading of GSB"
-  },
-  {
-   "fieldname": "column_break_pj0wz",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "unloading_of_gsb_qty",
-   "fieldname": "r9",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "UOM"
-  },
-  {
-   "depends_on": "unloading_of_gsb_qty",
-   "fieldname": "q9",
-   "fieldtype": "Float",
-   "label": "Qty"
-  },
-  {
-   "fieldname": "section_break_edeco",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "concrete_mix",
    "fieldtype": "Select",
    "label": "Concrete Mix",
@@ -485,7 +241,6 @@
    "label": "No. of workers"
   },
   {
-   "allow_bulk_edit": 1,
    "fieldname": "steel_enforcement",
    "fieldtype": "Table",
    "label": "Steel Enforcement",
@@ -626,9 +381,11 @@
    "label": "Checker Signature"
   },
   {
+   "default": "Praveen Kumar",
    "fieldname": "approved_by",
    "fieldtype": "Data",
-   "label": "Approved by"
+   "label": "Approved by",
+   "read_only": 1
   },
   {
    "fieldname": "pm_signature",
@@ -636,23 +393,262 @@
    "label": "PM Signature"
   },
   {
+   "default": "Vijayakumar T T",
    "fieldname": "authorised_by",
    "fieldtype": "Data",
-   "label": "Authorised by"
+   "label": "Authorised by",
+   "read_only": 1
   },
   {
    "fieldname": "gm_signature",
    "fieldtype": "Signature",
    "label": "GM Signature"
+  },
+  {
+   "fieldname": "column_break_dxmcq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "land_excavations",
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "land_excavations",
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "section_break_4ahkm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "roofing",
+   "fieldtype": "Check",
+   "label": "Roofing"
+  },
+  {
+   "depends_on": "roofing",
+   "fieldname": "q2",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "gsb_laying",
+   "fieldname": "q3",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "att",
+   "fieldname": "q4",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "unloading_of_material",
+   "fieldname": "q5",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "unloading_of_steel",
+   "fieldname": "q6",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "unloading_of_msand",
+   "fieldname": "q7",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "unloading_of_metal",
+   "fieldname": "q8",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "unloading_of_gsb",
+   "fieldname": "q9",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "depends_on": "roofing",
+   "fieldname": "u2",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "gsb_laying",
+   "fieldname": "u3",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_gsb",
+   "fieldname": "u4",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_metal",
+   "fieldname": "u5",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_msand",
+   "fieldname": "u6",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "att",
+   "fieldname": "u7",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "depends_on": "unloading_of_steel",
+   "fieldname": "u8",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_cdl21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tqsxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ga6fz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6oslp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jnvrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_megkg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tqbdj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qcjkq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "unloading_of_material",
+   "fieldname": "u9",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_2hcb5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "gsb_laying",
+   "fieldtype": "Check",
+   "label": "GSB laying"
+  },
+  {
+   "default": "0",
+   "fieldname": "att",
+   "fieldtype": "Check",
+   "label": "ATT"
+  },
+  {
+   "fieldname": "section_break_adfww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_wiho2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_fbst8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_material",
+   "fieldtype": "Check",
+   "label": "Unloading of Material"
+  },
+  {
+   "fieldname": "section_break_le84p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_steel",
+   "fieldtype": "Check",
+   "label": "Unloading of Steel"
+  },
+  {
+   "fieldname": "section_break_hjbmf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_msand",
+   "fieldtype": "Check",
+   "label": "Unloading of Msand"
+  },
+  {
+   "fieldname": "section_break_pmovt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_metal",
+   "fieldtype": "Check",
+   "label": "Unloading of Metal"
+  },
+  {
+   "fieldname": "section_break_fbllj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "unloading_of_gsb",
+   "fieldtype": "Check",
+   "label": "Unloading of GSB"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-21 16:10:18.396037",
+ "modified": "2024-09-23 15:36:46.364505",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Civil Checklist",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -664,7 +660,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "select": 1,
    "share": 1,
    "write": 1
   },
@@ -676,7 +671,19 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Projects User",
+   "role": "PR-Project",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
    "select": 1,
    "share": 1,
    "write": 1
