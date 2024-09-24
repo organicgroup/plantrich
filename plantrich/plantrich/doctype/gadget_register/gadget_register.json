@@ -1,13 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2024-09-16 16:15:54.925977",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "series",
+  "naming_series",
   "lastupdated",
   "laptop_asset_registry_table",
   "complaints",
@@ -17,12 +18,6 @@
   "name_of_checker"
  ],
  "fields": [
-  {
-   "fieldname": "series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "\nPAM/LAR/24-25/.####\nPAK/LAR/24-25/.####\nPAT/LAR/24-25/.####\nHAS/LAR/24-25/.####\nMAS/LAR/24-25/.####\nHOWFFA/LAR/24-25/.####\nBJY/LAR/24-25/.####\nPTN/LAR/24-25/.####\nPEC/LAR/24-25/.####\nMASS/LAR/24-25/.####"
-  },
   {
    "fieldname": "lastupdated",
    "fieldtype": "Date",
@@ -59,14 +54,22 @@
    "fieldname": "name_of_checker",
    "fieldtype": "Data",
    "label": "Name of Checker"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "\nPAM/LAR/24-25/.####\nPAK/LAR/24-25/.####\nPAT/LAR/24-25/.####\nHAS/LAR/24-25/.####\nMAS/LAR/24-25/.####\nHOWFFA/LAR/24-25/.####\nBJY/LAR/24-25/.####\nPTN/LAR/24-25/.####\nPEC/LAR/24-25/.####\nMASS/LAR/24-25/.####"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-17 17:43:05.416054",
+ "modified": "2024-09-24 15:21:26.653061",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Gadget Register",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
