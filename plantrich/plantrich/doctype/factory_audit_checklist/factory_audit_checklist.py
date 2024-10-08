@@ -3,6 +3,7 @@
 
 import frappe
 from frappe.model.document import Document
+from frappe.utils import cint
 
 class FactoryAuditChecklist(Document):
 	@frappe.whitelist()
@@ -848,3 +849,66 @@ class FactoryAuditChecklist(Document):
 					'questions': i.questions,
 					'idx':idx
 				})
+
+
+
+
+
+
+	@frappe.whitelist()
+	def add_points_to_internal_auditors(factory_audit_checklist):
+		try:
+			# Fetch the Factory Audit Checklist document
+			audit_doc = frappe.get_doc("Factory Audit Checklist", factory_audit_checklist)
+
+			# Check if 'internal_auditor_list' exists as a child table
+			if not hasattr(audit_doc, 'internal_auditor_list'):
+				frappe.throw(_("The Factory Audit Checklist does not have an Internal Auditor List"))
+
+			# Fetch the child table 'Internal Auditor List'
+			auditors = audit_doc.internal_auditor_list
+
+			# Define the number of points to be awarded (default points for audit)
+			points = cint(frappe.db.get_single_value("Energy Points Settings", "default_points_for_audit") or 1)
+
+			# Set to track users who have already been awarded points
+			awarded_users = set()
+			
+			# List to collect logs before inserting them
+			auditor_logs = []
+
+			# Award points to each auditor in the Internal Auditor List
+			for auditor in auditors:
+				if not auditor.employee_id or auditor.employee_id in awarded_users:
+					continue
+
+				# Fetch the employee's user linked to the employee_id
+				employee_user = frappe.db.get_value("Employee", auditor.employee_id, "user_id")
+				
+				# If no user is linked to the employee, skip this auditor
+				if not employee_user:
+					frappe.log_error(_("No user linked to Employee ID {0}").format(auditor.employee_id))
+					continue
+
+				# Create an energy point log for the employee
+				auditor_log = frappe.get_doc({
+					"doctype": "Energy Point Log",
+					"points": points,
+					"user": employee_user,
+					"reason": "Participation as Internal Auditor",
+					"reference_doctype": "Factory Audit Checklist",
+					"reference_name": audit_doc.name
+				})
+				auditor_logs.append(auditor_log)
+				awarded_users.add(auditor.employee_id)
+
+			# Insert all logs at once
+			if auditor_logs:
+				frappe.get_doclist(auditor_logs).insert()
+
+				# Commit the transaction to save logs to the database
+				frappe.db.commit()
+
+		except Exception as e:
+			# Log the error for debugging purposes
+			frappe.log_error(frappe.get_traceback(), _("Failed to add points to internal auditors"))

@@ -12,6 +12,9 @@
   "company",
   "date",
   "machinery_details",
+  "total_diesel_consumed",
+  "total_electricity_consumed",
+  "total_biofuel_consumed",
   "employee_section",
   "employee",
   "participants_section",
@@ -60,11 +63,26 @@
    "fieldname": "participants",
    "fieldtype": "Table",
    "options": "Participants"
+  },
+  {
+   "fieldname": "total_diesel_consumed",
+   "fieldtype": "Float",
+   "label": "Total Diesel Consumed"
+  },
+  {
+   "fieldname": "total_electricity_consumed",
+   "fieldtype": "Float",
+   "label": "Total Electricity Consumed"
+  },
+  {
+   "fieldname": "total_biofuel_consumed",
+   "fieldtype": "Float",
+   "label": "Total Biofuel Consumed"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-24 15:15:36.251490",
+ "modified": "2024-10-08 10:10:02.126062",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Machinery Operation Tracker",
