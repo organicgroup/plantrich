@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:Civil Bill-{vendor_name}-{#####}",
+ "autoname": "format:Civil Bill-{vendor_name}-{####}",
  "creation": "2024-07-17 18:06:14.661757",
  "default_view": "List",
  "doctype": "DocType",
@@ -26,10 +26,13 @@
   "prepared_by_name",
   "signature",
   "checked_by",
+  "checked_by_name",
   "checker_signature",
   "approved_by",
+  "approved_by_name",
   "approver_signature",
   "project_manager",
+  "pm_name",
   "pm_signature",
   "payment_terms",
   "total_work_value",
@@ -70,6 +73,7 @@
    "label": "CIVIL WORK STATEMENT"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "civil_details",
    "fieldtype": "Table",
    "label": "CIVIL BILL DETAILS",
@@ -130,10 +134,10 @@
    "label": "Signature"
   },
   {
-   "default": "BASIL K MATHEWS",
    "fieldname": "checked_by",
-   "fieldtype": "Read Only",
-   "label": "Checked By"
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee"
   },
   {
    "fieldname": "checker_signature",
@@ -141,10 +145,10 @@
    "label": "Checker Signature"
   },
   {
-   "default": "ANGEL M S",
    "fieldname": "approved_by",
-   "fieldtype": "Read Only",
-   "label": "Approved by"
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "Employee"
   },
   {
    "fieldname": "approver_signature",
@@ -152,12 +156,12 @@
    "label": "Approver Signature"
   },
   {
-   "default": "Mohanan K N",
    "fieldname": "project_manager",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Project Manager"
+   "label": "Project Manager",
+   "options": "Employee"
   },
   {
    "fieldname": "pm_signature",
@@ -178,22 +182,41 @@
   {
    "fieldname": "completed_paid_work_value",
    "fieldtype": "Data",
-   "label": "Completed_Paid Work Value"
+   "label": "Completed Paid Work Value"
   },
   {
    "fieldname": "balance_to_be_paid",
    "fieldtype": "Currency",
    "label": "Balance to be paid",
    "read_only": 1
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "checked_by_name",
+   "fieldtype": "Data",
+   "label": "Checked By Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "approved_by.employee_name",
+   "fieldname": "approved_by_name",
+   "fieldtype": "Read Only",
+   "label": "Approved by Name"
+  },
+  {
+   "fetch_from": "project_manager.employee_name",
+   "fieldname": "pm_name",
+   "fieldtype": "Read Only",
+   "label": "PM Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 18:06:14.661757",
+ "modified": "2024-10-18 12:45:29.459935",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Civil Contract Bill Preparation",
- "name_case": "Title Case",
+ "name_case": "UPPER CASE",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

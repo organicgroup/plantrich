@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-18 11:11:35.196264",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "start_date",
+  "end_date",
+  "work_description",
+  "u1",
+  "nos",
+  "lngth",
+  "breadth",
+  "height",
+  "measurement",
+  "quantity",
+  "coefficient",
+  "unit",
+  "rateunit",
+  "amount",
+  "civil_work_photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "work_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Work Description",
+   "max_height": "32px"
+  },
+  {
+   "fieldname": "measurement",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Measurement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "rateunit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Rate/Unit"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Amount"
+  },
+  {
+   "depends_on": "eval:(doc.u1==\"\")||(doc.u1==\"Area\")||(doc.u1==\"Volume\")",
+   "fieldname": "breadth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Breadth"
+  },
+  {
+   "depends_on": "eval:(doc.u1==\"\")||(doc.u1==\"Volume\")",
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Height/Depth"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "civil_work_photo",
+   "fieldtype": "Attach Image",
+   "in_preview": 1,
+   "label": "Civil Work Photo"
+  },
+  {
+   "depends_on": "eval:(doc.u1==\"\")||(doc.u1==\"Area\")||(doc.u1==\"Volume\")||(doc.u1==\"Weight\")||(doc.u1==\"Running Meter\")",
+   "fieldname": "lngth",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Length"
+  },
+  {
+   "depends_on": "eval:(doc.u1==\"\")||(doc.u1==\"Area\")||(doc.u1==\"Volume\")||(doc.u1==\"Weight\")||(doc.u1==\"Running Meter\")",
+   "fieldname": "nos",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "No."
+  },
+  {
+   "fieldname": "coefficient",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Coefficient"
+  },
+  {
+   "fieldname": "u1",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Unit of Measurement",
+   "options": "Area\nVolume\nWeight\nRunning Meter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-19 17:17:35.306385",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Civil Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
