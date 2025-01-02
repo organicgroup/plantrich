@@ -1,0 +1,317 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-31 19:03:24.660052",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "buyer",
+  "column_break_kdsyz",
+  "buyer_flo_id",
+  "section_break_vj5c3",
+  "seller",
+  "column_break_0cgs8",
+  "seller_flo_id",
+  "section_break_fdnkb",
+  "cost_sheet",
+  "section_break_ysyya",
+  "naming_series",
+  "column_break_viawu",
+  "date",
+  "column_break_8wkpz",
+  "product_category",
+  "section_break_9iren",
+  "exchange_rate_notification",
+  "section_break_yegbe",
+  "ft_premium_coffee",
+  "column_break_eguhe",
+  "ftmp_coffee_details",
+  "section_break_7loi4",
+  "coffee_market_price_per_kg",
+  "column_break_lkkn0",
+  "section_break_lgntn",
+  "coffee_market_price_report",
+  "total_usdkg",
+  "total_inr",
+  "coffee_market_price_report_a",
+  "total_usdkg1",
+  "total_inr1",
+  "section_break_rcvdd",
+  "product_description_table_coffee",
+  "section_break_ttykk",
+  "fob_expenses",
+  "section_break_pgmo7",
+  "total_product_amount",
+  "total_fob_expenses",
+  "total",
+  "column_break_fruil",
+  "quantity",
+  "section_break_pvojm",
+  "final_rate_display",
+  "price_per_kg",
+  "ft_premium",
+  "selling_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_kdsyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "buyer_flo_id",
+   "fieldtype": "Data",
+   "label": "Buyer FLO ID"
+  },
+  {
+   "fieldname": "section_break_vj5c3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "label": "Seller",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_0cgs8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fdnkb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cost_sheet",
+   "fieldtype": "Heading",
+   "label": "Cost Sheet"
+  },
+  {
+   "fieldname": "section_break_ysyya",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_viawu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_8wkpz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Select",
+   "label": "Product Category",
+   "options": "\nArabica Coffee\nRobusta Coffee"
+  },
+  {
+   "fieldname": "section_break_9iren",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seller_flo_id",
+   "fieldtype": "Data",
+   "label": "Seller FLO ID"
+  },
+  {
+   "fieldname": "exchange_rate_notification",
+   "fieldtype": "Table",
+   "label": "Exchange Rate Notification",
+   "options": "Exchange Rate Notification"
+  },
+  {
+   "fieldname": "section_break_yegbe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ft_premium_coffee",
+   "fieldtype": "Table",
+   "label": "FT Premium Coffee",
+   "options": "FT Premium Coffee"
+  },
+  {
+   "fieldname": "column_break_eguhe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7loi4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "coffee_market_price_per_kg",
+   "fieldtype": "Table",
+   "label": "Coffee Market Price per KG",
+   "options": "Coffee Market Price per KG"
+  },
+  {
+   "fieldname": "column_break_lkkn0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Contract Number",
+   "options": "\nPAT/POC/FT.###./.YYYY.\nPATL/POC/FT.###./.YYYY.\nMAS/POC/FT.###./.YYYY.\nMASS/POC/FT.###./.YYYY.\nHAS/POC/FT.###./.YYYY.\nHOWFFA/POC/FT.###./.YYYY.\nPO/POC/FT.###./.YYYY.\nFONL/POC/FT.###./.YYYY.\nFTGS/POC/FT.###./.YYYY.\nBS/POC/FT.###./.YYYY.\nBIO/POC/FT.###./.YYYY.\nPEC/POC/FT.###./.YYYY.\nBARC/POC/FT.###./.YYYY.\nKNT/POC/FT.###./.YYYY."
+  },
+  {
+   "fieldname": "section_break_lgntn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Robusta Coffee\"",
+   "fieldname": "coffee_market_price_report",
+   "fieldtype": "Table",
+   "label": "Coffee Market Price Report",
+   "options": "Coffee Market Price Report"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Robusta Coffee\"",
+   "fieldname": "total_usdkg",
+   "fieldtype": "Float",
+   "label": "Total USDKG"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Robusta Coffee\"",
+   "fieldname": "total_inr",
+   "fieldtype": "Currency",
+   "label": "Total INR"
+  },
+  {
+   "fieldname": "section_break_rcvdd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_description_table_coffee",
+   "fieldtype": "Table",
+   "label": "Product Description Table Coffee",
+   "options": "Product Description Table Coffee"
+  },
+  {
+   "fieldname": "section_break_ttykk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fob_expenses",
+   "fieldtype": "Table",
+   "label": "FOB Expenses",
+   "options": "FOB Expenses"
+  },
+  {
+   "fieldname": "section_break_pgmo7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_product_amount",
+   "fieldtype": "Float",
+   "label": "Total Product Amount"
+  },
+  {
+   "fieldname": "total_fob_expenses",
+   "fieldtype": "Float",
+   "label": "Total FOB Expenses"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "fieldname": "section_break_pvojm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_rate_display",
+   "fieldtype": "Heading",
+   "label": "Final Rate Display"
+  },
+  {
+   "fieldname": "price_per_kg",
+   "fieldtype": "Float",
+   "label": "Price Per KG",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "ft_premium",
+   "fieldtype": "Float",
+   "label": "FT Premium"
+  },
+  {
+   "fieldname": "selling_rate",
+   "fieldtype": "Currency",
+   "label": "Selling Rate"
+  },
+  {
+   "fieldname": "column_break_fruil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Arabica Coffee\"",
+   "fieldname": "coffee_market_price_report_a",
+   "fieldtype": "Table",
+   "label": "Coffee Market Price Report A",
+   "options": "Coffee Market Price Report A"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Arabica Coffee\"",
+   "fieldname": "total_usdkg1",
+   "fieldtype": "Float",
+   "label": "Total USDKG"
+  },
+  {
+   "depends_on": "eval:doc.product_category==\"Arabica Coffee\"",
+   "fieldname": "total_inr1",
+   "fieldtype": "Currency",
+   "label": "Total INR"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "ftmp_coffee_details",
+   "fieldtype": "Table",
+   "label": "FTMP Coffee",
+   "options": "FTMP Coffee Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-02 16:18:45.602667",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "COST SHEET CALCULATIONS",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
