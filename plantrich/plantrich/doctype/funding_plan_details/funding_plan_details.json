@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-28 15:46:20.643556",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "purchasesales",
+  "supplier",
+  "customer",
+  "description",
+  "item",
+  "quantity_kg",
+  "amountkg",
+  "receipt",
+  "payment",
+  "due_date",
+  "opening_balance",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "purchasesales",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Purchase/Sales",
+   "options": "\nPurchase\nSales"
+  },
+  {
+   "depends_on": "eval: doc.purchasesales == 'Purchase'",
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval: doc.purchasesales == 'Sales'",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "quantity_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Quantity KG"
+  },
+  {
+   "fieldname": "amountkg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Amount/KG"
+  },
+  {
+   "depends_on": "eval: doc.purchasesales == 'Sales'",
+   "fieldname": "receipt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Receipt"
+  },
+  {
+   "depends_on": "eval: doc.purchasesales == 'Purchase'",
+   "fieldname": "payment",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Payment"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "opening_balance",
+   "fieldtype": "Float",
+   "label": "Opening Balance"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Balance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-30 14:53:58.203699",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Funding Plan Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
