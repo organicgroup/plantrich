@@ -17,6 +17,7 @@
   "receipt",
   "payment",
   "due_date",
+  "realised",
   "opening_balance",
   "balance"
  ],
@@ -34,10 +35,10 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Purchase/Sales",
-   "options": "\nPurchase\nSales"
+   "options": "\nPurchase\nSales\nLoan\nExpenses"
   },
   {
-   "depends_on": "eval: doc.purchasesales == 'Purchase'",
+   "depends_on": "eval: doc.purchasesales == 'Purchase' || doc.purchasesales == 'Expenses'\n",
    "fieldname": "supplier",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -46,7 +47,7 @@
    "options": "Supplier"
   },
   {
-   "depends_on": "eval: doc.purchasesales == 'Sales'",
+   "depends_on": "eval: doc.purchasesales == 'Sales' || doc.purchasesales == 'Loan'\n",
    "fieldname": "customer",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -84,7 +85,7 @@
    "label": "Amount/KG"
   },
   {
-   "depends_on": "eval: doc.purchasesales == 'Sales'",
+   "depends_on": "eval: doc.purchasesales == 'Sales' || doc.purchasesales == 'Loan'\n",
    "fieldname": "receipt",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -92,7 +93,7 @@
    "label": "Receipt"
   },
   {
-   "depends_on": "eval: doc.purchasesales == 'Purchase'",
+   "depends_on": "eval: doc.purchasesales == 'Purchase' || doc.purchasesales == 'Expenses'\n",
    "fieldname": "payment",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -117,12 +118,18 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Balance"
+  },
+  {
+   "default": "0",
+   "fieldname": "realised",
+   "fieldtype": "Check",
+   "label": "Realised"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-30 14:53:58.203699",
+ "modified": "2025-02-03 14:53:00.846842",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Funding Plan Details",
