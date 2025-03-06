@@ -303,7 +303,7 @@
   },
   {
    "fieldname": "contract_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Supplier Contract No"
   },
   {
@@ -321,7 +321,7 @@
   },
   {
    "fieldname": "supplier_invoice_number",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Supplier invoice Number "
   },
   {
@@ -960,7 +960,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 13:44:48.100556",
+ "modified": "2025-03-06 18:32:15.277561",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Export Traces",
