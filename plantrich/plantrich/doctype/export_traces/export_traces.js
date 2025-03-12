@@ -120,3 +120,23 @@ function calculate_total_amount(frm) {
     frm.set_value('total_amount', total);
 }
 
+
+frappe.ui.form.on('Export Traces', {
+    total_amount: function(frm) {
+        calculate_total_amount_inr(frm);
+    },
+    usd_value: function(frm) {
+        calculate_total_amount_inr(frm);
+    },
+    currency: function(frm) {
+        calculate_total_amount_inr(frm);
+    }
+});
+
+function calculate_total_amount_inr(frm) {
+    if (frm.doc.currency === 'USD') {
+        frm.set_value('total_amount_inr', frm.doc.total_amount * frm.doc.usd_value);
+    } else {
+        frm.set_value('total_amount_inr', 0); // Reset if not USD
+    }
+}
