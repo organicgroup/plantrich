@@ -117,6 +117,7 @@
   "coi_buyer_approved_date",
   "column_break_haqvt",
   "coi_date",
+  "coi_status",
   "section_break_vxjjg",
   "scan_copy_of_original_documents",
   "section_break_nggq1",
@@ -160,6 +161,7 @@
   "cb_sampling_date",
   "section_break_q4bih",
   "shipping_bill_no",
+  "delivery_status",
   "column_break_3mids",
   "shipping_bill_date",
   "section_break_wwlpo",
@@ -778,7 +780,7 @@
    "fieldname": "fund_status",
    "fieldtype": "Select",
    "label": "Fund Status",
-   "options": "\nReceived\nNot Received\nPending"
+   "options": "\nReceived\nNot Received\nPending\nDocuments Send\nSWIFT Received"
   },
   {
    "fieldname": "column_break_ql8dv",
@@ -1001,11 +1003,23 @@
    "fieldname": "total_amount_inr",
    "fieldtype": "Float",
    "label": "Total Amount (INR)"
+  },
+  {
+   "fieldname": "coi_status",
+   "fieldtype": "Select",
+   "label": "COI Status",
+   "options": "\nBuyer approved\nCOI Issued\nPending from CB"
+  },
+  {
+   "fieldname": "delivery_status",
+   "fieldtype": "Select",
+   "label": "Delivery Status",
+   "options": "\nShip on Board\nEx Factory\nTransit\nArrived\nCancelled"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-12 11:57:55.497582",
+ "modified": "2025-03-13 14:44:24.225944",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Export Traces",
