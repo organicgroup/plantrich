@@ -22,7 +22,7 @@
   },
   {
    "fieldname": "inward_qty",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "label": "INWARD QTY in MT"
   },
@@ -50,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-17 17:46:58.261509",
+ "modified": "2025-03-19 16:42:49.063633",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "BMR Details",
