@@ -100,6 +100,21 @@
   "q44",
   "workload_distribution_section",
   "q45",
+  "supplier_tab",
+  "certification_details_section",
+  "q50",
+  "founders_details_section",
+  "q51",
+  "employee_details_section",
+  "q52",
+  "quality_policies_section",
+  "q53",
+  "worker_social",
+  "q54",
+  "documentation_system_section",
+  "q55",
+  "insurance_details_section",
+  "q56",
   "feedback_tab",
   "feedback_collection_system_section",
   "q46",
@@ -656,11 +671,86 @@
    "fieldname": "q48",
    "fieldtype": "Table",
    "options": "Worker Satisfaction"
+  },
+  {
+   "fieldname": "supplier_tab",
+   "fieldtype": "Tab Break",
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "certification_details_section",
+   "fieldtype": "Section Break",
+   "label": "Certification Details"
+  },
+  {
+   "fieldname": "q50",
+   "fieldtype": "Table",
+   "options": "Certifications"
+  },
+  {
+   "fieldname": "founders_details_section",
+   "fieldtype": "Section Break",
+   "label": "Founders Details"
+  },
+  {
+   "fieldname": "q51",
+   "fieldtype": "Table",
+   "options": "Founders Details"
+  },
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "q52",
+   "fieldtype": "Table",
+   "options": "Employee Details"
+  },
+  {
+   "fieldname": "quality_policies_section",
+   "fieldtype": "Section Break",
+   "label": "Quality Policies"
+  },
+  {
+   "fieldname": "q53",
+   "fieldtype": "Table",
+   "options": "Quality Policies"
+  },
+  {
+   "fieldname": "worker_social",
+   "fieldtype": "Section Break",
+   "label": "Worker Social Security & Safety"
+  },
+  {
+   "fieldname": "q54",
+   "fieldtype": "Table",
+   "options": "Worker Social"
+  },
+  {
+   "fieldname": "documentation_system_section",
+   "fieldtype": "Section Break",
+   "label": "Documentation System"
+  },
+  {
+   "fieldname": "q55",
+   "fieldtype": "Table",
+   "options": "Documentation System"
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "q56",
+   "fieldtype": "Table",
+   "options": "Insurance Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-18 16:01:13.522728",
+ "modified": "2025-03-20 15:51:48.557226",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Audit Questions",

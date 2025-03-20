@@ -105,7 +105,21 @@ frappe.ui.form.on('Factory Audit Checklist', {
 		refresh_field("q47");
 		cur_frm.get_field("q48").grid.cannot_add_rows = true;
 		refresh_field("q48");
-		
+
+		cur_frm.get_field("q50").grid.cannot_add_rows = true;
+		refresh_field("q50");
+		cur_frm.get_field("q51").grid.cannot_add_rows = true;
+		refresh_field("q51");
+		cur_frm.get_field("q52").grid.cannot_add_rows = true;
+		refresh_field("q52");
+		cur_frm.get_field("q53").grid.cannot_add_rows = true;
+		refresh_field("q53");
+		cur_frm.get_field("q54").grid.cannot_add_rows = true;
+		refresh_field("q54");
+		cur_frm.get_field("q55").grid.cannot_add_rows = true;
+		refresh_field("q55");
+		cur_frm.get_field("q56").grid.cannot_add_rows = true;
+		refresh_field("q56");
 
 		
 

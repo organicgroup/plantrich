@@ -850,8 +850,129 @@ class FactoryAuditChecklist(Document):
 					'idx':idx
 				})
 
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		aaa = frappe.db.sql("""
+		SELECT certifications.*, audit_questions.*
+		FROM `tabCertifications` certifications
+		JOIN `tabAudit Questions` audit_questions
+		ON certifications.parent = audit_questions.name
+		ORDER BY certifications.idx
+		""", as_dict=1)
+		
+		if aaa:
+			for idx,i in enumerate(aaa, start=1):
+				self.append("q50", {
+					'questions': i.questions,
+					'idx':idx
+				})
+
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		bbb = frappe.db.sql("""
+		SELECT founders_details.*, audit_questions.*
+		FROM `tabFounders Details` founders_details
+		JOIN `tabAudit Questions` audit_questions
+		ON founders_details.parent = audit_questions.name
+		ORDER BY founders_details.idx
+		""", as_dict=1)
+		
+		if bbb:
+			for idx,i in enumerate(bbb, start=1):
+				self.append("q51", {
+					'questions': i.questions,
+					'idx':idx
+				})
 
 
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		ccc = frappe.db.sql("""
+		SELECT employee_details.*, audit_questions.*
+		FROM `tabEmployee Details` employee_details
+		JOIN `tabAudit Questions` audit_questions
+		ON employee_details.parent = audit_questions.name
+		ORDER BY employee_details.idx
+		""", as_dict=1)
+		
+		if ccc:
+			for idx,i in enumerate(ccc, start=1):
+				self.append("q52", {
+					'questions': i.questions,
+					'idx':idx
+				})
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		ddd = frappe.db.sql("""
+		SELECT quality_policies.*, audit_questions.*
+		FROM `tabQuality Policies` quality_policies
+		JOIN `tabAudit Questions` audit_questions
+		ON quality_policies.parent = audit_questions.name
+		ORDER BY quality_policies.idx
+		""", as_dict=1)
+		
+		if ddd:
+			for idx,i in enumerate(ddd, start=1):
+				self.append("q53", {
+					'questions': i.questions,
+					'idx':idx
+				})
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		eee = frappe.db.sql("""
+		SELECT worker_social.*, audit_questions.*
+		FROM `tabWorker Social` worker_social
+		JOIN `tabAudit Questions` audit_questions
+		ON worker_social.parent = audit_questions.name
+		ORDER BY worker_social.idx
+		""", as_dict=1)
+		
+		if eee:
+			for idx,i in enumerate(eee, start=1):
+				self.append("q54", {
+					'questions': i.questions,
+					'idx':idx
+				})
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		fff = frappe.db.sql("""
+		SELECT documentation_system.*, audit_questions.*
+		FROM `tabDocumentation System` documentation_system
+		JOIN `tabAudit Questions` audit_questions
+		ON documentation_system.parent = audit_questions.name
+		ORDER BY documentation_system.idx
+		""", as_dict=1)
+		
+		if fff:
+			for idx,i in enumerate(fff, start=1):
+				self.append("q55", {
+					'questions': i.questions,
+					'idx':idx
+				})	
+
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		ggg = frappe.db.sql("""
+		SELECT insurance_details.*, audit_questions.*
+		FROM `tabInsurance Details` insurance_details
+		JOIN `tabAudit Questions` audit_questions
+		ON insurance_details.parent = audit_questions.name
+		ORDER BY insurance_details.idx
+		""", as_dict=1)
+		
+		if ggg:
+			for idx,i in enumerate(ggg, start=1):
+				self.append("q56", {
+					'questions': i.questions,
+					'idx':idx
+				})	
 
 
 
