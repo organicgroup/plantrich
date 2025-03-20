@@ -1,21 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:BMR-{fg_lot_number}",
+ "autoname": "naming_series:",
  "creation": "2024-07-17 17:45:51.362637",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "batch_manufacturing_report",
   "processing_centre",
   "name_of_commodity",
+  "product_name",
   "fg_lot_number",
   "inward_vehicle",
   "bmr_details",
   "processing_details",
   "despatched_qty",
+  "fg_product_code",
+  "finished_goods_name",
   "despatched_date",
   "despatched_vehicle",
   "balance_qty",
@@ -40,7 +44,8 @@
    "fieldname": "name_of_commodity",
    "fieldtype": "Link",
    "label": "Name of Commodity",
-   "options": "Item"
+   "options": "Item",
+   "print_hide": 1
   },
   {
    "fieldname": "fg_lot_number",
@@ -101,15 +106,41 @@
    "fieldtype": "Text",
    "label": "Remarks",
    "max_height": "64px"
+  },
+  {
+   "fetch_from": "name_of_commodity.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "fg_product_code",
+   "fieldtype": "Link",
+   "label": "FG Product Code",
+   "options": "Item",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "fg_product_code.item_name",
+   "fieldname": "finished_goods_name",
+   "fieldtype": "Data",
+   "label": "Finished Goods Name"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nBS/BMR/24-25/.####.\nPAM/BMR/24-25/.####.\nPAK/BMR/24-25/.####.\nMASS/BMR/IDN/FT/24-25/.####.\nMASS/BMR/IDN/O/24-25/.####.",
+   "print_hide": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 17:45:51.362637",
+ "modified": "2025-03-20 11:07:35.531543",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "BMR REPORT",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

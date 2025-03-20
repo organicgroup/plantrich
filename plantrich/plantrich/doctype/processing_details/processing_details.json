@@ -10,15 +10,15 @@
   "processed_from",
   "processed_to",
   "pulping_date",
-  "hulling_date",
   "drying_date",
-  "grading_qty__if_needed",
+  "hulling_date",
   "loss",
-  "drying_qty___if_needed",
+  "roasting_loss",
+  "grinding_loss",
+  "sterilization_loss",
+  "extraction_loss",
   "drying_loss",
-  "powdering_qty",
   "powdering_loss",
-  "other_process",
   "other_process_loss",
   "total_loss",
   "fg_qty"
@@ -27,47 +27,35 @@
   {
    "fieldname": "processed_from",
    "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Processed From"
   },
   {
    "fieldname": "processed_to",
    "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Processed To"
-  },
-  {
-   "fieldname": "grading_qty__if_needed",
-   "fieldtype": "Data",
-   "label": "Grading Qty  (if needed)"
   },
   {
    "fieldname": "loss",
    "fieldtype": "Data",
-   "label": "Loss"
-  },
-  {
-   "fieldname": "drying_qty___if_needed",
-   "fieldtype": "Data",
-   "label": "Drying Qty   (if needed)"
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Grading Loss"
   },
   {
    "fieldname": "drying_loss",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Drying Loss"
-  },
-  {
-   "fieldname": "powdering_qty",
-   "fieldtype": "Data",
-   "label": "Powdering Qty"
   },
   {
    "fieldname": "powdering_loss",
    "fieldtype": "Data",
    "label": "Powdering Loss"
-  },
-  {
-   "fieldname": "other_process",
-   "fieldtype": "Data",
-   "label": "Other Process"
   },
   {
    "fieldname": "other_process_loss",
@@ -86,24 +74,58 @@
   },
   {
    "fieldname": "pulping_date",
-   "fieldtype": "Datetime",
-   "label": "Pulping Date"
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Washing Date"
   },
   {
    "fieldname": "hulling_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Hulling Date"
   },
   {
    "fieldname": "drying_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Drying Date"
+  },
+  {
+   "fieldname": "roasting_loss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Roasting Loss"
+  },
+  {
+   "fieldname": "grinding_loss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Grinding Loss"
+  },
+  {
+   "fieldname": "sterilization_loss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sterilization Loss"
+  },
+  {
+   "fieldname": "extraction_loss",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Extraction Loss"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-19 16:59:15.183456",
+ "modified": "2025-03-20 10:48:22.751319",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Processing details",
