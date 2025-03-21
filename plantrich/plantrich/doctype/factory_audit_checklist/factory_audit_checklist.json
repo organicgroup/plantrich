@@ -122,6 +122,14 @@
   "q55",
   "insurance_details_section",
   "q56",
+  "factory_facility_audit_section",
+  "q57",
+  "farm_facility_audit_section",
+  "q58",
+  "machinery_details_section",
+  "q59",
+  "maintenance_system_section",
+  "q60",
   "feedback_tab",
   "feedback_collection_system_section",
   "q46",
@@ -813,11 +821,51 @@
    "fieldname": "q56",
    "fieldtype": "Table",
    "options": "Insurance Details"
+  },
+  {
+   "fieldname": "factory_facility_audit_section",
+   "fieldtype": "Section Break",
+   "label": "Factory Facility Audit"
+  },
+  {
+   "fieldname": "q57",
+   "fieldtype": "Table",
+   "options": "Factory Facility"
+  },
+  {
+   "fieldname": "farm_facility_audit_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Facility Audit"
+  },
+  {
+   "fieldname": "q58",
+   "fieldtype": "Table",
+   "options": "Farm Facility"
+  },
+  {
+   "fieldname": "machinery_details_section",
+   "fieldtype": "Section Break",
+   "label": "Machinery Details"
+  },
+  {
+   "fieldname": "q59",
+   "fieldtype": "Table",
+   "options": "Supmachine"
+  },
+  {
+   "fieldname": "maintenance_system_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance System"
+  },
+  {
+   "fieldname": "q60",
+   "fieldtype": "Table",
+   "options": "Supmaintenance"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-20 15:51:01.237055",
+ "modified": "2025-03-21 10:55:22.260497",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Factory Audit Checklist",

@@ -120,6 +120,15 @@ frappe.ui.form.on('Factory Audit Checklist', {
 		refresh_field("q55");
 		cur_frm.get_field("q56").grid.cannot_add_rows = true;
 		refresh_field("q56");
+		cur_frm.get_field("q57").grid.cannot_add_rows = true;
+		refresh_field("q57");
+		cur_frm.get_field("q58").grid.cannot_add_rows = true;
+		refresh_field("q58");
+		cur_frm.get_field("q59").grid.cannot_add_rows = true;
+		refresh_field("q59");
+		cur_frm.get_field("q60").grid.cannot_add_rows = true;
+		refresh_field("q60");
+
 
 		
 

@@ -974,6 +974,76 @@ class FactoryAuditChecklist(Document):
 					'idx':idx
 				})	
 
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		hhh = frappe.db.sql("""
+		SELECT factory_facility.*, audit_questions.*
+		FROM `tabFactory Facility` factory_facility
+		JOIN `tabAudit Questions` audit_questions
+		ON factory_facility.parent = audit_questions.name
+		ORDER BY factory_facility.idx
+		""", as_dict=1)
+		
+		if hhh:
+			for idx,i in enumerate(hhh, start=1):
+				self.append("q57", {
+					'questions': i.questions,
+					'idx':idx
+				})
+
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		iii = frappe.db.sql("""
+		SELECT farm_facility.*, audit_questions.*
+		FROM `tabFarm Facility` farm_facility
+		JOIN `tabAudit Questions` audit_questions
+		ON farm_facility.parent = audit_questions.name
+		ORDER BY farm_facility.idx
+		""", as_dict=1)
+		
+		if iii:
+			for idx,i in enumerate(iii, start=1):
+				self.append("q58", {
+					'questions': i.questions,
+					'idx':idx
+				})
+
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		jjj = frappe.db.sql("""
+		SELECT supmachine.*, audit_questions.*
+		FROM `tabSupmachine` supmachine
+		JOIN `tabAudit Questions` audit_questions
+		ON supmachine.parent = audit_questions.name
+		ORDER BY supmachine.idx
+		""", as_dict=1)
+		
+		if jjj:
+			for idx,i in enumerate(jjj, start=1):
+				self.append("q59", {
+					'questions': i.questions,
+					'idx':idx
+				})	
+# /////////////////////////////////////////////////////////////////////////////////////////////				
+
+		# zz = frappe.db.sql("""select * from `tabWorker Satisfaction` order by idx """,as_dict=1)
+		kkk = frappe.db.sql("""
+		SELECT supmaintenance.*, audit_questions.*
+		FROM `tabSupmaintenance` supmaintenance
+		JOIN `tabAudit Questions` audit_questions
+		ON supmaintenance.parent = audit_questions.name
+		ORDER BY supmaintenance.idx
+		""", as_dict=1)
+		
+		if kkk:
+			for idx,i in enumerate(kkk, start=1):
+				self.append("q60", {
+					'questions': i.questions,
+					'idx':idx
+				})							
 
 
 	@frappe.whitelist()

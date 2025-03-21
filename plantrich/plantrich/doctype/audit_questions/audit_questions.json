@@ -115,6 +115,14 @@
   "q55",
   "insurance_details_section",
   "q56",
+  "factory_facility_audit_section",
+  "q57",
+  "farm_facility_audit_section",
+  "q58",
+  "machinery_details_section",
+  "q59",
+  "supmaintenancesystem",
+  "q60",
   "feedback_tab",
   "feedback_collection_system_section",
   "q46",
@@ -683,6 +691,7 @@
    "label": "Certification Details"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q50",
    "fieldtype": "Table",
    "options": "Certifications"
@@ -693,6 +702,7 @@
    "label": "Founders Details"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q51",
    "fieldtype": "Table",
    "options": "Founders Details"
@@ -703,6 +713,7 @@
    "label": "Employee Details"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q52",
    "fieldtype": "Table",
    "options": "Employee Details"
@@ -713,6 +724,7 @@
    "label": "Quality Policies"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q53",
    "fieldtype": "Table",
    "options": "Quality Policies"
@@ -723,6 +735,7 @@
    "label": "Worker Social Security & Safety"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q54",
    "fieldtype": "Table",
    "options": "Worker Social"
@@ -733,6 +746,7 @@
    "label": "Documentation System"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q55",
    "fieldtype": "Table",
    "options": "Documentation System"
@@ -743,14 +757,59 @@
    "label": "Insurance Details"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "q56",
    "fieldtype": "Table",
    "options": "Insurance Details"
+  },
+  {
+   "fieldname": "factory_facility_audit_section",
+   "fieldtype": "Section Break",
+   "label": "Factory Facility Audit"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q57",
+   "fieldtype": "Table",
+   "options": "Factory Facility"
+  },
+  {
+   "fieldname": "farm_facility_audit_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Facility Audit"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q58",
+   "fieldtype": "Table",
+   "options": "Farm Facility"
+  },
+  {
+   "fieldname": "machinery_details_section",
+   "fieldtype": "Section Break",
+   "label": "Machinery Details"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q59",
+   "fieldtype": "Table",
+   "options": "Supmachine"
+  },
+  {
+   "fieldname": "supmaintenancesystem",
+   "fieldtype": "Section Break",
+   "label": "Maintenance System"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "q60",
+   "fieldtype": "Table",
+   "options": "Supmaintenance"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-20 15:51:48.557226",
+ "modified": "2025-03-21 10:58:23.522125",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Audit Questions",
