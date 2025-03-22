@@ -7,11 +7,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "processed_qty_from_inward_tc",
   "processed_from",
   "processed_to",
   "pulping_date",
   "drying_date",
   "hulling_date",
+  "hulling_loss",
   "loss",
   "roasting_loss",
   "grinding_loss",
@@ -40,36 +42,36 @@
   },
   {
    "fieldname": "loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Grading Loss"
   },
   {
    "fieldname": "drying_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Drying Loss"
   },
   {
    "fieldname": "powdering_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Powdering Loss"
   },
   {
    "fieldname": "other_process_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Other Process Loss"
   },
   {
    "fieldname": "total_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "Total Loss"
   },
   {
    "fieldname": "fg_qty",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "label": "FG QTY"
   },
   {
@@ -95,37 +97,51 @@
   },
   {
    "fieldname": "roasting_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Roasting Loss"
   },
   {
    "fieldname": "grinding_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Grinding Loss"
   },
   {
    "fieldname": "sterilization_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Sterilization Loss"
   },
   {
    "fieldname": "extraction_loss",
-   "fieldtype": "Data",
+   "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Extraction Loss"
+  },
+  {
+   "fieldname": "processed_qty_from_inward_tc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Processed Qty From Inward TC"
+  },
+  {
+   "fieldname": "hulling_loss",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Hulling Loss"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-20 10:48:22.751319",
+ "modified": "2025-03-22 16:47:08.869292",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Processing details",

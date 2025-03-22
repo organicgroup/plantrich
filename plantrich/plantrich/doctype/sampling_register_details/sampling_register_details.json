@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-22 09:57:09.626909",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_type",
+  "product",
+  "product_name",
+  "certifications",
+  "lotbatch_no",
+  "sampling_qty",
+  "sampling_date",
+  "sending_date",
+  "sent_to",
+  "courier_name",
+  "delivered_date",
+  "status",
+  "remarksupdation"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sample Type",
+   "options": "\nCoffee\nSpices"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Certifications",
+   "options": "\nOrg\nFT\nFTO\nRA\nEUDR\nGeneral"
+  },
+  {
+   "fieldname": "lotbatch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Lot/Batch No."
+  },
+  {
+   "fieldname": "sampling_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sampling Qty"
+  },
+  {
+   "fieldname": "sampling_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sampling Date"
+  },
+  {
+   "fieldname": "sending_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sending Date"
+  },
+  {
+   "fieldname": "sent_to",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Sent To"
+  },
+  {
+   "fieldname": "courier_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Courier Name & Tracking No."
+  },
+  {
+   "fieldname": "delivered_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Delivered Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Status",
+   "options": "\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "remarksupdation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Remarks/Updation"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Product ",
+   "options": "Item",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Product Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-22 10:11:11.773955",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Sampling Register Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
