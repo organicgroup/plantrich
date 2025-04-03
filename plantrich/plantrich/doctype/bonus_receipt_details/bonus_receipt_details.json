@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-03 13:11:51.726208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_receipt_no",
+  "purchase_date",
+  "product_id",
+  "product_name",
+  "unit",
+  "total_purchase_qty",
+  "bonus_amout_per_kgnos",
+  "bonus_amount_inr",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "purchase_receipt_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Purchase Receipt No.",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fetch_from": "purchase_receipt_no.posting_date",
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Purchase Date"
+  },
+  {
+   "fetch_from": "purchase_receipt_no.ignore_pricing_rule",
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Product ID",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "product_id.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fetch_from": "purchase_receipt_no.total_qty",
+   "fieldname": "total_purchase_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Total Purchase Qty"
+  },
+  {
+   "fieldname": "bonus_amout_per_kgnos",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Bonus Amout Per Kg/Nos"
+  },
+  {
+   "fieldname": "bonus_amount_inr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Bonus Amount (INR)"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-03 14:01:11.085194",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Bonus Receipt Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

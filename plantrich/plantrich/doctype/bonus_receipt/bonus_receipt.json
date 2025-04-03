@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-03 13:38:50.373641",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "sub_group",
+  "flo_id",
+  "section_break_3orm",
+  "bonus_receipt_details",
+  "total_amount",
+  "farmer_id",
+  "farmer_name",
+  "signature",
+  "date1"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nBR-HAS./FT/.FY./.####."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "sub_group",
+   "fieldtype": "Link",
+   "label": "Sub Group",
+   "options": "Supplier Group"
+  },
+  {
+   "fieldname": "flo_id",
+   "fieldtype": "Data",
+   "label": "FLO ID"
+  },
+  {
+   "fieldname": "bonus_receipt_details",
+   "fieldtype": "Table",
+   "label": "Bonus Receipt Details",
+   "options": "Bonus Receipt Details"
+  },
+  {
+   "fieldname": "section_break_3orm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "farmer_id",
+   "fieldtype": "Link",
+   "label": "Farmer ID",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "farmer_id.supplier_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-03 13:52:21.532530",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Bonus Receipt",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
