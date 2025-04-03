@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "purchase_receipt_no",
+  "invoice_no",
   "purchase_date",
   "product_id",
   "product_name",
@@ -86,12 +87,20 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Remarks"
+  },
+  {
+   "fetch_from": "purchase_receipt_no.bill_no",
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Invoice No."
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-03 14:01:11.085194",
+ "modified": "2025-04-03 16:32:40.042130",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Bonus Receipt Details",
