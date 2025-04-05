@@ -16,6 +16,7 @@
   "farmer_id",
   "farmer_name",
   "signature",
+  "submitted_by",
   "date1"
  ],
  "fields": [
@@ -77,11 +78,17 @@
    "fieldname": "date1",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-03 13:52:21.532530",
+ "modified": "2025-04-05 12:24:31.248938",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Bonus Receipt",
