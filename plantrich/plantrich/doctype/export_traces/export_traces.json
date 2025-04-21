@@ -11,6 +11,7 @@
   "naming_series",
   "column_break_rh5ja",
   "md_email_id",
+  "created_by",
   "section_break_bguux",
   "amended_from",
   "company",
@@ -26,6 +27,7 @@
   "section_break_minnd",
   "destination_portcountry",
   "shipping_mark",
+  "shipping_instructions",
   "column_break_qrdma",
   "purchase_contract_number",
   "packing_instruction",
@@ -35,10 +37,70 @@
   "batch_creation_date",
   "section_break_9vrx8",
   "shipment_date",
+  "ico_date",
+  "pss_date",
+  "bag_marking_design_approved_date",
   "column_break_6zttc",
-  "supplier_name",
+  "ico_no_and_date",
+  "certification",
+  "pss_approved_date",
   "section_break_oougv",
+  "do_no",
+  "bl_no_and_date",
+  "column_break_af7kd",
+  "do_date",
+  "isf_date",
+  "section_break_sgpn3",
+  "scan_copy_of_original_documents",
+  "section_break_vxjjg",
+  "obl_or_swb",
+  "column_break_andma",
+  "shipping_line",
+  "section_break_dgvjy",
+  "pol",
+  "column_break_bj7x1",
+  "pod",
+  "section_break_cexbj",
+  "eta_jomol",
+  "column_break_fmgwi",
+  "etd_jomol",
+  "section_break_bcdjo",
+  "scan_docs_date",
+  "docs_tracking_no",
+  "column_break_fijpv",
+  "original_document_sent_date",
+  "column_break_zafmv",
+  "fund_status",
+  "column_break_0omjy",
+  "date",
+  "section_break_t0ill",
+  "ref_bank_details_or_foreign_bills_transaction_advice",
+  "stuffing_date",
+  "column_break_ql8dv",
+  "label_approval_from_cb",
+  "stuffing_location",
+  "section_break_wqbhv",
+  "shipping_bill_no",
+  "delivery_status",
+  "column_break_3mids",
+  "shipping_bill_date",
+  "section_break_wwlpo",
+  "spice_board_test_approved_date",
+  "section_break_plgq2",
+  "pq_aplin_submit_date",
+  "column_break_aqkcl",
+  "pq",
+  "section_break_p5hb2",
+  "other",
+  "section_break_vx3od",
+  "cb_sampling_date",
+  "container_no",
+  "column_break_ww4t4",
+  "labcb_sampling_status",
+  "section_break_nggq1",
   "contract_no",
+  "column_break_p5rh",
+  "supplier_name",
   "section_break_6sjnf",
   "contract_date_s",
   "column_break_wumox",
@@ -47,6 +109,10 @@
   "supplier_invoice_date",
   "column_break_1zayv",
   "section_break_lqxj2",
+  "tracenet_batch_id",
+  "column_break_apii",
+  "tracenet_batch_date",
+  "section_break_2vjs",
   "source_coffee_from",
   "section_break_hkzup",
   "test_results_of_sourced_material_qc",
@@ -64,11 +130,6 @@
   "section_break_8firz",
   "e_way_bill_no",
   "column_break_hwbsf",
-  "ico_no_and_date",
-  "section_break_8fi6e",
-  "ico_date",
-  "column_break_okgrd",
-  "certification",
   "section_break_49axd",
   "product_coffee",
   "section_break_6xfym",
@@ -97,75 +158,13 @@
   "column_break_ug4h4",
   "batch_no",
   "section_break_pfibt",
-  "pss_date",
-  "column_break_0omjy",
-  "pss_approved_date",
-  "section_break_t0ill",
-  "bag_marking_design_approved_date",
-  "column_break_doyyy",
-  "spice_board_test_approved_date",
-  "section_break_plgq2",
-  "do_no",
-  "column_break_af7kd",
-  "do_date",
-  "section_break_sgpn3",
-  "bl_no_and_date",
-  "column_break_nuxrd",
-  "isf_date",
   "section_break_o5awm",
   "coi_no_and_date",
   "coi_buyer_approved_date",
   "column_break_haqvt",
   "coi_date",
   "coi_status",
-  "section_break_vxjjg",
-  "scan_copy_of_original_documents",
-  "section_break_nggq1",
-  "obl_or_swb",
-  "column_break_aqkcl",
-  "pq_aplin_submit_date",
-  "section_break_p5hb2",
-  "pq",
-  "column_break_mpv3e",
-  "other",
-  "section_break_vx3od",
-  "shipping_line",
-  "column_break_andma",
-  "pol",
-  "section_break_wqbhv",
-  "pod",
-  "column_break_bj7x1",
-  "etd_jomol",
-  "section_break_dgvjy",
-  "eta_jomol",
-  "column_break_fmgwi",
-  "scan_docs_date",
-  "section_break_cexbj",
-  "original_document_sent_date",
-  "column_break_fijpv",
-  "docs_tracking_no",
-  "section_break_bcdjo",
-  "fund_status",
-  "column_break_ql8dv",
-  "date",
-  "column_break_zafmv",
-  "ref_bank_details_or_foreign_bills_transaction_advice",
-  "column_break_j20iu",
-  "column_break_ipzhx",
-  "label_approval_from_cb",
-  "column_break_2ubjq",
-  "stuffing_location",
-  "section_break_u5csn",
-  "stuffing_date",
-  "column_break_ww4t4",
-  "cb_sampling_date",
   "section_break_q4bih",
-  "shipping_bill_no",
-  "delivery_status",
-  "column_break_3mids",
-  "shipping_bill_date",
-  "section_break_wwlpo",
-  "container_no",
   "column_break_uub34",
   "npop_tc_no",
   "section_break_8kbly",
@@ -192,7 +191,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Naming Series",
-   "options": "PAM/ET/24-25/.####\nPAK/ET/24-25/.####\nPAT/ET/24-25/.####\nHAS/ET/24-25/.####\nMAS/ET/24-25/.####\nHOWFFA/ET/24-25/.####\nBJY/ET/24-25/.####\nPTN/ET/24-25/.####\nPEC/ET/24-25/.####\nMASS/ET/24-25/.####",
+   "options": "\nPAM/ET/24-25/.####\nPAK/ET/24-25/.####\nPAT/ET/24-25/.####\nHAS/ET/24-25/.####\nMAS/ET/24-25/.####\nHOWFFA/ET/24-25/.####\nBJY/ET/24-25/.####\nPTN/ET/24-25/.####\nPEC/ET/24-25/.####\nMASS/ET/24-25/.####",
    "reqd": 1
   },
   {
@@ -203,8 +202,11 @@
    "default": "biju@plantrich.com",
    "fieldname": "md_email_id",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "MD Email ID",
-   "options": "Email"
+   "options": "Email",
+   "print_hide": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "section_break_bguux",
@@ -426,17 +428,9 @@
    "label": "ICO No "
   },
   {
-   "fieldname": "section_break_8fi6e",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "ico_date",
    "fieldtype": "Date",
    "label": "ICO Date"
-  },
-  {
-   "fieldname": "column_break_okgrd",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "certification",
@@ -593,10 +587,6 @@
    "label": "Bag Marking design Approved Date"
   },
   {
-   "fieldname": "column_break_doyyy",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "spice_board_test_approved_date",
    "fieldtype": "Date",
    "label": "Spice Board Test Approved Date"
@@ -627,10 +617,6 @@
    "fieldname": "bl_no_and_date",
    "fieldtype": "Data",
    "label": "BL No and Date "
-  },
-  {
-   "fieldname": "column_break_nuxrd",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "isf_date",
@@ -690,10 +676,6 @@
    "fieldname": "pq",
    "fieldtype": "Data",
    "label": "PQ No"
-  },
-  {
-   "fieldname": "column_break_mpv3e",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "other",
@@ -801,30 +783,14 @@
    "label": "Ref Bank details  Foreign Bills Transaction Advice"
   },
   {
-   "fieldname": "column_break_j20iu",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_ipzhx",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "label_approval_from_cb",
    "fieldtype": "Data",
    "label": "Label approval from CB "
   },
   {
-   "fieldname": "column_break_2ubjq",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "stuffing_location",
    "fieldtype": "Data",
    "label": "Stuffing Location "
-  },
-  {
-   "fieldname": "section_break_u5csn",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "stuffing_date",
@@ -838,7 +804,7 @@
   {
    "fieldname": "cb_sampling_date",
    "fieldtype": "Date",
-   "label": "CB Sampling Date"
+   "label": "Lab/CB Sampling Date"
   },
   {
    "fieldname": "section_break_q4bih",
@@ -1015,11 +981,51 @@
    "fieldtype": "Select",
    "label": "Delivery Status",
    "options": "\nShip on Board\nEx Factory\nTransit\nArrived\nCancelled"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "fieldname": "shipping_instructions",
+   "fieldtype": "Link",
+   "label": "Shipping Instructions",
+   "options": "Shipping Instructions"
+  },
+  {
+   "fieldname": "column_break_p5rh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labcb_sampling_status",
+   "fieldtype": "Select",
+   "label": "Lab/CB Sampling Status",
+   "options": "\nApproved\nRejected"
+  },
+  {
+   "fieldname": "tracenet_batch_id",
+   "fieldtype": "Data",
+   "label": "Tracenet Batch ID"
+  },
+  {
+   "fieldname": "column_break_apii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tracenet_batch_date",
+   "fieldtype": "Date",
+   "label": "Tracenet Batch Date"
+  },
+  {
+   "fieldname": "section_break_2vjs",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-13 14:44:24.225944",
+ "modified": "2025-04-21 13:05:53.371177",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Export Traces",
