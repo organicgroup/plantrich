@@ -9,6 +9,7 @@
   "customer",
   "name1",
   "contact_number",
+  "date",
   "visit_location"
  ],
  "fields": [
@@ -41,12 +42,19 @@
    "in_preview": 1,
    "label": "Customer",
    "options": "Customer"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-12 14:12:24.745479",
+ "modified": "2025-05-12 17:03:20.729846",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Visited Customer",
