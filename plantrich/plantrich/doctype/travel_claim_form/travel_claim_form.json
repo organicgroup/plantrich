@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-05-12 11:27:15.319897",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "column_break_ncnt",
+  "date_of_visit_from",
+  "date_of_visit_to",
+  "number_of_days",
+  "section_break_odp4",
+  "visited_farmer",
+  "section_break_rxgb",
+  "visited_processor",
+  "section_break_hcwa",
+  "visited_customers",
+  "section_break_lqn6",
+  "claim_breakdown_table",
+  "total_amount",
+  "section_break_9avh",
+  "employee_declaration",
+  "signature_of_employee",
+  "date",
+  "section_break_5mqz",
+  "verified_by",
+  "name1",
+  "column_break_ibuf",
+  "submitted_by",
+  "name2"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/TCF/25-26/.####.\nPAK/TCF/25-26/.####.\nPAT/TCF/25-26/.####."
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ncnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_visit_from",
+   "fieldtype": "Date",
+   "label": "Date Of Visit From"
+  },
+  {
+   "fieldname": "date_of_visit_to",
+   "fieldtype": "Date",
+   "label": "Date Of Visit To"
+  },
+  {
+   "fieldname": "section_break_odp4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visited_farmer",
+   "fieldtype": "Table",
+   "label": "Visited Farmers",
+   "options": "Visited Supplier"
+  },
+  {
+   "fieldname": "section_break_rxgb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visited_processor",
+   "fieldtype": "Table",
+   "label": "Visited Processor",
+   "options": "Visited Supplier"
+  },
+  {
+   "fieldname": "section_break_hcwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "claim_breakdown_table",
+   "fieldtype": "Table",
+   "label": "Claim Breakdown Table",
+   "options": "Claim Breakdown Table"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_9avh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "I hereby declare that the above expenses were incurred for official purposes and the information provided is true to the best of my knowledge.",
+   "fieldname": "employee_declaration",
+   "fieldtype": "Small Text",
+   "label": "Employee Declaration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_of_employee",
+   "fieldtype": "Signature",
+   "label": "Signature Of Employee"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_5mqz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "User"
+  },
+  {
+   "fieldname": "number_of_days",
+   "fieldtype": "Data",
+   "label": "Number Of Days"
+  },
+  {
+   "fetch_from": "verified_by.username",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ibuf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submitted_by",
+   "fieldtype": "Link",
+   "label": "Submitted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visited_customers",
+   "fieldtype": "Table",
+   "label": "Visited Customers",
+   "options": "Visited Customer"
+  },
+  {
+   "fieldname": "section_break_lqn6",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-12 14:13:28.395275",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Travel Claim Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
