@@ -19,7 +19,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Particulars",
-   "options": "\nInspection Fees\nFood Allowance\nTravel \u2013 Petrol\nTravel \u2013 KM Travelled\nBus Fare\nAuto Fare\nTaxi Fare\nTrain Fare\nFlight Fare"
+   "options": "\nInspection Fees\nFood Allowance\nTravel \u2013 Petrol\nTravel \u2013 KM Travelled\nBus Fare\nAuto Fare\nTaxi Fare\nTrain Fare\nFlight Fare\nAccomodation Fare\nOther Fares"
   },
   {
    "fieldname": "quantity",
@@ -53,7 +53,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-12 17:03:37.142876",
+ "modified": "2025-05-22 14:40:16.585642",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Claim Breakdown Table",
