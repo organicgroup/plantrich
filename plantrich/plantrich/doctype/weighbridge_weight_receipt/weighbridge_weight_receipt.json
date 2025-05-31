@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-05-31 14:53:05.002060",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "vehicle_number",
+  "driver_name",
+  "transporter",
+  "column_break_tpbn",
+  "container_number",
+  "product",
+  "product_description",
+  "container_type",
+  "weight_details_section",
+  "gross_weight",
+  "column_break_sibd",
+  "tare_weight",
+  "net_weight",
+  "section_break_kdb3",
+  "weighbridge_officer",
+  "weighbridge_officer_name",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/WB/25-26/.####.\nPAM/WB/25-26/.####.\nWB/25-26/.####."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "transporter",
+   "fieldtype": "Data",
+   "label": "Transporter"
+  },
+  {
+   "fieldname": "column_break_tpbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "container_number",
+   "fieldtype": "Data",
+   "label": "Container Number"
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_description",
+   "fieldtype": "Data",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "container_type",
+   "fieldtype": "Data",
+   "label": "Container Type"
+  },
+  {
+   "fieldname": "weight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Weight Details"
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Float",
+   "label": "Gross Weight (KG)"
+  },
+  {
+   "fieldname": "tare_weight",
+   "fieldtype": "Float",
+   "label": "Tare Weight (KG)"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "label": "Net Weight (KG)"
+  },
+  {
+   "fieldname": "section_break_kdb3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "weighbridge_officer",
+   "fieldtype": "Link",
+   "label": "WeighBridge Officer ",
+   "options": "User"
+  },
+  {
+   "fetch_from": "weighbridge_officer.full_name",
+   "fieldname": "weighbridge_officer_name",
+   "fieldtype": "Data",
+   "label": "WeighBridge Officer Name ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "column_break_sibd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-31 15:35:48.920786",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "WEIGHBRIDGE WEIGHT RECEIPT",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
