@@ -7,7 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "tos",
+  "column_break_a6mp",
+  "date",
+  "toc",
+  "section_break_wno3",
   "details",
+  "parameters_to_be_checked",
   "qr_code"
  ],
  "fields": [
@@ -15,7 +21,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "\nPAM/SR/.####.\nPAK/SR/.####."
+   "options": "\nPAM/SR/.####.\nPAK/SR/.####.\nPAM/SR/LAB/.####.\nPAK/SR/LAB/.####.\nPAM/SR/PSS/.####.\nPAK/SR/PSS/.####."
   },
   {
    "fieldname": "details",
@@ -27,11 +33,43 @@
    "fieldname": "qr_code",
    "fieldtype": "Attach",
    "label": "QR Code"
+  },
+  {
+   "fieldname": "parameters_to_be_checked",
+   "fieldtype": "Small Text",
+   "label": "Parameters to be checked"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "description": "Sup/Lab",
+   "fieldname": "tos",
+   "fieldtype": "Link",
+   "label": "To:",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_a6mp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wno3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Customer",
+   "fieldname": "toc",
+   "fieldtype": "Link",
+   "label": "To",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-22 10:36:37.367956",
+ "modified": "2025-07-22 11:37:41.577428",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register",

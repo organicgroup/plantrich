@@ -18,6 +18,8 @@
   "courier_name",
   "delivered_date",
   "status",
+  "tracenet_id",
+  "parameters",
   "remarksupdation"
  ],
  "fields": [
@@ -117,12 +119,24 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Product Name"
+  },
+  {
+   "fieldname": "tracenet_id",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Tracenet ID"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Small Text",
+   "in_preview": 1,
+   "label": "Parameters"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-22 10:11:11.773955",
+ "modified": "2025-07-22 10:40:31.285667",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",
