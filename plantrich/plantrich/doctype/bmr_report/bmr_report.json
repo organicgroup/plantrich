@@ -14,6 +14,7 @@
   "name_of_commodity",
   "product_name",
   "fg_lot_number",
+  "tracenet_batch_id",
   "inward_vehicle",
   "bmr_details",
   "processing_details",
@@ -132,11 +133,16 @@
    "label": "Series",
    "options": "\nBS/BMR/24-25/.####.\nPAM/BMR/24-25/.####.\nPAK/BMR/24-25/.####.\nMASS/BMR/IDN/FT/24-25/.####.\nMASS/BMR/IDN/O/24-25/.####.",
    "print_hide": 1
+  },
+  {
+   "fieldname": "tracenet_batch_id",
+   "fieldtype": "Data",
+   "label": "Tracenet Batch ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-20 11:07:35.531543",
+ "modified": "2025-07-29 11:13:10.613110",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "BMR REPORT",
