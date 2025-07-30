@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
+  "from",
   "tos",
   "column_break_a6mp",
   "date",
@@ -14,14 +15,17 @@
   "section_break_wno3",
   "details",
   "parameters_to_be_checked",
-  "qr_code"
+  "section_break_z1sw",
+  "qr_code",
+  "column_break_iwvp",
+  "result"
  ],
  "fields": [
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Series",
-   "options": "\nPAM/SR/.####.\nPAK/SR/.####.\nPAM/SR/LAB/.####.\nPAK/SR/LAB/.####.\nPAM/SR/PSS/.####.\nPAK/SR/PSS/.####."
+   "options": "\nTL/SR/25-26/.####.\nSB/SR/25-26/.####.\nCS/SR/25-26/.####.\nPAM/SR/.####.\nPAK/SR/.####.\nPAM/SR/LAB/.####.\nPAK/SR/LAB/.####.\nPAM/SR/PSS/.####.\nPAK/SR/PSS/.####."
   },
   {
    "fieldname": "details",
@@ -65,11 +69,31 @@
    "fieldtype": "Link",
    "label": "To",
    "options": "Customer"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "label": "From",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_z1sw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_iwvp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "options": "\nApproved\nRejected"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 11:37:41.577428",
+ "modified": "2025-07-30 10:58:38.783874",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register",
