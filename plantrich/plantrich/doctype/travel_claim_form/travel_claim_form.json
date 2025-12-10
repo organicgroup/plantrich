@@ -22,6 +22,8 @@
   "section_break_lqn6",
   "claim_breakdown_table",
   "total_amount",
+  "advance_amount",
+  "balance_amount",
   "section_break_9avh",
   "employee_declaration",
   "signature_of_employee",
@@ -74,7 +76,7 @@
   {
    "fieldname": "visited_farmer",
    "fieldtype": "Table",
-   "label": "Visited Farmers",
+   "label": "Visited Farmers/Suppliers",
    "options": "Visited Supplier"
   },
   {
@@ -85,7 +87,7 @@
    "fieldname": "visited_processor",
    "fieldtype": "Table",
    "label": "Visited Processor",
-   "options": "Visited Supplier"
+   "options": "Visited Processor"
   },
   {
    "fieldname": "section_break_hcwa",
@@ -170,11 +172,21 @@
   {
    "fieldname": "section_break_lqn6",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "advance_amount",
+   "fieldtype": "Float",
+   "label": "Advance Amount"
+  },
+  {
+   "fieldname": "balance_amount",
+   "fieldtype": "Float",
+   "label": "Balance Amount"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-12 14:13:28.395275",
+ "modified": "2025-12-10 15:33:08.159010",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Travel Claim Form",

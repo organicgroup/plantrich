@@ -1,34 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-05-12 14:11:28.863975",
+ "creation": "2025-12-10 14:51:58.791710",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "customer",
+  "processor",
   "name1",
   "contact_number",
   "date",
   "address",
-  "column_break_qe4d",
+  "column_break_00z6",
+  "pin_code",
   "kyc",
   "pan",
   "fssai",
   "visit_location",
   "image",
-  "section_break_i7cf",
+  "section_break_mwde",
   "expense_description",
   "amount",
   "advance",
   "balance_amount",
-  "section_break_eicu",
+  "section_break_ckpl",
   "fetch_location",
   "latitude",
   "longitude"
  ],
  "fields": [
   {
+   "fetch_from": "farmer.supplier_name",
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -43,21 +45,6 @@
    "label": "Contact Number"
   },
   {
-   "fieldname": "visit_location",
-   "fieldtype": "Small Text",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "label": "Visit Location & Purpose"
-  },
-  {
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_preview": 1,
-   "label": "Customer",
-   "options": "Customer"
-  },
-  {
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -70,9 +57,16 @@
    "label": "Address"
   },
   {
+   "fieldname": "visit_location",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Visit Location & Purpose"
+  },
+  {
    "fieldname": "image",
    "fieldtype": "Attach Image",
-   "label": "image"
+   "label": "Image"
   },
   {
    "fieldname": "fetch_location",
@@ -82,12 +76,27 @@
   {
    "fieldname": "latitude",
    "fieldtype": "Float",
-   "label": "Latitude"
+   "label": "Latitude",
+   "precision": "6"
   },
   {
    "fieldname": "longitude",
    "fieldtype": "Float",
-   "label": "Longitude"
+   "label": "Longitude",
+   "precision": "6"
+  },
+  {
+   "fieldname": "processor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Processor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
   },
   {
    "fieldname": "kyc",
@@ -105,11 +114,11 @@
    "label": "Reg No./FSSAI"
   },
   {
-   "fieldname": "column_break_qe4d",
+   "fieldname": "column_break_00z6",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_i7cf",
+   "fieldname": "section_break_mwde",
    "fieldtype": "Section Break"
   },
   {
@@ -133,17 +142,17 @@
    "label": "Balance Amount"
   },
   {
-   "fieldname": "section_break_eicu",
+   "fieldname": "section_break_ckpl",
    "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-10 15:13:04.380576",
+ "modified": "2025-12-10 15:44:20.459609",
  "modified_by": "Administrator",
  "module": "Plantrich",
- "name": "Visited Customer",
+ "name": "Visited Processor",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

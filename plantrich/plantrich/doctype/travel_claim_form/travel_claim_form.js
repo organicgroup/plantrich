@@ -72,3 +72,80 @@ function calculate_number_of_days_excluding_sundays(frm) {
         frm.set_value('number_of_days', count);
     }
 }
+
+frappe.ui.form.on('Visited Supplier', {
+    fetch_location(frm, cdt, cdn) {
+        // Get the row
+        let row = locals[cdt][cdn];
+
+        if (!navigator.geolocation) {
+            frappe.msgprint("Geolocation is not supported in this browser.");
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                let lat = position.coords.latitude;
+                let lon = position.coords.longitude;
+
+                // Set values to the row
+                frappe.model.set_value(cdt, cdn, "latitude", lat);
+                frappe.model.set_value(cdt, cdn, "longitude", lon);
+
+                frappe.msgprint(`Location Fetched:<br>
+                    <b>Latitude:</b> ${lat}<br>
+                    <b>Longitude:</b> ${lon}`);
+            },
+            (error) => {
+                frappe.msgprint("Unable to fetch location. Please allow location access.");
+            }
+        );
+    }
+});
+
+
+frappe.ui.form.on('Visited Processor', {
+    fetch_location(frm, cdt, cdn) {
+        // Get the row
+        let row = locals[cdt][cdn];
+
+        if (!navigator.geolocation) {
+            frappe.msgprint("Geolocation is not supported in this browser.");
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                let lat = position.coords.latitude;
+                let lon = position.coords.longitude;
+
+                // Set values to the row
+                frappe.model.set_value(cdt, cdn, "latitude", lat);
+                frappe.model.set_value(cdt, cdn, "longitude", lon);
+
+                frappe.msgprint(`Location Fetched:<br>
+                    <b>Latitude:</b> ${lat}<br>
+                    <b>Longitude:</b> ${lon}`);
+            },
+            (error) => {
+                frappe.msgprint("Unable to fetch location. Please allow location access.");
+            }
+        );
+    }
+});
+
+frappe.ui.form.on('Travel Claim Form', {
+    total_amount(frm) {
+        frm.trigger("calculate_balance");
+    },
+    advance_amount(frm) {
+        frm.trigger("calculate_balance");
+    },
+
+    calculate_balance(frm) {
+        let total = frm.doc.total_amount || 0;
+        let advance = frm.doc.advance_amount || 0;
+
+        frm.set_value("balance_amount", total - advance);
+    }
+});
