@@ -12,6 +12,7 @@
   "certifications",
   "lotbatch_no",
   "sampling_qty",
+  "sampling_location",
   "sampling_date",
   "sending_date",
   "sent_to",
@@ -130,12 +131,17 @@
    "fieldtype": "Small Text",
    "in_preview": 1,
    "label": "Parameters"
+  },
+  {
+   "fieldname": "sampling_location",
+   "fieldtype": "Data",
+   "label": "Sampling Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-30 10:50:43.331178",
+ "modified": "2025-12-27 15:30:50.307305",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",
