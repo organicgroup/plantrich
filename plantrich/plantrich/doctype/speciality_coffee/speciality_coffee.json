@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-01-16 10:12:39.195726",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "estate_name",
+  "column_break_kz3t",
+  "company",
+  "item",
+  "item_name",
+  "section_break_9djl",
+  "berry_harvest",
+  "s2",
+  "cherry_reception",
+  "s3",
+  "processing_selection",
+  "s4",
+  "fermentation_monitoring",
+  "s5",
+  "wahing",
+  "s6",
+  "drying",
+  "s7",
+  "hulling_storage",
+  "s8",
+  "sample_roasting",
+  "s9",
+  "cupping",
+  "s10",
+  "batch_status",
+  "s11",
+  "final_qty",
+  "lot_no",
+  "bag_mark",
+  "verified_by",
+  "name1",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nSC/25-26/.####."
+  },
+  {
+   "fieldname": "estate_name",
+   "fieldtype": "Data",
+   "label": "Estate Name/Source"
+  },
+  {
+   "fieldname": "section_break_9djl",
+   "fieldtype": "Section Break",
+   "label": "Berry Harvest"
+  },
+  {
+   "fieldname": "berry_harvest",
+   "fieldtype": "Table",
+   "label": "Berry Harvest",
+   "options": "SC Berry Harvest"
+  },
+  {
+   "fieldname": "cherry_reception",
+   "fieldtype": "Table",
+   "label": "Cherry Reception & Sorting",
+   "options": "SC Cherry Reception"
+  },
+  {
+   "fieldname": "processing_selection",
+   "fieldtype": "Table",
+   "label": "Processing Selection",
+   "options": "SC Processing Selection"
+  },
+  {
+   "fieldname": "fermentation_monitoring",
+   "fieldtype": "Table",
+   "label": "Fermentation & Environment Monitoring",
+   "options": "SC Fermentation Log"
+  },
+  {
+   "fieldname": "wahing",
+   "fieldtype": "Table",
+   "label": "Washing & Post Fermentation",
+   "options": "SC Washing Log"
+  },
+  {
+   "fieldname": "drying",
+   "fieldtype": "Table",
+   "label": "Drying Control & Layer Depth",
+   "options": "SC Drying Log"
+  },
+  {
+   "fieldname": "hulling_storage",
+   "fieldtype": "Table",
+   "label": "Hulling, Grading & Storage",
+   "options": "SC Hulling Storage"
+  },
+  {
+   "fieldname": "sample_roasting",
+   "fieldtype": "Table",
+   "label": "Sample Roasting",
+   "options": "SC Sample Roasting"
+  },
+  {
+   "fieldname": "cupping",
+   "fieldtype": "Table",
+   "label": "Cupping & Sensory Evaluation",
+   "options": "SC Cupping Log"
+  },
+  {
+   "fieldname": "batch_status",
+   "fieldtype": "Table",
+   "label": "Batch Status & Buyer Readiness",
+   "options": "SC Batch Status"
+  },
+  {
+   "fieldname": "s2",
+   "fieldtype": "Section Break",
+   "label": "Cherry Reception & Sorting"
+  },
+  {
+   "fieldname": "s3",
+   "fieldtype": "Section Break",
+   "label": "Processing Selection"
+  },
+  {
+   "fieldname": "s4",
+   "fieldtype": "Section Break",
+   "label": "Fermentation & Environment Monitoring"
+  },
+  {
+   "fieldname": "s5",
+   "fieldtype": "Section Break",
+   "label": "Washing & Post Fermentation"
+  },
+  {
+   "fieldname": "s6",
+   "fieldtype": "Section Break",
+   "label": "Drying Control & Layer Depth"
+  },
+  {
+   "fieldname": "s7",
+   "fieldtype": "Section Break",
+   "label": "Hulling, Grading & Storage"
+  },
+  {
+   "fieldname": "s8",
+   "fieldtype": "Section Break",
+   "label": "Sample Roasting"
+  },
+  {
+   "fieldname": "s9",
+   "fieldtype": "Section Break",
+   "label": "Cupping & Sensory Evaluation"
+  },
+  {
+   "fieldname": "s10",
+   "fieldtype": "Section Break",
+   "label": "Batch Status & Buyer Readiness"
+  },
+  {
+   "fieldname": "s11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "final_qty",
+   "fieldtype": "Float",
+   "label": "Final Qty(Kg)"
+  },
+  {
+   "fieldname": "lot_no",
+   "fieldtype": "Data",
+   "label": "Lot No."
+  },
+  {
+   "fieldname": "bag_mark",
+   "fieldtype": "Data",
+   "label": "Bag Mark"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "User"
+  },
+  {
+   "fetch_from": "verified_by.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "column_break_kz3t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-16 12:38:44.881795",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Speciality Coffee",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
