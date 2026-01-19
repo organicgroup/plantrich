@@ -14,6 +14,8 @@
   "drying_date",
   "hulling_date",
   "hulling_loss",
+  "p_date",
+  "pulping_loss",
   "loss",
   "roasting_loss",
   "grinding_loss",
@@ -23,6 +25,8 @@
   "powdering_loss",
   "other_process_loss",
   "total_loss",
+  "total_qty",
+  "sample_qty",
   "fg_qty"
  ],
  "fields": [
@@ -45,7 +49,7 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Grading Loss"
+   "label": "Grading Gain"
   },
   {
    "fieldname": "drying_loss",
@@ -136,12 +140,32 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Hulling Loss"
+  },
+  {
+   "fieldname": "p_date",
+   "fieldtype": "Date",
+   "label": "Pulping Date"
+  },
+  {
+   "fieldname": "pulping_loss",
+   "fieldtype": "Float",
+   "label": "Pulping Loss"
+  },
+  {
+   "fieldname": "sample_qty",
+   "fieldtype": "Float",
+   "label": "Sample Qty"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-22 16:47:08.869292",
+ "modified": "2026-01-19 12:16:27.364601",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Processing details",
