@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-27 15:21:38.914857",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "column_break_ptc3",
+  "product",
+  "product_name",
+  "section_break_mhto",
+  "start_date",
+  "end_date",
+  "running_hr",
+  "column_break_r7s5",
+  "raw_material_rate",
+  "raw_material_qty",
+  "yield",
+  "section_break_jbdd",
+  "firewood",
+  "electricity",
+  "manpower",
+  "supervision",
+  "column_break_zcpj",
+  "diesel",
+  "other_cost",
+  "raw_total_cost",
+  "oil_produced",
+  "section_break_asjr",
+  "total_production_cost",
+  "final_cost",
+  "market_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/OCC/25-26/.####.\nPAK/OCC/26-27/.####."
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "raw_material_qty",
+   "fieldtype": "Float",
+   "label": "Raw Material Quantity (Kg)"
+  },
+  {
+   "fieldname": "raw_material_rate",
+   "fieldtype": "Float",
+   "label": "Raw Material Rate (\u20b9/Kg)"
+  },
+  {
+   "fieldname": "yield",
+   "fieldtype": "Float",
+   "label": "Yield (%)"
+  },
+  {
+   "fieldname": "running_hr",
+   "fieldtype": "Float",
+   "label": "Running Hr"
+  },
+  {
+   "fieldname": "firewood",
+   "fieldtype": "Float",
+   "label": "Fire Wood(579/Hr)"
+  },
+  {
+   "fieldname": "electricity",
+   "fieldtype": "Float",
+   "label": "Electricity(570/Hr)"
+  },
+  {
+   "fieldname": "manpower",
+   "fieldtype": "Float",
+   "label": "Manpower(140/Hr)"
+  },
+  {
+   "fieldname": "supervision",
+   "fieldtype": "Float",
+   "label": "Supervision Cost(375/Hr)"
+  },
+  {
+   "fieldname": "diesel",
+   "fieldtype": "Float",
+   "label": "Diesel"
+  },
+  {
+   "fieldname": "other_cost",
+   "fieldtype": "Float",
+   "label": "Other Cost (Packing+Testing+etc) (\u20b9)"
+  },
+  {
+   "fieldname": "raw_total_cost",
+   "fieldtype": "Float",
+   "label": "Raw Material Total Cost (\u20b9)"
+  },
+  {
+   "fieldname": "oil_produced",
+   "fieldtype": "Float",
+   "label": "Oil Produced (Kg)"
+  },
+  {
+   "fieldname": "total_production_cost",
+   "fieldtype": "Float",
+   "label": "Total Production Cost (\u20b9)"
+  },
+  {
+   "fieldname": "final_cost",
+   "fieldtype": "Float",
+   "label": "Final Cost per Kg Oil (\u20b9)"
+  },
+  {
+   "fieldname": "market_rate",
+   "fieldtype": "Float",
+   "label": "Market rate/lit"
+  },
+  {
+   "fieldname": "column_break_ptc3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mhto",
+   "fieldtype": "Section Break",
+   "label": "Oil Cost Calculation Sheet"
+  },
+  {
+   "fieldname": "column_break_r7s5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jbdd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zcpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_asjr",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-27 16:10:16.931000",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Oil Cost Calculation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
