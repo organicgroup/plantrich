@@ -11,6 +11,11 @@
   "product_name",
   "certifications",
   "lotbatch_no",
+  "no_of_bags",
+  "bulk_sample",
+  "total_qty_of_sample",
+  "retention_qty",
+  "test_qty",
   "sampling_qty",
   "sampling_location",
   "sampling_date",
@@ -52,7 +57,7 @@
    "fieldtype": "Float",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Sampling Qty"
+   "label": "E.Lab Sampling Qty (Kg)"
   },
   {
    "fieldname": "sampling_date",
@@ -136,12 +141,37 @@
    "fieldname": "sampling_location",
    "fieldtype": "Data",
    "label": "Sampling Location"
+  },
+  {
+   "fieldname": "no_of_bags",
+   "fieldtype": "Float",
+   "label": "No. of Bags"
+  },
+  {
+   "fieldname": "bulk_sample",
+   "fieldtype": "Float",
+   "label": "Bulk Sample per Bag"
+  },
+  {
+   "fieldname": "total_qty_of_sample",
+   "fieldtype": "Float",
+   "label": "Total Qty of Sample"
+  },
+  {
+   "fieldname": "retention_qty",
+   "fieldtype": "Float",
+   "label": "Retention Qty"
+  },
+  {
+   "fieldname": "test_qty",
+   "fieldtype": "Float",
+   "label": "Test Qty"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-12-27 15:30:50.307305",
+ "modified": "2026-02-28 12:29:31.556883",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",
