@@ -9,8 +9,10 @@
   "sample_type",
   "product",
   "product_name",
+  "fg_rm",
   "certifications",
   "lotbatch_no",
+  "total_qty",
   "no_of_bags",
   "bulk_sample",
   "total_qty_of_sample",
@@ -26,7 +28,8 @@
   "status",
   "tracenet_id",
   "parameters",
-  "remarksupdation"
+  "remarksupdation",
+  "profile"
  ],
  "fields": [
   {
@@ -166,12 +169,28 @@
    "fieldname": "test_qty",
    "fieldtype": "Float",
    "label": "Test Qty"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Small Text",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "fg_rm",
+   "fieldtype": "Select",
+   "label": "FG/RM",
+   "options": "\nFG\nRM"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Lot Qty"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-28 12:29:31.556883",
+ "modified": "2026-03-02 11:07:39.988808",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",

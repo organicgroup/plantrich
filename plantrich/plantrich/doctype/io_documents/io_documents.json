@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-03-02 11:23:23.238622",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date_and_time",
+  "in_out",
+  "mode",
+  "party",
+  "assigned",
+  "emp_name",
+  "action"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/IO/25-26/.####.\nPAK/IO/25-26/.####."
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date and Time"
+  },
+  {
+   "fieldname": "in_out",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Inward/Outward",
+   "options": "\nInward\nOutward"
+  },
+  {
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mode",
+   "options": "\nSP\nDHL\nUPS\nPOST\nOther"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Small Text",
+   "label": "Party"
+  },
+  {
+   "fieldname": "assigned",
+   "fieldtype": "Link",
+   "label": "Assigned",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "assigned.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Emp Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Select",
+   "label": "Action",
+   "options": "\nReceived\nSent\nReturned In\nReturned Out"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-02 11:34:17.320377",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "IO Documents",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
