@@ -13,6 +13,8 @@
   "certifications",
   "lotbatch_no",
   "total_qty",
+  "dispatched_qty",
+  "balance_lot_qty",
   "no_of_bags",
   "bulk_sample",
   "total_qty_of_sample",
@@ -184,13 +186,26 @@
   {
    "fieldname": "total_qty",
    "fieldtype": "Float",
-   "label": "Total Lot Qty"
+   "label": "Total Lot Qty",
+   "precision": "2"
+  },
+  {
+   "fieldname": "dispatched_qty",
+   "fieldtype": "Float",
+   "label": "Dispatched Qty",
+   "precision": "2"
+  },
+  {
+   "fieldname": "balance_lot_qty",
+   "fieldtype": "Float",
+   "label": "Balance Lot Qty",
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-02 11:07:39.988808",
+ "modified": "2026-03-02 17:05:55.080834",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",
