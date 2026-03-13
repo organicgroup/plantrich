@@ -30,6 +30,8 @@
   "product_code",
   "product_name",
   "lot_number",
+  "invoice_no",
+  "weighbridge_receipt_id",
   "section_break_15",
   "parameters",
   "column_break_6ogbz",
@@ -108,7 +110,17 @@
   "section_break_brldo",
   "boxsack_loading_tracker",
   "value",
-  "total"
+  "total",
+  "weighbridge_details_tab",
+  "weight_details_section",
+  "gross_weight",
+  "column_break_eckf",
+  "tare_weight",
+  "net_weight",
+  "section_break_mj73",
+  "weighbridge_officer",
+  "weighbridge_officer_name",
+  "signature"
  ],
  "fields": [
   {
@@ -660,12 +672,75 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "options": "DISPATCH VEHICLE CHECK REPORT"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Link",
+   "label": "Invoice No.",
+   "options": "Purchase Invoice"
+  },
+  {
+   "fieldname": "weighbridge_receipt_id",
+   "fieldtype": "Link",
+   "label": "Weighbridge Receipt ID",
+   "options": "WEIGHBRIDGE WEIGHT RECEIPT"
+  },
+  {
+   "fieldname": "weighbridge_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Weighbridge Details"
+  },
+  {
+   "fieldname": "weight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Weight Details"
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Float",
+   "label": "Gross Weight (KG)"
+  },
+  {
+   "fieldname": "column_break_eckf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tare_weight",
+   "fieldtype": "Float",
+   "label": "Tare Weight (KG)"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Float",
+   "label": "Net Weight (KG)"
+  },
+  {
+   "fieldname": "section_break_mj73",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "weighbridge_officer",
+   "fieldtype": "Link",
+   "label": "Weighbridge Officer",
+   "options": "User"
+  },
+  {
+   "fetch_from": "weighbridge_officer.full_name",
+   "fieldname": "weighbridge_officer_name",
+   "fieldtype": "Data",
+   "label": "Weighbridge Officer Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-03 21:40:55.495701",
+ "modified": "2026-03-13 11:31:38.979536",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "DISPATCH VEHICLE CHECK REPORT",

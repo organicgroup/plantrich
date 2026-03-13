@@ -47,8 +47,8 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Seried",
-   "options": "\nPATM/CCR/.####\nPAK/CCR/.####"
+   "label": "Series",
+   "options": "\nPAK/SNR/25-26/.####.\nPAM/SNR/25-26/.####."
   },
   {
    "fieldname": "date",
@@ -197,13 +197,13 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
+   "fieldtype": "Small Text",
    "label": "Remarks",
    "max_height": "48px"
   },
   {
    "fieldname": "name1",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name",
    "max_height": "48px"
   },
@@ -215,15 +215,15 @@
   {
    "fieldname": "coffee_qr_code",
    "fieldtype": "Attach",
-   "label": "Coffee QR Code"
+   "label": "QR Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-11 16:47:15.214050",
+ "modified": "2026-03-13 11:48:28.363027",
  "modified_by": "Administrator",
  "module": "Plantrich",
- "name": "Coffee Cup Report with QR code",
+ "name": "Sensory Report",
  "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [

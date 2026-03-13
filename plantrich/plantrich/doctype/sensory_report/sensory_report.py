@@ -7,7 +7,7 @@ from frappe.utils import get_url
 from pyqrcode import create as qr_create
 from frappe.model.document import Document
 
-class CoffeeCupReportwithQRcode(Document):
+class SensoryReport(Document):
 	def validate(self):
 		self.create_coffee_qr_code()
 

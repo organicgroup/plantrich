@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestCoffeeCupReportwithQRcode(FrappeTestCase):
+class TestSensoryReport(FrappeTestCase):
 	pass

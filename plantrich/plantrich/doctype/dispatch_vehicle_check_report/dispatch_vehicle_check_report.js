@@ -6,3 +6,17 @@ frappe.ui.form.on('Dispatch Vehicle Check Report', {
 
 	// }
 });
+frappe.ui.form.on('DISPATCH VEHICLE CHECK REPORT', {
+    gross_weight(frm) {
+        calculate_net_weight(frm);
+    },
+    tare_weight(frm) {
+        calculate_net_weight(frm);
+    }
+});
+
+function calculate_net_weight(frm) {
+    if (frm.doc.gross_weight != null && frm.doc.tare_weight != null) {
+        frm.set_value('net_weight', frm.doc.gross_weight - frm.doc.tare_weight);
+    }
+}
