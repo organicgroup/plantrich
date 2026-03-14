@@ -10,38 +10,74 @@
  "field_order": [
   "naming_series",
   "date",
+  "column_break_mfrj",
   "sample_ref_no",
   "source",
-  "name_of_exporter",
-  "country",
-  "quality_description_as_per_contract",
-  "section_break_qv3mb",
-  "coffee_qr_code",
-  "section_break_eb10x",
-  "product_physical_aspect",
-  "section_break_nxvbx",
-  "roast_details",
-  "notes",
-  "section_break_knje4",
-  "fragrancearoma",
-  "flavor_out_of_10",
-  "after_taste_out_of_10",
-  "acidity_out_of_10",
-  "bodyout_of_10",
-  "balance_out_of_10",
-  "overallout_of_10",
-  "sweetnessout_of_10",
-  "uniformityout_of_10",
-  "clean_cupout_of_10",
-  "defectsout_of_10",
-  "total_points_sca",
-  "column_break_pfdzh",
-  "chart_wrapper",
-  "section_break_nvnkq",
-  "plantrich_findings",
+  "product_description_section",
+  "product_code",
+  "product_name",
+  "botanical_name",
+  "column_break_e0bm",
+  "plant_part",
+  "formula_use",
+  "certified",
+  "aroma_smell_evaluation_section",
+  "ar_strong",
+  "ar_medium",
+  "ar_weak",
+  "charecteristic_aroma",
+  "column_break_ldhw",
+  "in_high",
+  "in_medium",
+  "in_low",
+  "2_tasty_profile_section",
+  "pungency",
+  "sweetness",
+  "bitterness",
+  "column_break_7bup",
+  "warmth",
+  "balance",
+  "3_mouthfeel_section",
+  "sharp_biting",
+  "smooth",
+  "dry",
+  "column_break_citc",
+  "oily_sensation",
+  "lingering_warmth",
+  "4_aftertaste_section",
+  "clean_finish",
+  "lingering_spice_note",
+  "column_break_qufo",
+  "bitter_aftertaste",
+  "metallic_taste",
+  "visual_physical",
+  "appearance",
+  "colour_uniformity",
+  "particle_size",
+  "bulk_density",
+  "tapped_density",
+  "column_break_7bbx",
+  "loss_on_drying",
+  "broken_percentage",
+  "presence_of_foreig_matter",
+  "insect_damage",
+  "volatile_oil_indicator_section",
+  "spice",
+  "column_break_yz0g",
+  "percent",
+  "7_microbial_test_section",
+  "tpc",
+  "yield_and_mold",
+  "staphylococcus_aureus",
+  "column_break_lofa",
+  "ecoli",
+  "salmonella",
+  "section_break_pq8t",
   "remarks",
+  "verfied_by",
   "name1",
-  "signature"
+  "signature",
+  "column_break_ro8e"
  ],
  "fields": [
   {
@@ -66,146 +102,337 @@
    "label": "Source"
   },
   {
-   "fieldname": "name_of_exporter",
-   "fieldtype": "Data",
-   "label": "Name of Exporter"
-  },
-  {
-   "fieldname": "country",
-   "fieldtype": "Link",
-   "label": "Country",
-   "options": "Country"
-  },
-  {
-   "fieldname": "quality_description_as_per_contract",
-   "fieldtype": "Data",
-   "label": "Quality Description as per contract"
-  },
-  {
-   "fieldname": "section_break_qv3mb",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_eb10x",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "product_physical_aspect",
-   "fieldtype": "Table",
-   "label": "Product Physical Aspect",
-   "options": "Physical Aspect"
-  },
-  {
-   "fieldname": "section_break_nxvbx",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "roast_details",
-   "fieldtype": "Table",
-   "label": "Roast details",
-   "options": "Roast"
-  },
-  {
-   "description": "THE BELOW SELECTION DOESNOT APPLY FOR LOW GRADES\n(Stocklots)",
-   "fieldname": "notes",
-   "fieldtype": "Text",
-   "label": "Notes",
-   "max_height": "48px"
-  },
-  {
-   "fieldname": "section_break_knje4",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "fragrancearoma",
-   "fieldtype": "Data",
-   "label": "Fragrance/Aroma (out of 10)"
-  },
-  {
-   "fieldname": "flavor_out_of_10",
-   "fieldtype": "Data",
-   "label": "Flavor (out of 10)"
-  },
-  {
-   "fieldname": "after_taste_out_of_10",
-   "fieldtype": "Data",
-   "label": "After taste (out of 10)"
-  },
-  {
-   "fieldname": "acidity_out_of_10",
-   "fieldtype": "Data",
-   "label": "Acidity (out of 10)"
-  },
-  {
-   "fieldname": "bodyout_of_10",
-   "fieldtype": "Data",
-   "label": "Body(out of 10)"
-  },
-  {
-   "fieldname": "balance_out_of_10",
-   "fieldtype": "Data",
-   "label": "Balance (out of 10)"
-  },
-  {
-   "fieldname": "overallout_of_10",
-   "fieldtype": "Data",
-   "label": "Overall(out of 10)"
-  },
-  {
-   "fieldname": "sweetnessout_of_10",
-   "fieldtype": "Data",
-   "label": "Sweetness(out of 10)"
-  },
-  {
-   "fieldname": "uniformityout_of_10",
-   "fieldtype": "Data",
-   "label": "Uniformity(out of 10)"
-  },
-  {
-   "fieldname": "clean_cupout_of_10",
-   "fieldtype": "Data",
-   "label": "Clean cup(out of 10)"
-  },
-  {
-   "fieldname": "defectsout_of_10",
-   "fieldtype": "Data",
-   "label": "Defects(out of 10)"
-  },
-  {
-   "fieldname": "total_points_sca",
-   "fieldtype": "Data",
-   "label": "Total Points SCA"
-  },
-  {
-   "fieldname": "column_break_pfdzh",
+   "fieldname": "column_break_mfrj",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "chart_wrapper",
-   "fieldtype": "HTML",
-   "label": "Chart Wrapper"
+   "fieldname": "product_description_section",
+   "fieldtype": "Section Break",
+   "label": "Product Description"
   },
   {
-   "fieldname": "section_break_nvnkq",
+   "fieldname": "product_code",
+   "fieldtype": "Link",
+   "label": "Product Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "product_code.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "botanical_name",
+   "fieldtype": "Data",
+   "label": "Botanical Name"
+  },
+  {
+   "fieldname": "column_break_e0bm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant_part",
+   "fieldtype": "Data",
+   "label": "Plant Part"
+  },
+  {
+   "fieldname": "formula_use",
+   "fieldtype": "Data",
+   "label": "Formula Use"
+  },
+  {
+   "fieldname": "certified",
+   "fieldtype": "Select",
+   "label": "Certified",
+   "options": "\nOrganic EU\nOrganic NOP\nFT\nRFA\nNL\nOthers"
+  },
+  {
+   "fieldname": "aroma_smell_evaluation_section",
+   "fieldtype": "Section Break",
+   "label": "1. Aroma (Smell Evaluation)"
+  },
+  {
+   "default": "0",
+   "fieldname": "ar_strong",
+   "fieldtype": "Check",
+   "label": "Freshness Aroma - Strong"
+  },
+  {
+   "default": "0",
+   "fieldname": "ar_medium",
+   "fieldtype": "Check",
+   "label": "Freshness Aroma - Medium"
+  },
+  {
+   "default": "0",
+   "fieldname": "ar_weak",
+   "fieldtype": "Check",
+   "label": "Freshness Aroma - Weak"
+  },
+  {
+   "fieldname": "charecteristic_aroma",
+   "fieldtype": "Small Text",
+   "label": "Charecteristic Aroma"
+  },
+  {
+   "fieldname": "column_break_ldhw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "in_high",
+   "fieldtype": "Check",
+   "label": "Intensity - High"
+  },
+  {
+   "default": "0",
+   "fieldname": "in_medium",
+   "fieldtype": "Check",
+   "label": "Intensity - Medium"
+  },
+  {
+   "default": "0",
+   "fieldname": "in_low",
+   "fieldtype": "Check",
+   "label": "Intensity - Low"
+  },
+  {
+   "fieldname": "2_tasty_profile_section",
+   "fieldtype": "Section Break",
+   "label": "2. Tasty Profile"
+  },
+  {
+   "fieldname": "pungency",
+   "fieldtype": "Data",
+   "label": "Pungency"
+  },
+  {
+   "fieldname": "sweetness",
+   "fieldtype": "Data",
+   "label": "Sweetness"
+  },
+  {
+   "fieldname": "bitterness",
+   "fieldtype": "Data",
+   "label": "Bitterness"
+  },
+  {
+   "fieldname": "column_break_7bup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warmth",
+   "fieldtype": "Data",
+   "label": "Warmth"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "3_mouthfeel_section",
+   "fieldtype": "Section Break",
+   "label": "3. Mouthfeel"
+  },
+  {
+   "default": "0",
+   "fieldname": "sharp_biting",
+   "fieldtype": "Check",
+   "label": "Sharp/Biting"
+  },
+  {
+   "default": "0",
+   "fieldname": "smooth",
+   "fieldtype": "Check",
+   "label": "Smooth"
+  },
+  {
+   "default": "0",
+   "fieldname": "dry",
+   "fieldtype": "Check",
+   "label": "Dry"
+  },
+  {
+   "fieldname": "column_break_citc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "oily_sensation",
+   "fieldtype": "Check",
+   "label": "OIly Sensation"
+  },
+  {
+   "default": "0",
+   "fieldname": "lingering_warmth",
+   "fieldtype": "Check",
+   "label": "Lingering Warmth"
+  },
+  {
+   "fieldname": "4_aftertaste_section",
+   "fieldtype": "Section Break",
+   "label": "4. Aftertaste"
+  },
+  {
+   "default": "0",
+   "fieldname": "clean_finish",
+   "fieldtype": "Check",
+   "label": "Clean Finish"
+  },
+  {
+   "default": "0",
+   "fieldname": "lingering_spice_note",
+   "fieldtype": "Check",
+   "label": "Lingering Spice Note"
+  },
+  {
+   "fieldname": "column_break_qufo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bitter_aftertaste",
+   "fieldtype": "Check",
+   "label": "Bitter Aftertaste"
+  },
+  {
+   "default": "0",
+   "fieldname": "metallic_taste",
+   "fieldtype": "Check",
+   "label": "Metallic Taste"
+  },
+  {
+   "fieldname": "visual_physical",
+   "fieldtype": "Section Break",
+   "label": "5. Visual & Physical Indicators"
+  },
+  {
+   "fieldname": "appearance",
+   "fieldtype": "Select",
+   "label": "Appearance & Shape",
+   "options": "\nPowder\nWhole\nSlice"
+  },
+  {
+   "fieldname": "colour_uniformity",
+   "fieldtype": "Data",
+   "label": "Colour Uniformity"
+  },
+  {
+   "fieldname": "particle_size",
+   "fieldtype": "Float",
+   "label": "Particle Size"
+  },
+  {
+   "fieldname": "bulk_density",
+   "fieldtype": "Float",
+   "label": "Bulk Density"
+  },
+  {
+   "fieldname": "tapped_density",
+   "fieldtype": "Float",
+   "label": "Tapped Density"
+  },
+  {
+   "fieldname": "column_break_7bbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loss_on_drying",
+   "fieldtype": "Float",
+   "label": "Loss on Drying"
+  },
+  {
+   "fieldname": "broken_percentage",
+   "fieldtype": "Float",
+   "label": "Broken Percentage"
+  },
+  {
+   "fieldname": "presence_of_foreig_matter",
+   "fieldtype": "Float",
+   "label": "Presence of Foreig Matter"
+  },
+  {
+   "fieldname": "insect_damage",
+   "fieldtype": "Float",
+   "label": "Insect Damage"
+  },
+  {
+   "fieldname": "volatile_oil_indicator_section",
+   "fieldtype": "Section Break",
+   "label": "Volatile Oil Indicator"
+  },
+  {
+   "fieldname": "spice",
+   "fieldtype": "Select",
+   "label": "Spice",
+   "options": "\nBlack Pepper\nCardamom\nClove\nGinger\nCinnamon\nNutmeg\nMace\nTurmeric\nLemon Grass\nChilly\nBirds Eye Chilly\nCassia\nVanilla\nTulsi\nCurry Leaves\nStar Anise\nAllspice\nTamarind\nKokum\nFenugreek\nMustard Seeds\nCoriander\nFennel"
+  },
+  {
+   "fieldname": "column_break_yz0g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Data",
+   "label": "Percent"
+  },
+  {
+   "fieldname": "7_microbial_test_section",
+   "fieldtype": "Section Break",
+   "label": "7. Microbial Test"
+  },
+  {
+   "fieldname": "tpc",
+   "fieldtype": "Data",
+   "label": "TPC"
+  },
+  {
+   "fieldname": "yield_and_mold",
+   "fieldtype": "Data",
+   "label": "Yield and Mold"
+  },
+  {
+   "fieldname": "staphylococcus_aureus",
+   "fieldtype": "Data",
+   "label": "Staphylococcus Aureus"
+  },
+  {
+   "fieldname": "column_break_lofa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ecoli",
+   "fieldtype": "Data",
+   "label": "E.Coli"
+  },
+  {
+   "fieldname": "salmonella",
+   "fieldtype": "Data",
+   "label": "Salmonella"
+  },
+  {
+   "fieldname": "section_break_pq8t",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "plantrich_findings",
-   "fieldtype": "Select",
-   "label": "FINDINGS",
-   "options": "\nApproved\nRejected"
+   "fieldname": "verfied_by",
+   "fieldtype": "Link",
+   "label": "Verfied By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verfied_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
   },
   {
    "fieldname": "remarks",
    "fieldtype": "Small Text",
-   "label": "Remarks",
-   "max_height": "48px"
-  },
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name",
-   "max_height": "48px"
+   "label": "Remarks"
   },
   {
    "fieldname": "signature",
@@ -213,14 +440,13 @@
    "label": "Signature"
   },
   {
-   "fieldname": "coffee_qr_code",
-   "fieldtype": "Attach",
-   "label": "QR Code"
+   "fieldname": "column_break_ro8e",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-13 11:48:28.363027",
+ "modified": "2026-03-14 13:37:50.959997",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sensory Report",
