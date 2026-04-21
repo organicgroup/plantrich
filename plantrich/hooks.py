@@ -17,7 +17,9 @@ doctypes = [
 
 app_include_js = "/assets/plantrich/js/Chart.js"
 
-
+doctype_list_js = {
+    "Lanatime Checkin": "public/js/lanatime_checkin_list.js"
+}
 
 # Includes in <head>
 # ------------------
@@ -292,3 +294,9 @@ fixtures =[{
 		]]
 	]
 }]
+
+
+
+
+
+

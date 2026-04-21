@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-04-21 14:49:14.269306",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2026-04-21 16:12:04.097534",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Lanatime Daily Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\n    employee,\n    employee_name,\n    DATE(check_time) AS date,\n\n    MIN(CASE \n        WHEN log_type = 'IN' THEN check_time \n    END) AS check_in,\n\n    MAX(CASE \n        WHEN log_type = 'OUT' THEN check_time \n    END) AS check_out,\n\n    SEC_TO_TIME(\n        TIMESTAMPDIFF(\n            SECOND,\n            MIN(CASE WHEN log_type = 'IN' THEN check_time END),\n            MAX(CASE WHEN log_type = 'OUT' THEN check_time END)\n        )\n    ) AS total_hours\n\nFROM `tabLanatime Checkin`\n\nGROUP BY employee, DATE(check_time)\n\nORDER BY date DESC, employee",
+ "ref_doctype": "Lanatime Checkin",
+ "report_name": "Lanatime Daily Summary",
+ "report_script": "",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}
