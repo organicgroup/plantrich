@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-22 14:50:40.605624",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "section_break_n4ez",
+  "item",
+  "item_name",
+  "column_break_mclv",
+  "qty",
+  "uom",
+  "section_break_ake8",
+  "carried_person",
+  "vehicle_no",
+  "column_break_4eq0",
+  "phone_no",
+  "section_break_wdin",
+  "authorised_by",
+  "name1",
+  "column_break_aibk",
+  "approved_by",
+  "name2"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PAK/GP/25-26/.####."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "\nMachine\nMachine Parts\nIT Gadgets\nCivil\nStock\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.item==\"Others\"",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "section_break_n4ez",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mclv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "\nKg\nNos\nLtr"
+  },
+  {
+   "fieldname": "section_break_ake8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "carried_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Carried Person"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No."
+  },
+  {
+   "fieldname": "column_break_4eq0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Data",
+   "label": "Phone No."
+  },
+  {
+   "fieldname": "section_break_wdin",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "authorised_by",
+   "fieldtype": "Link",
+   "label": "Authorised By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_aibk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "authorised_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "approved_by.employee_name",
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-22 15:10:33.172842",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Gate Pass",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
