@@ -8,10 +8,17 @@
  "field_order": [
   "employee",
   "employee_name",
+  "date",
   "column_break_trlx",
+  "company",
   "department",
   "section_break_s3f3",
-  "asset_allocation_details"
+  "asset_allocation_details",
+  "section_break_2klf",
+  "handed_over",
+  "handed_over_to",
+  "name1",
+  "handed_over_date"
  ],
  "fields": [
   {
@@ -51,11 +58,52 @@
   {
    "fieldname": "column_break_trlx",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_2klf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "handed_over",
+   "fieldtype": "Check",
+   "label": "Handed Over "
+  },
+  {
+   "depends_on": "eval:doc.handed_over==1",
+   "fieldname": "handed_over_to",
+   "fieldtype": "Link",
+   "label": "Handed Over To",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "handed_over_to.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.handed_over==1",
+   "fieldname": "handed_over_date",
+   "fieldtype": "Date",
+   "label": "Handed Over Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-22 15:29:48.660903",
+ "modified": "2026-04-24 10:55:54.336937",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Asset Allocation Form",

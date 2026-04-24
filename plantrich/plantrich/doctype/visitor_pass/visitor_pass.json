@@ -19,6 +19,8 @@
   "entry_time",
   "exit_time",
   "section_break_hnyj",
+  "authorized_by",
+  "name2",
   "approved_by",
   "name1",
   "column_break_q7wt",
@@ -76,7 +78,7 @@
   {
    "fieldname": "person_to_visit",
    "fieldtype": "Data",
-   "label": "Person to Visit"
+   "label": "Person to Meet"
   },
   {
    "fieldname": "entry_time",
@@ -124,11 +126,24 @@
   {
    "fieldname": "column_break_woy0",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_by",
+   "fieldtype": "Link",
+   "label": "Authorized By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "authorized_by.employee_name",
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-22 15:32:31.373821",
+ "modified": "2026-04-24 10:44:21.022225",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Visitor Pass",
