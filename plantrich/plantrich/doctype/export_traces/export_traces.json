@@ -124,6 +124,7 @@
   "sales_invoice_date",
   "section_break_dw4dm",
   "whether_samplingtest_done_shonithaswapna",
+  "dispatched_date",
   "column_break_svbgd",
   "sampling_status",
   "e_way_bill_date",
@@ -1021,11 +1022,16 @@
   {
    "fieldname": "section_break_2vjs",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "dispatched_date",
+   "fieldtype": "Date",
+   "label": "Dispatched Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-21 13:05:53.371177",
+ "modified": "2026-05-26 09:01:44.694389",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Export Traces",
