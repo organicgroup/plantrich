@@ -12,7 +12,12 @@
   "company",
   "date",
   "worker_details",
-  "participants"
+  "participants",
+  "remarks",
+  "section_break_0ind",
+  "attachment_1",
+  "column_break_ffqb",
+  "attachment_2"
  ],
  "fields": [
   {
@@ -43,11 +48,34 @@
    "fieldtype": "Table",
    "label": "Participants",
    "options": "Factory Worker Participants"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_0ind",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachment_1",
+   "fieldtype": "Attach Image",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "column_break_ffqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach Image",
+   "label": "Attachment 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-24 15:16:42.157860",
+ "modified": "2026-07-09 13:12:58.272528",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Factory Worker Tracker",
