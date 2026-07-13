@@ -40,7 +40,7 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Sample Type",
-   "options": "\nCoffee\nSpices"
+   "options": "\nCoffee\nSpices\nSoil\nWater"
   },
   {
    "fieldname": "certifications",
@@ -205,7 +205,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-03-02 17:05:55.080834",
+ "modified": "2026-07-13 13:31:18.210207",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register Details",
