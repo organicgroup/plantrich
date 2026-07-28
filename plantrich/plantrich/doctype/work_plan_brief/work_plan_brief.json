@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "company",
   "employee_code",
   "employee_name",
   "department",
@@ -191,12 +192,18 @@
    "in_list_view": 1,
    "in_preview": 1,
    "label": "Remarks of Open Task"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-17 17:39:32.615351",
+ "modified": "2026-07-28 17:21:09.310659",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Work Plan Brief",

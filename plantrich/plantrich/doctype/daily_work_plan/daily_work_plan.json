@@ -13,7 +13,11 @@
   "grand_total_score",
   "reviewer",
   "reviewer_name",
-  "reviewer_feedback"
+  "reviewer_feedback",
+  "section_break_zz2j",
+  "attachment_1",
+  "column_break_j5bv",
+  "attachment_2"
  ],
  "fields": [
   {
@@ -57,11 +61,29 @@
    "in_preview": 1,
    "label": "Reviewer Feedback",
    "max_height": "48px"
+  },
+  {
+   "fieldname": "section_break_zz2j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachment_1",
+   "fieldtype": "Attach Image",
+   "label": "Attachment 1"
+  },
+  {
+   "fieldname": "column_break_j5bv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachment_2",
+   "fieldtype": "Attach Image",
+   "label": "Attachment 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 17:37:31.740087",
+ "modified": "2026-07-28 17:19:53.980083",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Daily Work Plan",
