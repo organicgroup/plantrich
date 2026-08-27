@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-08-27 16:34:54.000851",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "company",
+  "frequency",
+  "column_break_kin2",
+  "product",
+  "product_name",
+  "batch",
+  "section_break_o0jq",
+  "checklist_items",
+  "section_break_nyoe",
+  "allergen_present",
+  "allergens",
+  "column_break_lhtv",
+  "cross_contact",
+  "observation",
+  "section_break_mgm3",
+  "checked_by",
+  "name1",
+  "column_break_mhfu",
+  "verified_by",
+  "name2"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/AMC/26-27/.####.\nPAM/AMC/26-27/.####."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "\nDaily\nTwice in a Week\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "column_break_kin2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fieldname": "batch",
+   "fieldtype": "Data",
+   "label": "Batch/Lot No."
+  },
+  {
+   "fieldname": "section_break_nyoe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "allergen_present",
+   "fieldtype": "Select",
+   "label": "Allergen Present",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "allergens",
+   "fieldtype": "Small Text",
+   "label": "If Yes, Allergen(s):"
+  },
+  {
+   "fieldname": "column_break_lhtv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cross_contact",
+   "fieldtype": "Select",
+   "label": "Cross-contact Risk Identified",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Small Text",
+   "label": "Details of Observation/Corrective Action:"
+  },
+  {
+   "fieldname": "section_break_mgm3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Link",
+   "label": "Checked By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "checked_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_mhfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "name2",
+   "fieldtype": "Data",
+   "label": "Name."
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "section_break_o0jq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "checklist_items",
+   "fieldtype": "Table",
+   "label": "Checklist Items",
+   "options": "Allergen Management Checklist Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-27 16:58:08.464716",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Allergen Management Checklist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
