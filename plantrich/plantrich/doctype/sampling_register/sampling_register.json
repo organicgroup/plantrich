@@ -18,7 +18,22 @@
   "section_break_z1sw",
   "qr_code",
   "column_break_iwvp",
-  "result"
+  "risks_tab",
+  "pesticide",
+  "loss_of_organic",
+  "ochratoxin",
+  "aflatoxin",
+  "salmonella",
+  "column_break_sdfe",
+  "hold_reject",
+  "product_released",
+  "inaccurate",
+  "non_representative",
+  "section_break_hx2s",
+  "result",
+  "reason_for_rejection",
+  "column_break_3dwe",
+  "final_status"
  ],
  "fields": [
   {
@@ -89,11 +104,96 @@
    "fieldtype": "Select",
    "label": "Result",
    "options": "\nApproved\nRejected"
+  },
+  {
+   "depends_on": "eval:doc.result==\"Rejected\"",
+   "fieldname": "reason_for_rejection",
+   "fieldtype": "Small Text",
+   "label": "Reason For Rejection"
+  },
+  {
+   "depends_on": "eval:doc.result==\"Rejected\"",
+   "fieldname": "final_status",
+   "fieldtype": "Select",
+   "label": "Final Status",
+   "options": "\nReleased\nRejected\nReprocessed\nDisposed"
+  },
+  {
+   "fieldname": "risks_tab",
+   "fieldtype": "Section Break",
+   "label": "Risks"
+  },
+  {
+   "fieldname": "pesticide",
+   "fieldtype": "Select",
+   "label": "1.) Pesticide Residues above legal/customer limits.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "loss_of_organic",
+   "fieldtype": "Select",
+   "label": "2.) Loss of organic integrity/prohibited residue.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "ochratoxin",
+   "fieldtype": "Select",
+   "label": "3.) Ochratoxin A / mould Risk.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "aflatoxin",
+   "fieldtype": "Select",
+   "label": "4.) Aflatoxin Contamination",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "salmonella",
+   "fieldtype": "Select",
+   "label": "5.) Salmonella or other pathogen in incoming Spices",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "hold_reject",
+   "fieldtype": "Select",
+   "label": "6.) Hold/Rejected Material accidentally released.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "product_released",
+   "fieldtype": "Select",
+   "label": "7.) Product released before critical test results.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "inaccurate",
+   "fieldtype": "Select",
+   "label": "8.) Inaccurate internal/external test result.",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "non_representative",
+   "fieldtype": "Select",
+   "label": "9.) Non- representative sample misses contamination(poor sampling plan/training).",
+   "options": "\nYes\nNo\nN/A"
+  },
+  {
+   "fieldname": "column_break_sdfe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hx2s",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "column_break_3dwe",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-30 10:58:38.783874",
+ "modified": "2026-08-29 17:03:02.144361",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register",
