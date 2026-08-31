@@ -13,14 +13,23 @@
   "employee_code",
   "employee_name",
   "sender_email",
-  "subject",
-  "issue_raised_on",
-  "issue_description",
   "status",
+  "column_break_6zb4",
+  "subject",
+  "complaint_source",
+  "supplier_name",
+  "customer_name",
+  "department_name",
+  "issue_raised_on",
+  "resolution_due_date",
+  "section_break_4x65",
+  "issue_description",
   "resolved_by",
   "resolver",
   "comments",
+  "section_break_2nvm",
   "issue_closed_on",
+  "column_break_uoli",
   "objective_evidence"
  ],
  "fields": [
@@ -86,7 +95,7 @@
    "in_standard_filter": 1,
    "label": "Status",
    "no_copy": 1,
-   "options": "\nOpen\nWorking\nStill exist\nResolved"
+   "options": "\nOpen\nWorking\nStill exist\nOverdue\nResolved"
   },
   {
    "fieldname": "resolved_by",
@@ -115,11 +124,59 @@
    "fieldname": "objective_evidence",
    "fieldtype": "Attach",
    "label": "Objective evidence"
+  },
+  {
+   "fieldname": "column_break_6zb4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "complaint_source",
+   "fieldtype": "Select",
+   "label": "Complaint Source/Category",
+   "options": "\nEmployee\nSupplier\nCustomer\nFood Safety\nDepartment\nOther"
+  },
+  {
+   "fieldname": "resolution_due_date",
+   "fieldtype": "Date",
+   "label": "Resolution Due Date"
+  },
+  {
+   "fieldname": "section_break_4x65",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.complaint_source==\"Supplier\"",
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "depends_on": "eval:doc.complaint_source==\"Customer\"",
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "depends_on": "eval:doc.complaint_source==\"Department\"",
+   "fieldname": "department_name",
+   "fieldtype": "Link",
+   "label": "Department Name",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_uoli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2nvm",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 17:38:33.875169",
+ "modified": "2026-08-31 12:43:53.082192",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Internal Complaint Register",
