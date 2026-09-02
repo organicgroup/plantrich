@@ -24,9 +24,11 @@
   "resolution_due_date",
   "section_break_4x65",
   "issue_description",
+  "root_cause_analysis",
   "resolved_by",
   "resolver",
   "comments",
+  "corrective_action",
   "section_break_2nvm",
   "issue_closed_on",
   "column_break_uoli",
@@ -172,11 +174,21 @@
   {
    "fieldname": "section_break_2nvm",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "root_cause_analysis",
+   "fieldtype": "Text",
+   "label": "Root Cause Analysis"
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Text",
+   "label": "Corrective Action"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-31 12:43:53.082192",
+ "modified": "2026-09-02 15:53:49.258301",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Internal Complaint Register",
