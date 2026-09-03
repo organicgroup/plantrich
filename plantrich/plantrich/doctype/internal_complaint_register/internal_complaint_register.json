@@ -22,6 +22,7 @@
   "department_name",
   "issue_raised_on",
   "resolution_due_date",
+  "resolution_status",
   "section_break_4x65",
   "issue_description",
   "root_cause_analysis",
@@ -97,7 +98,7 @@
    "in_standard_filter": 1,
    "label": "Status",
    "no_copy": 1,
-   "options": "\nOpen\nWorking\nStill exist\nOverdue\nResolved"
+   "options": "\nOpen\nWorking\nStill exist\nResolved"
   },
   {
    "fieldname": "resolved_by",
@@ -184,11 +185,17 @@
    "fieldname": "corrective_action",
    "fieldtype": "Text",
    "label": "Corrective Action"
+  },
+  {
+   "fieldname": "resolution_status",
+   "fieldtype": "Select",
+   "label": "Resolution Status",
+   "options": "\nOn time\nOverdue"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-02 15:53:49.258301",
+ "modified": "2026-09-03 16:44:10.710101",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Internal Complaint Register",
