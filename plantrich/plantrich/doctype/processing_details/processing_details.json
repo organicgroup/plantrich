@@ -24,6 +24,13 @@
   "drying_loss",
   "powdering_loss",
   "other_process_loss",
+  "rejections",
+  "colour_sorting",
+  "pb_bold",
+  "bits",
+  "cadoor_rejection",
+  "md",
+  "bleed_run",
   "total_loss",
   "total_qty",
   "sample_qty",
@@ -160,12 +167,60 @@
    "fieldname": "total_qty",
    "fieldtype": "Float",
    "label": "Total Qty"
+  },
+  {
+   "default": "0",
+   "fieldname": "rejections",
+   "fieldtype": "Check",
+   "label": "Rejections"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "colour_sorting",
+   "fieldtype": "Float",
+   "label": "Colour Sorting Rejection (C/R)",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "pb_bold",
+   "fieldtype": "Float",
+   "label": "PB Bold",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "bits",
+   "fieldtype": "Float",
+   "label": "BITS",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "cadoor_rejection",
+   "fieldtype": "Float",
+   "label": "Cadoor Rejection",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "md",
+   "fieldtype": "Float",
+   "label": "M/D",
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:doc.rejections==1",
+   "fieldname": "bleed_run",
+   "fieldtype": "Float",
+   "label": "Bleed Run",
+   "precision": "2"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-01-19 12:16:27.364601",
+ "modified": "2026-09-10 12:17:27.131700",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Processing details",

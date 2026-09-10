@@ -16,9 +16,14 @@
   "fg_lot_number",
   "tracenet_batch_id",
   "inward_vehicle",
+  "column_break_wply",
+  "type",
+  "section_break_m2as",
   "bmr_details",
   "processing_details",
   "despatched_qty",
+  "fg_is_bulk",
+  "fg_product_details",
   "fg_product_code",
   "finished_goods_name",
   "despatched_date",
@@ -115,6 +120,7 @@
    "label": "Product Name"
   },
   {
+   "depends_on": "eval:doc.fg_is_bulk==0",
    "fieldname": "fg_product_code",
    "fieldtype": "Link",
    "label": "FG Product Code",
@@ -122,6 +128,7 @@
    "print_hide": 1
   },
   {
+   "depends_on": "eval:doc.fg_is_bulk==0",
    "fetch_from": "fg_product_code.item_name",
    "fieldname": "finished_goods_name",
    "fieldtype": "Data",
@@ -138,11 +145,38 @@
    "fieldname": "tracenet_batch_id",
    "fieldtype": "Data",
    "label": "Tracenet Batch ID"
+  },
+  {
+   "fieldname": "column_break_wply",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nSpice\nCoffee"
+  },
+  {
+   "fieldname": "section_break_m2as",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "fg_is_bulk",
+   "fieldtype": "Check",
+   "label": "FG is Bulk"
+  },
+  {
+   "depends_on": "eval:doc.fg_is_bulk==1",
+   "fieldname": "fg_product_details",
+   "fieldtype": "Table",
+   "label": "FG Product Details",
+   "options": "FG Product Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-29 11:13:10.613110",
+ "modified": "2026-09-10 12:26:20.472088",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "BMR REPORT",
