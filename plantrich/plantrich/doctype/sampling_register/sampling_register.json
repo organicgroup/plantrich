@@ -12,6 +12,8 @@
   "column_break_a6mp",
   "date",
   "toc",
+  "section_break_0n7v",
+  "our_reference",
   "section_break_wno3",
   "details",
   "parameters_to_be_checked",
@@ -189,11 +191,20 @@
   {
    "fieldname": "column_break_3dwe",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0n7v",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "our_reference",
+   "fieldtype": "Data",
+   "label": "Our Reference"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-29 17:03:02.144361",
+ "modified": "2026-09-22 12:13:39.814264",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sampling Register",
