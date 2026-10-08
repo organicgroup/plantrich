@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-07 10:27:50.416297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "required_sieve_size",
+  "actual_sieve_installed",
+  "done_by",
+  "employee_name",
+  "verified_by",
+  "name1"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Product",
+   "options": "\nPre-Sterilization\nGround Spice - Final Sifting"
+  },
+  {
+   "fieldname": "required_sieve_size",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Required Sieve Size (\u00b5m)",
+   "options": "\n640\n800\n1000\n1200\n2000"
+  },
+  {
+   "fieldname": "actual_sieve_installed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Actual Sieve Installed"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "done_by",
+   "fieldtype": "Link",
+   "label": "Done by",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "done_by.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-07 11:19:34.204069",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Sieve Size Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
