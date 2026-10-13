@@ -20,7 +20,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Product",
+   "label": "Production Line",
    "options": "\nPre-Sterilization\nGround Spice - Final Sifting"
   },
   {
@@ -70,7 +70,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-10-07 11:19:34.204069",
+ "modified": "2026-10-08 13:00:19.383810",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Sieve Size Details",

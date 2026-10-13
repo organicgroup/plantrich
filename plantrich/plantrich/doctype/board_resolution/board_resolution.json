@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-10-13 11:10:35.455245",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "subject",
+  "column_break_9qbb",
+  "date",
+  "place",
+  "section_break_ozis",
+  "content",
+  "section_break_32co",
+  "authorized_1",
+  "designation_1",
+  "din_1",
+  "column_break_k1yl",
+  "authorized_2",
+  "designation_2",
+  "din_2"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAM/BR/26-27/.####."
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "column_break_9qbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "section_break_ozis",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Text Editor",
+   "label": "Content"
+  },
+  {
+   "fieldname": "section_break_32co",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "authorized_1",
+   "fieldtype": "Data",
+   "label": "Authorized Signatory Name"
+  },
+  {
+   "fieldname": "designation_1",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "din_1",
+   "fieldtype": "Data",
+   "label": "DIN"
+  },
+  {
+   "fieldname": "column_break_k1yl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "authorized_2",
+   "fieldtype": "Data",
+   "label": "Authorized Signatory Name"
+  },
+  {
+   "fieldname": "designation_2",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "din_2",
+   "fieldtype": "Data",
+   "label": "DIN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-13 11:34:52.353474",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Board Resolution",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
