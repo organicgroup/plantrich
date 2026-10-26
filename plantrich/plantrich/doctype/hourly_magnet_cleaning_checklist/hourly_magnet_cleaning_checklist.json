@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-10-26 14:24:28.968874",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "company",
+  "column_break_dbdd",
+  "shift",
+  "product",
+  "product_name",
+  "section_break_mkfy",
+  "details",
+  "section_break_atmd",
+  "cleaned_by",
+  "employee_name",
+  "column_break_zytv",
+  "verified_by",
+  "verifier_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/HMCC/26-27/.####"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nMorning\nEvening\nNight"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_dbdd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mkfy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "Hourly Magnet Cleaning Details"
+  },
+  {
+   "fieldname": "section_break_atmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cleaned_by",
+   "fieldtype": "Link",
+   "label": "Cleaned By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "cleaned_by.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zytv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "verifier_name",
+   "fieldtype": "Data",
+   "label": "Verifier Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-26 15:25:53.200316",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Hourly Magnet Cleaning Checklist",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

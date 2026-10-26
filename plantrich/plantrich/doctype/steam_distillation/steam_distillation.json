@@ -1,0 +1,275 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-10-24 12:56:53.217156",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "date",
+  "column_break_qhow",
+  "company",
+  "distillation_vessel_1_section",
+  "start_time",
+  "end_time",
+  "raw_material_quantity_charged",
+  "readings_1",
+  "distillation_vessel_section_2",
+  "start_time_2",
+  "end_time_2",
+  "raw_material_quantitiy_2",
+  "readings_2",
+  "distillation_vessel__3_section",
+  "start_time_3",
+  "end_time_3",
+  "raw_material_quantity_3",
+  "reading_3",
+  "post_process_check_distillation_vessel_1_section",
+  "distillation_vessel_1",
+  "post_process_check_distillation_vessel_2_section",
+  "distillation_vessel_2",
+  "post_process_check_distillation_vessel_3_section",
+  "distillation_vessel_3",
+  "filteration_check_section",
+  "filteration_check",
+  "distillation_summary_time_taken_for_each_vessel_section",
+  "distillation_summary",
+  "section_break_pdnz",
+  "operator",
+  "operator_name",
+  "operator_signature",
+  "column_break_qfje",
+  "production_supervisor",
+  "production_supervisor_name",
+  "supervisor_signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/SD/26-27/.####."
+  },
+  {
+   "fieldname": "column_break_qhow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "distillation_vessel_1_section",
+   "fieldtype": "Section Break",
+   "label": "Distillation Vessel 1"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time - 1"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time - 1"
+  },
+  {
+   "fieldname": "raw_material_quantity_charged",
+   "fieldtype": "Float",
+   "label": "Raw Material Quantity Charged - 1",
+   "precision": "2"
+  },
+  {
+   "fieldname": "readings_1",
+   "fieldtype": "Table",
+   "label": "Readings - 1",
+   "options": "Distillation Vessel Readings"
+  },
+  {
+   "fieldname": "distillation_vessel_section_2",
+   "fieldtype": "Section Break",
+   "label": "Distillation Vessel  2"
+  },
+  {
+   "fieldname": "start_time_2",
+   "fieldtype": "Datetime",
+   "label": "Start Time - 2"
+  },
+  {
+   "fieldname": "end_time_2",
+   "fieldtype": "Datetime",
+   "label": "End Time - 2"
+  },
+  {
+   "fieldname": "raw_material_quantitiy_2",
+   "fieldtype": "Float",
+   "label": "Raw Material Quantity Charged - 2",
+   "precision": "2"
+  },
+  {
+   "fieldname": "readings_2",
+   "fieldtype": "Table",
+   "label": "Readings - 2",
+   "options": "Distillation Vessel Readings"
+  },
+  {
+   "fieldname": "distillation_vessel__3_section",
+   "fieldtype": "Section Break",
+   "label": "Distillation Vessel  3"
+  },
+  {
+   "fieldname": "start_time_3",
+   "fieldtype": "Datetime",
+   "label": "Start Time - 3"
+  },
+  {
+   "fieldname": "end_time_3",
+   "fieldtype": "Datetime",
+   "label": "End Time - 3"
+  },
+  {
+   "fieldname": "raw_material_quantity_3",
+   "fieldtype": "Float",
+   "label": "Raw Material Quantity Charged - 3",
+   "precision": "2"
+  },
+  {
+   "fieldname": "reading_3",
+   "fieldtype": "Table",
+   "label": "Readings - 3",
+   "options": "Distillation Vessel Readings"
+  },
+  {
+   "fieldname": "post_process_check_distillation_vessel_1_section",
+   "fieldtype": "Section Break",
+   "label": "Post Process Check (Distillation Vessel 1)"
+  },
+  {
+   "fieldname": "distillation_vessel_1",
+   "fieldtype": "Table",
+   "label": "Distillation Vessel 1",
+   "options": "Distillation Post-Process Checks"
+  },
+  {
+   "fieldname": "post_process_check_distillation_vessel_2_section",
+   "fieldtype": "Section Break",
+   "label": "Post Process Check (Distillation Vessel 2)"
+  },
+  {
+   "fieldname": "distillation_vessel_2",
+   "fieldtype": "Table",
+   "label": "Distillation Vessel 2",
+   "options": "Distillation Post-Process Checks"
+  },
+  {
+   "fieldname": "post_process_check_distillation_vessel_3_section",
+   "fieldtype": "Section Break",
+   "label": "Post Process Check (Distillation Vessel 3)"
+  },
+  {
+   "fieldname": "distillation_vessel_3",
+   "fieldtype": "Table",
+   "label": "Distillation Vessel 3",
+   "options": "Distillation Post-Process Checks"
+  },
+  {
+   "fieldname": "filteration_check_section",
+   "fieldtype": "Section Break",
+   "label": "Filteration Check"
+  },
+  {
+   "fieldname": "filteration_check",
+   "fieldtype": "Table",
+   "label": "Filteration Check",
+   "options": "Filtration Check"
+  },
+  {
+   "fieldname": "distillation_summary_time_taken_for_each_vessel_section",
+   "fieldtype": "Section Break",
+   "label": "Distillation Summary (Time Taken for Each Vessel)"
+  },
+  {
+   "fieldname": "section_break_pdnz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "operator.employee_name",
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operator_signature",
+   "fieldtype": "Signature",
+   "label": "Operator Signature"
+  },
+  {
+   "fieldname": "production_supervisor",
+   "fieldtype": "Link",
+   "label": "Production Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "production_supervisor.employee_name",
+   "fieldname": "production_supervisor_name",
+   "fieldtype": "Data",
+   "label": "Production Supervisor Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supervisor_signature",
+   "fieldtype": "Signature",
+   "label": "Supervisor Signature"
+  },
+  {
+   "fieldname": "column_break_qfje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distillation_summary",
+   "fieldtype": "Table",
+   "label": "Distillation Summary",
+   "options": "Distillation Summary"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-26 13:14:08.883648",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Steam Distillation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-10-19 13:10:59.456812",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "log_details_section",
+  "naming_series",
+  "date",
+  "shift",
+  "company",
+  "column_break_xply",
+  "product",
+  "product_details",
+  "ccp_limits_section",
+  "treatment_temperature_limit",
+  "steam_pressure_limit",
+  "column_break_cnyr",
+  "treatment_time_limit",
+  "process_parameters_section",
+  "chamber_injection_temperature",
+  "screw_speed",
+  "dryer_temperature_t1",
+  "dryer_temperature_t2",
+  "column_break_ppdt",
+  "dryer_temperature_t3",
+  "dryer_temperature_t4",
+  "product_discharge_temperature",
+  "sterilization_details_section",
+  "batch_number",
+  "total_input_weight",
+  "start_time",
+  "end_time",
+  "column_break_fbnq",
+  "total_output_weight",
+  "remarks_if_any",
+  "sign_off_section",
+  "operator",
+  "operator_name",
+  "column_break_hjxw",
+  "verified_by",
+  "verifier_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "log_details_section",
+   "fieldtype": "Section Break",
+   "label": "Log Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nMorning\nEvening\nNight"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_xply",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Small Text",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "ccp_limits_section",
+   "fieldtype": "Section Break",
+   "label": "CCP Limits"
+  },
+  {
+   "fieldname": "treatment_temperature_limit",
+   "fieldtype": "Data",
+   "label": "Treatment Temperature Limit"
+  },
+  {
+   "fieldname": "steam_pressure_limit",
+   "fieldtype": "Data",
+   "label": "Steam Pressure Limit"
+  },
+  {
+   "fieldname": "column_break_cnyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "treatment_time_limit",
+   "fieldtype": "Data",
+   "label": "Treatment Time Limit"
+  },
+  {
+   "fieldname": "process_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Process Parameters"
+  },
+  {
+   "fieldname": "chamber_injection_temperature",
+   "fieldtype": "Float",
+   "label": "Chamber Injection Temperature"
+  },
+  {
+   "fieldname": "screw_speed",
+   "fieldtype": "Float",
+   "label": "Screw Speed"
+  },
+  {
+   "fieldname": "dryer_temperature_t1",
+   "fieldtype": "Float",
+   "label": "Dryer Temperature T1"
+  },
+  {
+   "fieldname": "dryer_temperature_t2",
+   "fieldtype": "Float",
+   "label": "Dryer Temperature T2"
+  },
+  {
+   "fieldname": "column_break_ppdt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dryer_temperature_t3",
+   "fieldtype": "Float",
+   "label": "Dryer Temperature T3"
+  },
+  {
+   "fieldname": "dryer_temperature_t4",
+   "fieldtype": "Float",
+   "label": "Dryer Temperature T4"
+  },
+  {
+   "fieldname": "product_discharge_temperature",
+   "fieldtype": "Float",
+   "label": "Product Discharge Temperature"
+  },
+  {
+   "fieldname": "sterilization_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sterilization details"
+  },
+  {
+   "fieldname": "batch_number",
+   "fieldtype": "Link",
+   "label": "Batch Number",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "total_input_weight",
+   "fieldtype": "Float",
+   "label": "Total Input Weight"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "column_break_fbnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_output_weight",
+   "fieldtype": "Float",
+   "label": "Total Output Weight"
+  },
+  {
+   "fieldname": "remarks_if_any",
+   "fieldtype": "Small Text",
+   "label": "Remarks (If any)"
+  },
+  {
+   "fieldname": "sign_off_section",
+   "fieldtype": "Section Break",
+   "label": "Sign Off"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "label": "Operator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_hjxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/SLS/26-27/.####."
+  },
+  {
+   "fetch_from": "operator.employee_name",
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "verifier_name",
+   "fieldtype": "Data",
+   "label": "Verifier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-23 15:13:44.038365",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Sterilizer Log Sheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

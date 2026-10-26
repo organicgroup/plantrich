@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-26 15:10:10.334300",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "magnet_id",
+  "area_of_usage",
+  "start_time",
+  "end_time",
+  "no_of_times",
+  "qty_of_particles",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Plant",
+   "options": "\nSpice Plant\nCoffee Plant\nSpice OIl Plant"
+  },
+  {
+   "fieldname": "magnet_id",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Magnet ID",
+   "options": "\nSP-VSMAG-01\nSP-DBMAG-01\nSP-DBMAG-02\nSP-DBMAG-03\nSP-DBMAG-04\nCP-MAG-01"
+  },
+  {
+   "fieldname": "area_of_usage",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Area of Usage",
+   "options": "\nVibro Sifter Outlet - FG Spice Handling\nFG Collection Area - Spices\nStorage Silo - Coffee"
+  },
+  {
+   "fieldname": "no_of_times",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "No. of Times Magnet Cleaned"
+  },
+  {
+   "fieldname": "qty_of_particles",
+   "fieldtype": "Float",
+   "label": "Qty of Particles (g)"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-26 15:21:55.017999",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Hourly Magnet Cleaning Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
