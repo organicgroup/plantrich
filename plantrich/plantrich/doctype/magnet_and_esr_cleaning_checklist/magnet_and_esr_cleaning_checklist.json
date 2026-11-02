@@ -41,7 +41,7 @@
    "fieldname": "shift",
    "fieldtype": "Select",
    "label": "Shift",
-   "options": "\nMorning\nEvening\nNight"
+   "options": "\nGeneral\nEvening"
   },
   {
    "fieldname": "section_break_bcy0",
@@ -90,7 +90,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-23 15:32:18.674434",
+ "modified": "2026-11-02 09:30:07.947939",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Magnet and ESR Cleaning Checklist",

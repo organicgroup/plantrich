@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-10-29 15:49:11.548197",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "column_break_cmza",
+  "date",
+  "shift",
+  "section_break_azbo",
+  "utensil_control_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nPAK/26-27/UCR/.####."
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nGeneral\nEvening"
+  },
+  {
+   "fieldname": "column_break_cmza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_azbo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "utensil_control_details",
+   "fieldtype": "Table",
+   "label": "Utensil Control Details",
+   "options": "Utensil Control Record Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-02 09:28:32.854397",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Utensil Control Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

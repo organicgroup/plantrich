@@ -44,7 +44,7 @@
    "fieldname": "shift",
    "fieldtype": "Select",
    "label": "Shift",
-   "options": "\nMorning\nEvening\nNight"
+   "options": "\nGeneral\nEvening"
   },
   {
    "fieldname": "product",
@@ -110,7 +110,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-26 15:25:53.200316",
+ "modified": "2026-11-02 09:29:31.676525",
  "modified_by": "Administrator",
  "module": "Plantrich",
  "name": "Hourly Magnet Cleaning Checklist",

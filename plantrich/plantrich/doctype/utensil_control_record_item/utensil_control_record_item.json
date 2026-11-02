@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-30 11:49:12.867235",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "area_and_process_section",
+  "area",
+  "column_break_tqzw",
+  "process_name",
+  "brushes_section",
+  "long_brush_green",
+  "long_brush_blue",
+  "long_brush_red",
+  "column_break_ytuy",
+  "hand_brush_green",
+  "hand_brush_blue",
+  "hand_brush_red",
+  "other_utensils_section",
+  "scoop_production",
+  "scoop_floor",
+  "column_break_qhrc",
+  "knife",
+  "bowl",
+  "issuing_and_returning_utensils_section",
+  "issued_to",
+  "supervisor_signature_issued",
+  "column_break_mefo",
+  "employee_name",
+  "supervisor_signature_returned",
+  "utensil_condition_checks_section",
+  "brush_condition",
+  "scoops_knives_and_bowls_clean_and_undamaged",
+  "column_break_hkcn",
+  "verified_by",
+  "verifier_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Process"
+  },
+  {
+   "fieldname": "column_break_tqzw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_and_process_section",
+   "fieldtype": "Section Break",
+   "label": "Area and Process"
+  },
+  {
+   "fieldname": "brushes_section",
+   "fieldtype": "Section Break",
+   "label": "Brushes"
+  },
+  {
+   "fieldname": "long_brush_green",
+   "fieldtype": "Int",
+   "label": "Long Brush - Green"
+  },
+  {
+   "fieldname": "long_brush_blue",
+   "fieldtype": "Int",
+   "label": "Long Brush - Blue"
+  },
+  {
+   "fieldname": "long_brush_red",
+   "fieldtype": "Int",
+   "label": "Long Brush - Red"
+  },
+  {
+   "fieldname": "column_break_ytuy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hand_brush_green",
+   "fieldtype": "Int",
+   "label": "Hand Brush - Green"
+  },
+  {
+   "fieldname": "hand_brush_blue",
+   "fieldtype": "Int",
+   "label": "Hand Brush - Blue"
+  },
+  {
+   "fieldname": "hand_brush_red",
+   "fieldtype": "Int",
+   "label": "Hand Brush - Red"
+  },
+  {
+   "fieldname": "other_utensils_section",
+   "fieldtype": "Section Break",
+   "label": "Other Utensils"
+  },
+  {
+   "fieldname": "scoop_production",
+   "fieldtype": "Int",
+   "label": "Scoop - Production"
+  },
+  {
+   "fieldname": "scoop_floor",
+   "fieldtype": "Int",
+   "label": "Scoop - Floor"
+  },
+  {
+   "fieldname": "column_break_qhrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "knife",
+   "fieldtype": "Int",
+   "label": "Knife"
+  },
+  {
+   "fieldname": "bowl",
+   "fieldtype": "Int",
+   "label": "Bowl"
+  },
+  {
+   "fieldname": "issuing_and_returning_utensils_section",
+   "fieldtype": "Section Break",
+   "label": "Issuing and returning utensils"
+  },
+  {
+   "fieldname": "issued_to",
+   "fieldtype": "Link",
+   "label": "Issued to ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "issued_to.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "supervisor_signature_issued",
+   "fieldtype": "Signature",
+   "label": "Supervisor Signature - Issued"
+  },
+  {
+   "fieldname": "column_break_mefo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supervisor_signature_returned",
+   "fieldtype": "Signature",
+   "label": "Supervisor Signature - Returned"
+  },
+  {
+   "fieldname": "utensil_condition_checks_section",
+   "fieldtype": "Section Break",
+   "label": "Utensil condition checks"
+  },
+  {
+   "fieldname": "brush_condition",
+   "fieldtype": "Select",
+   "label": "Brush Bristles and Handles in Good Condition?",
+   "options": "Yes\nNo\nN/A"
+  },
+  {
+   "fieldname": "scoops_knives_and_bowls_clean_and_undamaged",
+   "fieldtype": "Select",
+   "label": "Scoops, Knives and Bowls Clean and Undamaged?",
+   "options": "Yes\nNo\nN/A"
+  },
+  {
+   "fieldname": "column_break_hkcn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "verified_by.employee_name",
+   "fieldname": "verifier_name",
+   "fieldtype": "Data",
+   "label": "Verifier Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-02 09:28:25.920733",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Utensil Control Record Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
