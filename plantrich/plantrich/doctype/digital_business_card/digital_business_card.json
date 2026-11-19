@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DGC-{MM}-{YY}-{#####}",
+ "creation": "2026-11-18 10:17:25.341776",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_section",
+  "full_name",
+  "designation",
+  "department",
+  "column_break_qnxr",
+  "profile_photo",
+  "company",
+  "contact_information_section",
+  "email",
+  "mobile_number",
+  "alternatenumber",
+  "office_phone",
+  "column_break_cind",
+  "website",
+  "office_address",
+  "google_map_link",
+  "social_media_section",
+  "linkedin",
+  "instagram",
+  "facebook",
+  "column_break_dlhh",
+  "twitter",
+  "whatsapp",
+  "digital_card_settings_section",
+  "qr_code",
+  "column_break_zrwh",
+  "device_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "column_break_qnxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "profile_photo",
+   "fieldtype": "Attach Image",
+   "label": "Profile Photo"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "alternatenumber",
+   "fieldtype": "Data",
+   "label": "Alternate Number"
+  },
+  {
+   "fieldname": "office_phone",
+   "fieldtype": "Data",
+   "label": "Office Phone"
+  },
+  {
+   "fieldname": "column_break_cind",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "office_address",
+   "fieldtype": "Small Text",
+   "label": "Office Address"
+  },
+  {
+   "fieldname": "google_map_link",
+   "fieldtype": "Data",
+   "label": "Location / Google Maps"
+  },
+  {
+   "fieldname": "social_media_section",
+   "fieldtype": "Section Break",
+   "label": "Social Media"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram"
+  },
+  {
+   "fieldname": "facebook",
+   "fieldtype": "Data",
+   "label": "Facebook"
+  },
+  {
+   "fieldname": "column_break_dlhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "twitter",
+   "fieldtype": "Data",
+   "label": "X/Twitter"
+  },
+  {
+   "fieldname": "whatsapp",
+   "fieldtype": "Data",
+   "label": "Whatsapp"
+  },
+  {
+   "fieldname": "digital_card_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Digital Card Settings"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Attach Image",
+   "label": "QR Code"
+  },
+  {
+   "fieldname": "column_break_zrwh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "Device ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-19 11:05:09.151344",
+ "modified_by": "Administrator",
+ "module": "Plantrich",
+ "name": "Digital Business Card",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
